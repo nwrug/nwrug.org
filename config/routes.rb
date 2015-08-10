@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
+  get 'code-of-conduct' => 'pages#code-of-conduct', as: :code_of_conduct
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
