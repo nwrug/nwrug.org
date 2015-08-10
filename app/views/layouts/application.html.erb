@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nwrug</title>
+  <title>North West Ruby User Group, Manchester, UK</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', root_path %></a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/participate">Participate</a></li>
+        <li><a href="/code-of-conduct">Code of Conduct</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<%= yield %>
+  <%= yield %>
 
+  <footer>
+    <p>
+    <ul>
+      <li><a href="mailto:info@nwrug.org">info@nwrug.org</a></li>
+      <li><a href="https://github.com/nwrug">Github</a></li>
+      <li><a href="https://twitter.com/nwrug">Twitter</a></li>
+    </p>
+    <p>This text is licensed as <a href="http://creativecommons.org/about/cc0">CC0</a>; in summary, it is in the public domain and can be used and modified with or without attribution.</p>
+  </footer>
 </body>
 </html>
