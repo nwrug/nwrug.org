@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'code-of-conduct' => 'pages#code-of-conduct', as: :code_of_conduct
 
+  resources :events
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
