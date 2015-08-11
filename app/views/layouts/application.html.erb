@@ -22,13 +22,18 @@
   <%= yield %>
 
   <footer>
-    <p>
     <ul>
-      <li><a href="mailto:info@nwrug.org">info@nwrug.org</a></li>
-      <li><a href="https://github.com/nwrug">Github</a></li>
-      <li><a href="https://twitter.com/nwrug">Twitter</a></li>
+      <li><%= link_to 'info@nwrug.org', 'mailto:info@nwrug.org' %></li>
+      <li><%= link_to 'Github', 'https://github.com/nwrug' %></li>
+      <li><%= link_to 'Twitter', 'https://twitter.com/nwrug' %></li>
+    </ul>
+
+    <p>
+      NWRUG is organised by <%= link_to 'Tekin Suleyman', 'http://tekin.co.uk' %>, <%= link_to 'Ben Aldred', 'http://tinycodefactory.com' %> and <%= link_to 'Will Jessop', 'http://willj.net' %>.
+      Kindly hosted by <%= link_to 'Brightbox', 'https://www.brightbox.co.uk/a/zr3hp' %>.
     </p>
-    <p>This text is licensed as <a href="http://creativecommons.org/about/cc0">CC0</a>; in summary, it is in the public domain and can be used and modified with or without attribution.</p>
+
+    <p>This text is licensed as <%= link_to 'CC0', 'http://creativecommons.org/about/cc0' %>; in summary, it is in the public domain and can be used and modified with or without attribution.</p>
   </footer>
 </body>
 </html>
