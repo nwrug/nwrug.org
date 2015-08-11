@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get 'code-of-conduct' => 'pages#code-of-conduct', as: :code_of_conduct
+  get 'participate' => 'pages#participate', as: :participate
 
   resources :events
 
