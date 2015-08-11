@@ -6,7 +6,7 @@
   <p>Each month there is an NWRUG meeting in Manchester, usually on the third Thursday. There is usually a talk on a Ruby or Ruby-related topic, followed by a visit to a local pub. The next meeting will be on Thursday 20th August: <%= link_to "Bug Free Code", event_path('bug-free-code') %>. More information about our meetings can be found on the <%= link_to 'events page', events_path %>.</p>
 
   <h2 id="mailing-list">Mailing list</h2>
-  <p>The <%= link_to 'NWRUG Google Group', 'https://groups.google.com/forum/#!forum/nwrug-members' %> provides a forum for members to discuss Ruby-related topics, as well as a place for Ruby-related announcements relevant to the community. Joining this group is probably the best way to stay informed about upcoming meetings. Please adhere to our <%= link_to 'code of conduct', code_of_conduct_path %> when posting to the group. We also have <%= link_to 'specific guidelines for job posts', 'https://groups.google.com/d/msg/nwrug-members/pkCjJAhCRwI/ddzTFK3wAcAJ' %></p>
+  <p>The <%= link_to 'NWRUG Google Group', mailing_list_url %> provides a forum for members to discuss Ruby-related topics, as well as a place for Ruby-related announcements relevant to the community. Joining this group is probably the best way to stay informed about upcoming meetings. Please adhere to our <%= link_to 'code of conduct', code_of_conduct_path %> when posting to the group. We also have <%= link_to 'specific guidelines for job posts', 'https://groups.google.com/d/msg/nwrug-members/pkCjJAhCRwI/ddzTFK3wAcAJ' %></p>
 
   <h2 id="speaking-at-nwrug">Speak at NWRUG</h2>
   <p>Our talks are given by members of the community and we're always looking for people to give talks, especially those that are new to the group or have not spoken before. If you'd like to give a talk at NWRUG, <%= link_to 'get in touch', 'mailto:info@nwrug.org.uk' %>. Talks can be anything from 15 to 40 minutes in length, and don't necessarily have to be about Ruby specifically. As long as it's a subject that will be interest or relevant for Ruby developers, then it is likely to be accepted. Occasionally, we hold lightning talk events with shorter talks (typically 5 minutes).</p>
@@ -16,7 +16,7 @@
 
   <ol>
     <li>mention the sponsorship on the details page for the corresponding event</li>
-    <li>mention the sponsorship on the announcement email sent to <%= link_to 'the mailing list', 'https://groups.google.com/forum/#!forum/nwrug-members' %></li>
+    <li>mention the sponsorship on the announcement email sent to <%= link_to 'the mailing list', mailing_list_url %></li>
     <li>tweet about the sponsorship from <%= link_to '@nwrug', 'https://twitter.com/nwrug' %> at least once</li>
     <li>mention the sponsorship at the event itself and give you the opportunity to make a short 30 second or so announcement at the start of the event so you can talk to the group</li>
   </ol>
