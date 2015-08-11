@@ -1,0 +1,36 @@
+@import "main";
+
+html, body {
+  height: 100%;
+  font-size: $base-font-size/$base-line-height;
+  font-family: $base-font-family;
+  background-color: white;
+  color: $text-colour;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.footer-container {
+  font-size: $small-font-size;
+  background-color: $footer-colour;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: $footer-text-colour;
+
+  background-image: linear-gradient(0deg, $footer-text-colour 0%, $footer-text-colour 50%);
+
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(0deg, $footer-colour 0%, $footer-colour 50%);
+  }
+  &:visited {
+    color: $footer-text-colour;
+  }
+}

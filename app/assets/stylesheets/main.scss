@@ -1,0 +1,79 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+// Variables
+$base-font-family: Lato, Helvetica, Helvetica Neue, Arial;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.9;
+$base-line-height: 26px;
+
+// Colours
+$brand-colour:           #D94949;
+// $secondary-brand-colour: #FFFFFF;
+$text-colour:            $brand-colour;
+$background-colour:      $brand-colour;
+$link-colour:            darken($brand-colour, 10%);
+$link_underline:         white;
+// $header-colour:          $brand-colour;
+$footer-colour:          $brand-colour;
+$footer-text-colour:     white;
+$selection-colour:   #b3d4fc;
+
+// Based on colours from http://paletton.com/#uid=1000u0klfrebDG9gXvnpynIsXiS
+//   .color-primary-0 { color: #D94949 }
+//   .color-primary-1 { color: #FFA2A2 }
+//   .color-primary-2 { color: #FA7676 }
+//   .color-primary-3 { color: #BD2626 }
+//   .color-primary-4 { color: #960E0E }
+
+::-moz-selection {
+  background: $selection-colour;
+  text-shadow: none;
+}
+
+::selection {
+  background: $selection-colour;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: $link-colour;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-position: 0% 93%;
+  background-image: linear-gradient(0deg, $link-colour 100%, $link-colour 0%);
+
+  background-size: 200% 1px;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(0deg, $link_underline 100%, $link_underline 0%);
+  }
+}

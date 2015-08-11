@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>North West Ruby User Group, Manchester, UK</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <h1>North West Ruby User Group</h1>
+
+  <header class="wrapper clearfix">
+    <h1 class="title">North West Ruby User Group</h1>
     <nav>
       <ul>
         <li><%= link_to 'Home', root_path %></a></li>
@@ -19,21 +27,25 @@
     </nav>
   </header>
 
-  <%= yield %>
+  <div class="main wrapper clearfix">
+      <%= yield %>
+  </div>
 
-  <footer>
-    <ul>
-      <li><%= link_to 'info@nwrug.org', 'mailto:info@nwrug.org' %></li>
-      <li><%= link_to 'Github', 'https://github.com/nwrug' %></li>
-      <li><%= link_to 'Twitter', 'https://twitter.com/nwrug' %></li>
-    </ul>
+  <div class="footer-container">
+    <footer class="wrapper">
+      <ul>
+        <li><%= link_to 'info@nwrug.org', 'mailto:info@nwrug.org' %></li>
+        <li><%= link_to 'Github', 'https://github.com/nwrug' %></li>
+        <li><%= link_to 'Twitter', 'https://twitter.com/nwrug' %></li>
+      </ul>
 
-    <p>
-      NWRUG is organised by <%= link_to 'Tekin Suleyman', 'http://tekin.co.uk' %>, <%= link_to 'Ben Aldred', 'http://tinycodefactory.com' %> and <%= link_to 'Will Jessop', 'http://willj.net' %>.
-      Kindly hosted by <%= link_to 'Brightbox', 'https://www.brightbox.co.uk/a/zr3hp' %>.
-    </p>
+      <p>
+        NWRUG is organised by <%= link_to 'Tekin Suleyman', 'http://tekin.co.uk' %>, <%= link_to 'Ben Aldred', 'http://tinycodefactory.com' %> and <%= link_to 'Will Jessop', 'http://willj.net' %>
+        and kindly hosted by <%= link_to 'Brightbox', 'https://www.brightbox.co.uk/a/zr3hp' %>.
+      </p>
 
-    <p>This text is licensed as <%= link_to 'CC0', 'http://creativecommons.org/about/cc0' %>; in summary, it is in the public domain and can be used and modified with or without attribution.</p>
-  </footer>
+      <p>This text is licensed as <%= link_to 'CC0', 'http://creativecommons.org/about/cc0' %>; in summary, it is in the public domain and can be used and modified with or without attribution.</p>
+    </footer>
+  </div>
 </body>
 </html>
