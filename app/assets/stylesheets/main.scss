@@ -97,6 +97,10 @@ a {
   }
 }
 
+.secondary-colour {
+  color: $secondary-brand-colour;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
