@@ -16,19 +16,23 @@
 <body>
   <div class="main-container">
     <header>
-      <nav class="nav-collapse">
-        <ul>
-          <li><%= link_to 'Home', root_path %></a></li>
-          <li><%= link_to 'Events', events_path %></li>
-          <li><%= link_to 'Participate', participate_path %></li>
-          <li><%= link_to 'Code of Conduct', code_of_conduct_path %></li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <nav class="nav-collapse">
+          <ul>
+            <li><%= link_to 'Home', root_path %></a></li>
+            <li><%= link_to 'Events', events_path %></li>
+            <li><%= link_to 'Participate', participate_path %></li>
+            <li><%= link_to 'Code of Conduct', code_of_conduct_path %></li>
+          </ul>
+        </nav>
+      </div>
+
       <h1 class="clearfix">
         <%= link_to_unless_current 'NWRUG', root_path %>
       </h1>
       <h2>North West Ruby User Group</h2>
     </header>
+
 
     <div class="main wrapper clearfix">
         <%= yield %>

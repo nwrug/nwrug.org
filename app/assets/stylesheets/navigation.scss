@@ -1,5 +1,9 @@
 @import "main";
 
+.nav-container {
+  background-color: $brand-colour;
+}
+
 .nav-collapse,
 .nav-collapse * {
   -moz-box-sizing: border-box;
@@ -14,6 +18,10 @@
   float: left;
 }
 
+.nav-collapse ul {
+  border-left: 1px solid white;
+}
+
 .nav-collapse li {
   float: left;
   width: 100%;
@@ -24,6 +32,13 @@
     width: 25%;
     *width: 24.9%; /* IE7 Hack */
     _width: 19%; /* IE6 Hack */
+  }
+
+  .nav-collapse {
+    float: none;
+    margin: 0 auto;
+    max-width: $max-page-width;
+    overflow: auto;
   }
 }
 

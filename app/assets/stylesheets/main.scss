@@ -1,11 +1,12 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 // Variables
-$base-font-family: Lato, Helvetica, Helvetica Neue, Arial;
+$base-font-family:    Lato, Helvetica, Helvetica Neue, Arial;
 $heading-font-family: Ubuntu, sans-serif;
-$base-font-size:   17px;
-$small-font-size:  $base-font-size * 0.9;
-$base-line-height: 26px;
+$base-font-size:      17px;
+$small-font-size:     $base-font-size * 0.9;
+$base-line-height:    26px;
+$max-page-width:      900px;
 
 $gutter:      20px;
 $gutter-half: $gutter/2;
@@ -94,4 +95,18 @@ a {
   &:focus {
     text-decoration: none;
   }
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }

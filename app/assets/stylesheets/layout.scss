@@ -53,15 +53,14 @@ header {
 }
 
 .main aside {
-  clear: both;
   padding: 0px 5% 10px;
   margin: $gutter-double 0;
-    background: $brand-colour;
-    color: white;
+  background: $brand-colour;
+  color: white;
 
-    h1, h2, h3, h4, a {
-      color: white;
-    }
+  h1, h2, h3, h4, a {
+    color: white;
+  }
 }
 
 aside.event {
@@ -99,14 +98,40 @@ footer a {
   }
 }
 
+/* Wide Styles */
+
 @media screen and (min-width: 40em) {
   .main-container {
     margin-top: 0;
   }
 
+  .main, .main-container footer {
+    margin: 0 auto;
+    max-width: $max-page-width;
+    overflow: auto;
+  }
+
+  .main {
+    article {
+        float: left;
+        width: 57%;
+    }
+
+    aside {
+      float: right;
+      width: 33%;
+      padding: 0px 2% 10px;
+      margin: $gutter 0;
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
   header{
     h1 {
-      padding-top: $gutter-double;
+      padding-top: $gutter;
       font-size: 60px;
       padding-bottom: 10px;
     }
