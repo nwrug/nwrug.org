@@ -2,17 +2,18 @@
 
 // Variables
 $base-font-family: Lato, Helvetica, Helvetica Neue, Arial;
-$base-font-size:   16px;
+$base-font-size:   17px;
 $small-font-size:  $base-font-size * 0.9;
 $base-line-height: 26px;
 
 $gutter:      20px;
 $gutter-half: $gutter/2;
+$gutter-double: $gutter*2;
 
 // Colours
 $brand-colour:           #D94949;
-// $secondary-brand-colour: #FFFFFF;
-$text-colour:            $brand-colour;
+$secondary-brand-colour: #FFA2A2;
+$text-colour:            black;
 $background-colour:      white;
 $link-colour:            darken($brand-colour, 10%);
 $link_underline:         white;
@@ -67,17 +68,30 @@ textarea {
   resize: vertical;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $header-colour;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: $gutter / 2;
+}
+
+h2 {
+  padding-top: $gutter;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 a {
   color: $link-colour;
-  text-decoration: none;
-  background-repeat: repeat-x;
-  background-position: 0% 93%;
-  background-image: linear-gradient(0deg, $link-colour 100%, $link-colour 0%);
-
-  background-size: 200% 1px;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
-    background-image: linear-gradient(0deg, $link_underline 100%, $link_underline 0%);
+    text-decoration: none;
   }
 }
