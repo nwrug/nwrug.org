@@ -18,10 +18,6 @@
   float: left;
 }
 
-.nav-collapse ul {
-  border-left: 1px solid white;
-}
-
 .nav-collapse li {
   float: left;
   width: 100%;
@@ -29,6 +25,10 @@
 }
 
 @media screen and (min-width: 40em) {
+  .nav-collapse ul {
+    border-left: 1px solid white;
+  }
+
   .nav-collapse li {
     width: 25%;
     *width: 24.9%; /* IE7 Hack */
