@@ -4,8 +4,12 @@ html, body {
   height: 100%;
   font-size: $base-font-size/$base-line-height;
   font-family: $base-font-family;
-  background-color: white;
+  background-color: $brand-colour;
   color: $text-colour;
+}
+
+.main-container {
+  background-color: white;
 }
 
 .wrapper {
@@ -13,11 +17,25 @@ html, body {
   margin: 0 5%;
 }
 
+/* Header */
+.header-container {
+  background-color: $header-colour;
+  color: $header-text-colour;
+}
+
+header {
+  h1 {
+    font-family: Ubuntu;
+    font-weight: 200;
+  }
+}
+
+/* Footer */
 .footer-container {
   font-size: $small-font-size;
   background-color: $footer-colour;
-  color: white;
-  padding: 20px 0;
+  color: $footer-text-colour;
+  padding: $gutter 0;
 }
 
 footer a {

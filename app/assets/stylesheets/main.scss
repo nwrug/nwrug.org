@@ -6,17 +6,21 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.9;
 $base-line-height: 26px;
 
+$gutter:      20px;
+$gutter-half: $gutter/2;
+
 // Colours
 $brand-colour:           #D94949;
 // $secondary-brand-colour: #FFFFFF;
 $text-colour:            $brand-colour;
-$background-colour:      $brand-colour;
+$background-colour:      white;
 $link-colour:            darken($brand-colour, 10%);
 $link_underline:         white;
-// $header-colour:          $brand-colour;
-$footer-colour:          $brand-colour;
-$footer-text-colour:     white;
-$selection-colour:   #b3d4fc;
+$header-colour:          $brand-colour;
+$header-text-colour:     white;
+$footer-colour:          $header-colour;
+$footer-text-colour:     $header-text-colour;
+$selection-colour:       #b3d4fc;
 
 // Based on colours from http://paletton.com/#uid=1000u0klfrebDG9gXvnpynIsXiS
 //   .color-primary-0 { color: #D94949 }
