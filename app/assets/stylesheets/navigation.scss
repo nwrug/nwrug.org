@@ -64,6 +64,13 @@
   }
 }
 
+.nav-collapse ul li a {
+  font-size: $small-font-size;
+}
+.nav-collapse ul li a:hover {
+  text-decoration: underline;
+}
+
 .nav-collapse ul ul a {
   background: #ca3716;
   padding-left: 2em;
