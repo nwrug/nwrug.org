@@ -1,6 +1,6 @@
 <article class="event no-aside">
   <h1 class="large-heading"><%= @event.title %></h1>
-  <h2 class="secondary-colour"><%= @event.date.to_s(:human_long) %> at the Manchester Digital Labratory</h2>
+  <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at the Manchester Digital Labratory</h2>
 
   <%= render_markdown @event.description %>
 
