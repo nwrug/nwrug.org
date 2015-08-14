@@ -1,5 +1,9 @@
 <aside class="event">
-  <h2>Next Event: <%= next_event_date.to_s(:human_short) %></h2>
-  <h3><%= link_to 'Bug Free Ruby', event_path('bug-free-code') %></h3>
-  <h4>6:30pm at the Manchester Digital Labratory</h4>
+  <% if next_event.present? %>
+    <h2>Next Event: <%= next_event.date.to_s(:human_short) %></h2>
+    <h3><%= link_to next_event.title, event_path(next_event) %></h3>
+    <h4><%= next_event.time %> at the Manchester Digital Labratory</h4>
+  <% else %>
+    <h2>Next Event: <%= next_event_date.to_s(:human_short) %></h2>
+  <% end %>
 </aside>

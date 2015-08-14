@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-next_month:
-  title: An event next month
-  slug: an-event-next-month
+august_2015:
+  title: An event for August
+  slug: an-event-for-august
   description: Description of event
-  date: <%= DateTime.new(Date.today.year, (Date.today.month + 1), 17, 18, 30) %>
+  date: <%= DateTime.new(2015, 8, 20, 18, 30) %>

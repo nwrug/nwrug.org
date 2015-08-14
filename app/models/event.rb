@@ -7,6 +7,10 @@ class Event < ActiveRecord::Base
     slug
   end
 
+  def time
+    date.strftime('%l:%M%P').strip
+  end
+
 private
 
   def set_slug

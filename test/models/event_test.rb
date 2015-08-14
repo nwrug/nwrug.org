@@ -21,6 +21,11 @@ class EventTest < ActiveSupport::TestCase
     assert_equal 'another-slug', event.slug
   end
 
+  test "returns the time" do
+    event = create_event!(date: DateTime.new(2015, 8, 1, 19, 0))
+    assert_equal "7:00pm", event.time
+  end
+
 private
 
   def create_event!(overrides={})
