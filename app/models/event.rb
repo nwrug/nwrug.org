@@ -14,6 +14,8 @@ class Event < ActiveRecord::Base
 private
 
   def set_slug
-    self.slug ||= title.parameterize
+    return unless date
+
+    self.slug ||= (date.strftime('%B %Y ') + title).parameterize
   end
 end

@@ -1,15 +1,15 @@
 require 'test_helper'
 
 class EventTest < ActiveSupport::TestCase
-  test "generates a slug from the title" do
-    event = create_event!(title: "Here is an Event. It's going to be great!")
+  test "generates a slug from the title and date" do
+    event = create_event!(title: "An event!", date: DateTime.new(2015,5,20))
 
-    assert_equal 'here-is-an-event-it-s-going-to-be-great', event.slug
+    assert_equal 'may-2015-an-event', event.slug
   end
 
   test "ensures the slug is unique" do
     event = create_event!(title: 'A title')
-    clash = Event.new(title: 'A title')
+    clash = Event.new(title: event.title, date: event.date)
 
     refute clash.valid?
     assert_match /already been taken/, clash.errors[:slug].first
