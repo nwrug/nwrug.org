@@ -1,3 +1,6 @@
+<% content_for :meta_title, "NWRUG Event: #{@event.title}, #{@event.date.to_s(:short_date)}" %>
+<% content_for :meta_description, truncate(render_plaintext(@event.description), length: 160) %>
+
 <article class="event no-aside">
   <h1 class="large-heading"><%= @event.title %></h1>
   <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at the Manchester Digital Labratory</h2>
