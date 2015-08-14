@@ -1,13 +1,8 @@
 <article class="event no-aside">
-  <h1 class="large-heading">Bug Free Code</h1>
-  <h2 class="secondary-colour">Thursday 20th August, 6:30pm at the Manchester Digital Labratory</h2>
+  <h1 class="large-heading"><%= @event.title %></h1>
+  <h2 class="secondary-colour"><%= @event.date.to_s(:human_long) %> at the Manchester Digital Labratory</h2>
 
-  <p>For the last two years at Allegro we’ve been working with No Backlog. When I share the experience of this with people they often ask “what about the bugs?” and my response “we don’t have bugs”. This talk explains the concept in more depth.</p>
-
-  <h2>The speaker</h2>
-  <p>
-    Gemma Cameron, developer, event organiser and Queen Bee of the NW tech event organisers.
-  </p>
+  <%= render_markdown @event.description %>
 
   <h2>Location</h2>
   <div class="vcard">
