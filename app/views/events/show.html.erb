@@ -2,7 +2,7 @@
 <% content_for :meta_description, truncate(render_plaintext(@event.description), length: 160) %>
 
 <article class="event no-aside">
-  <h1 class="large-heading"><%= @event.title %></h1>
+  <h1 class="large-heading">Event: <%= @event.title %></h1>
   <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at the Manchester Digital Labratory</h2>
 
   <%= render_markdown @event.description %>
@@ -20,4 +20,15 @@
   <div class='embed-container'>
     <iframe width='600' height='300' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/place?q=MadLab,+Edge+Street,+Manchester,+United+Kingdom&key=AIzaSyByIp6AzlpPjVjisNnNNKHMwn_i8XwCWdc' allowfullscreen></iframe>
   </div>
+</article>
+
+<article class="no-aside">
+  <h2>About NWRUG events</h2>
+  <p>
+    Our events are free and open to anyone with an interest in Ruby, regardless
+    of experience level. There is no need to register, just show up on the day!
+    We want to keep NWRUG as welcoming and inclusive as possible so we ask that
+    all attendies follow our <%= link_to 'Code of conduct', code_of_conduct_path %>.
+    If you have any questions, <%= link_to 'get in touch', 'mailto:info@nwrug.org' %>.
+  </p>
 </article>
