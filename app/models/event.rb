@@ -14,8 +14,8 @@ class Event < ActiveRecord::Base
 private
 
   def set_slug
-    return unless date
+    return if date.blank? || slug.present?
 
-    self.slug ||= (date.strftime('%B %Y ') + title).parameterize
+    self.slug = (date.strftime('%B %Y ') + title).parameterize
   end
 end

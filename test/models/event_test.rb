@@ -7,6 +7,13 @@ class EventTest < ActiveSupport::TestCase
     assert_equal 'may-2015-an-event', event.slug
   end
 
+  test "ignores blank slug strings" do
+    event = Event.new(title: 'some title', slug: '', date: DateTime.new(2015,6,20))
+    event.valid?
+
+    assert_equal 'june-2015-some-title', event.slug
+  end
+
   test "ensures the slug is unique" do
     event = create_event!(title: 'A title')
     clash = Event.new(title: event.title, date: event.date)
