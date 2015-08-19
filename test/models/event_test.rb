@@ -39,6 +39,7 @@ private
     Event.create!({
       title: "Event title",
       description: 'Event description',
-      date: 1.week.from_now }.merge(overrides))
+      date: 1.week.from_now,
+      location_id: locations(:madlab).id}.merge(overrides))
   end
 end

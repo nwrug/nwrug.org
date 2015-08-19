@@ -3,23 +3,25 @@
 
 <article class="event no-aside">
   <h1 class="large-heading">Event: <%= @event.title %></h1>
-  <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at the Manchester Digital Labratory</h2>
+  <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at <%= @event.location.name %></h2>
 
   <%= render_markdown @event.description %>
 
-  <h2>Location</h2>
-  <div class="vcard">
-   <a class="fn org url" href="http://madlab.org.uk/">The Manchester Digital Labratory (MadLab)</a>
-   <span class="adr">
-    <span class="street-address">36-40 Edge Street</span>
-    <span class="locality">Manchester</span>,
-    <span class="postal-code">M4 1HN</span>.
-   </span>
-  </div>
+  <% if location = @event.location %>
+    <h2>The location</h2>
+    <div class="vcard">
+     <a class="fn org url" href="<%= location.website %>"><%= location.name %></a>
+     <span class="adr">
+      <span class="street-address"><%= location.street_address %></span>,
+      <span class="locality"><%= location.city %></span>,
+      <span class="postal-code"><%= location.postal_code %></span>.
+     </span>
+    </div>
 
-  <div class='embed-container'>
-    <iframe width='600' height='300' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/place?q=MadLab,+Edge+Street,+Manchester,+United+Kingdom&key=AIzaSyByIp6AzlpPjVjisNnNNKHMwn_i8XwCWdc' allowfullscreen></iframe>
-  </div>
+    <div class='embed-container'>
+      <iframe width='600' height='300' frameborder='0' style='border:0' src='<%= google_maps_embed_url(location) %>' allowfullscreen></iframe>
+    </div>
+  <% end %>
 </article>
 
 <article class="no-aside">

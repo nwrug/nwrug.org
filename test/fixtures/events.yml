@@ -5,3 +5,4 @@ august_2015:
   slug: an-event-for-august
   description: Description of event
   date: <%= DateTime.new(2015, 8, 20, 18, 30) %>
+  location: :madlab

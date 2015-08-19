@@ -5,6 +5,11 @@ module ApplicationHelper
     'https://groups.google.com/forum/#!forum/nwrug-members'
   end
 
+  def google_maps_embed_url(location)
+    map_query = [location.name, location.street_address, location.city].join(', ')
+    "https://www.google.com/maps/embed/v1/place?q=#{map_query}&key=AIzaSyByIp6AzlpPjVjisNnNNKHMwn_i8XwCWdc"
+  end
+
   def render_markdown(markdown)
     markdown_renderer.render(markdown).html_safe
   end

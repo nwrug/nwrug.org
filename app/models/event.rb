@@ -3,6 +3,8 @@ class Event < ActiveRecord::Base
   validates :slug, uniqueness: true
   validates :title, :description, :slug, :date, presence: true
 
+  belongs_to :location
+
   def to_param
     slug
   end

@@ -1,0 +1,8 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+madlab:
+  name: The Manchester Digital Labratory (MadLab)
+  website: http://madlab.org.uk/
+  street_address: 36-40 Edge Street
+  city: Manchester
+  postal_code: M4 1HN
