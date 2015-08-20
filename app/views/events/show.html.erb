@@ -2,6 +2,10 @@
 <% content_for :meta_description, truncate(render_plaintext(@event.description), length: 160) %>
 
 <article class="event no-aside">
+  <div class="controls">
+    <%= link_to 'edit', edit_event_path(@event) %>
+  </div>
+
   <h1 class="large-heading">Event: <%= @event.title %></h1>
   <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at <%= @event.location.name %></h2>
 

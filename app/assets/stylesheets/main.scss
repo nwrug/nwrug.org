@@ -114,3 +114,14 @@ a {
 .clearfix {
     *zoom: 1;
 }
+
+form {
+  label {
+    display: block;
+  }
+
+  textarea {
+    width: 90%;
+    height: 300px;
+  }
+}

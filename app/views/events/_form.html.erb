@@ -1,0 +1,38 @@
+<%= form_for event do |form| %>
+  <% if event.errors.any? %>
+    <ul>
+    <% event.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <section>
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </section>
+
+  <section>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </section>
+
+  <section>
+    <%= form.label :slug %>
+    <%= form.text_field :slug %>
+  </section>
+
+  <section>
+    <%= form.label :location_id %>
+    <%= form.select :location_id, Location.all.map {|l| [l.name, l.id] } %>
+  </section>
+
+  <section>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </section>
+
+  <section>
+    <%= form.submit 'Save' %> or <%= link_to 'cancel', events_path %>
+  </section>
+<% end %>
