@@ -13,7 +13,7 @@
       <% if next_event.present? %>
         The next event will be on <%= next_event.date.to_s(:short_date) %>: <%= link_to next_event.title, event_path(next_event) %>.
       <% else %>
-        The next event will be on <%= next_event_date.to_s(:short_date) %> (details to follow&hellip;).
+        The next event will be on <%= Event.next_date.to_s(:short_date) %> (details to follow&hellip;).
       <% end %>
       General information about NWRUG events can be found on the <%= link_to 'events page', events_path %>.
     </p>

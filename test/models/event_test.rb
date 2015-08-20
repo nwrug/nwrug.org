@@ -41,6 +41,31 @@ class EventTest < ActiveSupport::TestCase
     end
   end
 
+  test 'Event.next_date returns the third Thursday of the month at 6:30pm' do
+    travel_to Date.new(2015, 8, 1) do
+      assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
+    end
+  end
+
+  test "Event.next_date returns today if it's the third Thursday of the month" do
+    travel_to Date.new(2015, 8, 20) do
+      assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
+    end
+  end
+
+  test "Event.next_date returns the third Thursday of next month if this month's has passed" do
+    travel_to Date.new(2015, 8, 21) do
+      assert_equal DateTime.new(2015, 9, 17, 18, 30), Event.next_date
+    end
+  end
+
+  test "Event.next_date correctly rolls over at the end of the year" do
+    travel_to Date.new(2015, 12, 20) do
+      assert_equal DateTime.new(2016, 1, 21, 18, 30), Event.next_date
+    end
+  end
+
+
 private
 
   def create_event!(overrides={})

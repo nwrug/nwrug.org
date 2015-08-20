@@ -9,6 +9,14 @@ class Event < ActiveRecord::Base
     new(date: next_date)
   end
 
+  def self.next_date
+    if third_thursday_of_month.past?
+      third_thursday_of_month(Date.today + 1.month)
+    else
+      third_thursday_of_month
+    end
+  end
+
   def to_param
     slug
   end
@@ -23,14 +31,6 @@ private
     return if date.blank? || slug.present?
 
     self.slug = (date.strftime('%B %Y ') + title).parameterize
-  end
-
-  def self.next_date
-    if third_thursday_of_month.past?
-      third_thursday_of_month(Date.today + 1.month)
-    else
-      third_thursday_of_month
-    end
   end
 
   def self.third_thursday_of_month(base_date=nil)
