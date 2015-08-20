@@ -1,6 +1,4 @@
 class EventsController < ApplicationController
-  include EventHelper
-
   before_filter :find_event, only: [:show, :edit, :update]
 
   def index
@@ -12,7 +10,7 @@ class EventsController < ApplicationController
   end
 
   def new
-    @event = Event.new(date: next_event_date)
+    @event = Event.new_with_defaults
   end
 
   def create
