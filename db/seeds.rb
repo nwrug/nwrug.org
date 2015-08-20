@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+require 'csv'
 
 LOCATIONS = [
   {
@@ -81,4 +81,14 @@ LOCATIONS = [
 
 LOCATIONS.each do |attributes|
   Location.create!(attributes) unless Location.exists?(name: attributes[:name])
+end
+
+CSV.foreach(Rails.root.join('db/events.csv'), headers: true) do |row|
+  Event.create!(
+    title: row['title'],
+    slug: row['slug'],
+    description: row['description'],
+    location_id: row['location_id'],
+    date: row['date'],
+  ) unless Event.exists?(slug: row['slug'])
 end
