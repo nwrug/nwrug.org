@@ -11,7 +11,7 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
     click_on 'Sign in'
 
     assert_path events_path
-    assert page.has_link?('sign out', signout_path)
+    assert page.has_link?('sign out', href: signout_path)
   end
 
   test 'failed authentication' do

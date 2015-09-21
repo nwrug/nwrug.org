@@ -35,7 +35,6 @@ class ActionDispatch::IntegrationTest
     assert_equal expected_path, page.current_path
   end
 
-  # Log a user in during integration tests
   def login_as(user)
     visit signin_path
     fill_in :email, :with => user.email
