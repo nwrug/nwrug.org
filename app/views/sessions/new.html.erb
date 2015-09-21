@@ -1,0 +1,15 @@
+<%= form_tag signin_path do %>
+  <section>
+    <%= label_tag :email %>
+    <%= email_field_tag :email %>
+  </section>
+
+  <section>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </section>
+
+  <section>
+    <%= submit_tag 'Sign in' %>
+  </section>
+<% end %>

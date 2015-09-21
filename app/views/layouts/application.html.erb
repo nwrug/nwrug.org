@@ -26,6 +26,12 @@
         </nav>
       </div>
 
+      <% if current_user.present? %>
+        <div id="admin">
+          <%= link_to 'sign out', signout_path %>
+        </div>
+      <% end %>
+
       <h1 class="clearfix">
         <%= link_to_unless_current 'NWRUG', root_path %>
       </h1>
@@ -34,7 +40,13 @@
 
 
     <div class="main wrapper clearfix">
-        <%= yield %>
+
+      <div id="flash">
+        <%= content_tag(:p, flash[:alert], :class => 'alert') if flash[:alert] %>
+        <%= content_tag(:p, flash[:notice], :class => 'notice') if flash[:notice] %>
+      </div>
+
+      <%= yield %>
     </div>
 
     <div class="footer-container">

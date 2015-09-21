@@ -22,6 +22,12 @@ html, body {
 header {
   padding-bottom: $gutter-half;
 
+  #admin {
+    float: right;
+    margin: 0 1em;
+    clear: both;
+  }
+
   h1 {
     clear: both;
     text-align: center;

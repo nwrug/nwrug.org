@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   resources :events
 
+  get '/signin' => 'sessions#new', as: :signin
+  post '/signin' => 'sessions#create'
+  get '/signout' => 'sessions#destroy', as: :signout
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

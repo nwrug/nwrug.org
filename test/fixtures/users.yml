@@ -1,0 +1,6 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  name: Admin user
+  email: admin@nwrug.org
+  password_digest: <%= default_password_digest %>
