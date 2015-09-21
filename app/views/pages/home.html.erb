@@ -2,11 +2,11 @@
 <% content_for :meta_description, 'Manchester-based community group for those with an interest in the Ruby programming language. We meet on the 3rd Thursday each month at Madlab.' %>
 
 <article>
-  <p>NWRUG is a Manchester-based community for people interested in the Ruby programming language. We run regular <a href="/events">events</a> open to anyone with an interest in Ruby. We also have a <a href="/mailing-list">mailing list</a> where you can discuss Ruby and related topics online.</p>
+  <p>NWRUG is a Manchester-based community for people interested in the <%= link_to "Ruby programming language", "https://www.ruby-lang.org/en/" %>. We run regular <%= link_to "events", events_path %> open to anyone with an interest in Ruby. We also have a <%= link_to "mailing list", mailing_list_url %> where you can discuss Ruby and related topics online.</p>
 
   <h2 id="our-aim">Our aim</h2>
 
-  <p>Our aim is to help grow and support the Ruby community here in the North West. We want NWRUG to be a diverse and inclusive community that is open to all those with an interest in Ruby regardless of gender, sexual orientation, disability, appearance, race or religion. Read more about <a href="/participate">participating with NWRUG</a> and our <a href="/code-of-conduct">code of conduct</a>.</p>
+  <p>Our aim is to help grow and support the Ruby community in the North West. We want NWRUG to be a diverse and inclusive community that is open to all those with an interest in Ruby regardless of gender, sexual orientation, disability, appearance, race or religion. Read more about <%= link_to "participating with NWRUG", participate_path %> and our <%= link_to "code of conduct", code_of_conduct_path %>.</p>
 </article>
 
 <%= render 'events/aside' %>
