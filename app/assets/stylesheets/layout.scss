@@ -5,12 +5,12 @@ html, body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-family: $base-font-family;
-  background-color: $brand-colour;
+  background-color: $background-colour;
   color: $text-colour;
 }
 
 .main-container {
-  margin-top: .5em;
+  border-top: $brand-colour solid .5em;
   background-color: white;
 }
 
@@ -29,10 +29,11 @@ header {
     font-weight: bold;
     padding-top: $gutter-half;
     margin-bottom: 0;
+    color: $header-text-colour;
 
     a {
       text-decoration: none;
-      color: $brand-colour;
+      color: $header-text-colour;
     }
     a:hover {
       text-decoration: underline;
@@ -44,6 +45,7 @@ header {
     font-size: 20px;
     padding: 0;
     margin: $gutter-half 0;
+    color: $brand-colour;
   }
 }
 
@@ -146,7 +148,7 @@ footer a {
 
 @media screen and (min-width: 40em) {
   .main-container {
-    margin-top: 0;
+    border-top: none;
   }
 
   .main, .main-container footer {

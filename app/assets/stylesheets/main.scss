@@ -4,7 +4,7 @@
 $base-font-family:    Lato, Helvetica, Helvetica Neue, Arial;
 $heading-font-family: Ubuntu, sans-serif;
 $base-font-size:      17px;
-$small-font-size:     $base-font-size * 0.9;
+$small-font-size:     $base-font-size * 0.8;
 $base-line-height:    26px;
 $max-page-width:      900px;
 
@@ -13,23 +13,16 @@ $gutter-half: $gutter/2;
 $gutter-double: $gutter*2;
 
 // Colours
-$brand-colour:           #D94949;
+$brand-colour:           #BE1717;
 $secondary-brand-colour: #FFA2A2;
 $text-colour:            black;
-$background-colour:      white;
-$link-colour:            darken($brand-colour, 10%);
+$background-colour:      #777;
+$link-colour:            darken($brand-colour, 5%);
 $header-colour:          $brand-colour;
-$header-text-colour:     white;
-$footer-colour:          $header-colour;
-$footer-text-colour:     $header-text-colour;
+$header-text-colour:     #A40202;
+$footer-colour:          $background-colour;
+$footer-text-colour:     white;
 $selection-colour:       #b3d4fc;
-
-// Based on colours from http://paletton.com/#uid=1000u0klfrebDG9gXvnpynIsXiS
-//   .color-primary-0 { color: #D94949 }
-//   .color-primary-1 { color: #FFA2A2 }
-//   .color-primary-2 { color: #FA7676 }
-//   .color-primary-3 { color: #BD2626 }
-//   .color-primary-4 { color: #960E0E }
 
 ::-moz-selection {
   background: $selection-colour;
@@ -70,9 +63,9 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $header-colour;
+  color: $header-text-colour;
   font-family: $heading-font-family;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6,
