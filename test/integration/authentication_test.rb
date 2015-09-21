@@ -30,7 +30,7 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
   test 'can sign out' do
     login_as users(:admin)
 
-    click_on 'sign out'
+    click_on 'Sign out'
 
     assert_path root_path
     refute page.has_content?('Sign out')
