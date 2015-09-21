@@ -14,4 +14,8 @@ private
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
   helper_method :current_user
+
+  def authorise
+    redirect_to signin_url unless current_user.present?
+  end
 end

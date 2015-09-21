@@ -31,6 +31,10 @@ class ActionDispatch::IntegrationTest
   # Make the Capybara DSL available in all integration tests
   include Capybara::DSL
 
+  teardown do
+    Capybara.reset_sessions!
+  end
+
   def assert_path(expected_path)
     assert_equal expected_path, page.current_path
   end

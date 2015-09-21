@@ -11,7 +11,7 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
     click_on 'Sign in'
 
     assert_path events_path
-    assert page.has_link?('sign out', href: signout_path)
+    assert page.has_link?('Sign out', href: signout_path)
   end
 
   test 'failed authentication' do
@@ -33,6 +33,6 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
     click_on 'sign out'
 
     assert_path root_path
-    refute page.has_content?('sign out')
+    refute page.has_content?('Sign out')
   end
 end
