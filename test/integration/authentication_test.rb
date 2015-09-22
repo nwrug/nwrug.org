@@ -2,11 +2,9 @@ require 'test_helper'
 
 class AuthenticationTest < ActionDispatch::IntegrationTest
   test 'can authenticate' do
-    admin = users(:admin)
-
     visit signin_path
 
-    fill_in :email, with: admin.email
+    fill_in :email, with: users(:admin).email
     fill_in :password, with: default_password
     click_on 'Sign in'
 
@@ -15,11 +13,9 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
   end
 
   test 'failed authentication' do
-    admin = users(:admin)
-
     visit signin_path
 
-    fill_in :email, with: admin.email
+    fill_in :email, with: users(:admin).email
     fill_in :password, with: 'wrong password'
     click_on 'Sign in'
 
