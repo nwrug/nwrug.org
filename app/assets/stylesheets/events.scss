@@ -4,3 +4,24 @@
   h1 { margin-bottom: 0; }
   h2 { margin-top: 0; }
 }
+
+.main article {
+  ul.events {
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding: 10px 0;
+
+      border-bottom: 1px solid #ddd;
+      h3 {
+        margin-bottom: 3px;
+      }
+
+      p {
+        margin-top: 3px;
+      }
+    }
+  }
+}
