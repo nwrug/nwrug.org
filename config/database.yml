@@ -15,8 +15,10 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql
+  encoding: utf8
+  username: development
+  password: devpassword
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -80,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: post_production
-  username: post
+  database: nwrug_production
+  username: nwrug
   password: <%= ENV['NWRUG_DATABASE_PASSWORD'] %>

@@ -5,7 +5,7 @@ ruby File.read(".ruby-version").chomp
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use PostgreSQL as the database for Active Record
-gem 'pg'
+gem 'mysql'
 # Use SCSS for stylesheets
 gem 'sass'
 gem 'sass-rails', '~> 5.0'
