@@ -1,28 +1,7 @@
 title,slug,description,location_id,date
-Social Meet,may11,"Social meet this month at the Paramount for Talk of Ruby and many other interesting things.
+Social Meet,may-2011-social-meet,"Social meet this month at the Paramount for Talk of Ruby and many other interesting things.
 ",8,2011-05-19 19:00:00 UTC
-What's New in Rails 1.2,january07,"[Michael Josephson](http://josephson.org) will be giving a talk about the new features available in the imminent 1.2 release of Rails.
-
-## The schedule
-
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: Talk starts
-- 8:30pm :: Move to The Paramount pub",6,2007-01-17 18:30:00 UTC
-Ruby and Rails Mini Conference,ruby-and-rails-day,"NWRUG was launched at the [GeekUp](http://geekup.org) Ruby and Rails mini-conference held on 30th September at the [MDDA](http://manchesterdda.com) in Manchester.
-
-More details about the event can be found at the [Ruby and Rails Day mini-site](http://geekup.org/rubyandrails).
-
-## Download the Slides
-
-All of the slides from the day have been made available for download here.
-
-1. [Introduction to Ruby on Rails](http://files.nwrug.org/GeekUpRubyAndRails/IntroductionToRailsByDaveVerwer.pdf) by [Dave Verwer](http://shinydevelopment.com)
-2. [Ruby for Existing Programmers](http://files.nwrug.org/GeekUpRubyAndRails/RubyForExistingProgrammersByCarlDrinkwater.pdf) by [Carl Drinkwater](http://29degrees.co.uk)
-3. [Javascript, Ajax and script.aculo.us on Rails](http://monkeyhelper.com/downloads/s5-railsajax) by [Rob Lee](http://monkeyhelper.com)
-4. [Hosting and Deploying Rails](http://files.nwrug.org/GeekUpRubyAndRails/HostingAndDeployingRailsByDaveVerwer.pdf) by [Dave Verwer](http://shinydevelopment.com)
-5. [WATIR – Web Application Testing in Ruby](http://files.nwrug.org/GeekUpRubyAndRails/WATIRByPhilWinstanley.pdf) by [Phil Winstanley](http://weblogs.asp.net/plip)
-",6,2006-09-30 09:30:00 UTC
-The NWRUG Way,june07,"This month we have something a little less formal, but hopefully just as interesting. Submit some code (see the discussion on the mailing list for how to do this) and we will have an evening of code reviews and our own little version of [The Rails Way](http://therailsway.com), NWRUG style.
+The NWRUG Way,june-2007-the-nwrug-way,"This month we have something a little less formal, but hopefully just as interesting. Submit some code (see the discussion on the mailing list for how to do this) and we will have an evening of code reviews and our own little version of [The Rails Way](http://therailsway.com), NWRUG style.
 
 More details of the code coming, closer to the event!
 
@@ -33,7 +12,7 @@ More details of the code coming, closer to the event!
 - 7:45pm :: Break
 - 8:00pm :: More Code Reviews (hopefully, please submit more code!)
 - 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2007-06-26 18:30:00 UTC
-Speedy TDD with Rails (the wrong way) ,16th-february-speedy-tdd-with-rails-the-wrong-way,"If you practice Test Driven Development, then you know that one of the most important things to have is a fast feedback loop when running your tests. Unfortunately, Rails out of the box has a painfully slow boot time. In this talk Ash Moran will go over some techniques to help speed up this feedback loop and take control of your testing once again.
+Speedy TDD with Rails (the wrong way) ,february-2012-speedy-tdd-with-rails-the-wrong-way,"If you practice Test Driven Development, then you know that one of the most important things to have is a fast feedback loop when running your tests. Unfortunately, Rails out of the box has a painfully slow boot time. In this talk Ash Moran will go over some techniques to help speed up this feedback loop and take control of your testing once again.
 
 This month’s NWRUG is kindly sponsored by [Fatsoma](http://www.fatsoma.com/).
 
@@ -43,10 +22,10 @@ This month’s NWRUG is kindly sponsored by [Fatsoma](http://www.fatsoma.com/).
 - 7:00pm :: Meet at [The MadLab](http://madlab.org.uk/)
 - 7:15pm :: Speedy TDD with Rails (the wrong way) by Ash Moran
 - 8:00pm :: Post-talk drinks back at [Common](http://www.aplacecalledcommon.co.uk/)",1,2012-02-16 18:30:00 UTC
-Pub Meet: RubyConf Aftermath,november08,This month the meeting will be two weeks after RubyConf so we will all be getting together to discuss any exciting news that may have found it’s way out onto the blogs. Maybe drink some curry and beer too!,8,2008-11-20 19:00:00 UTC
-Just Geeks in the Pub (again),may08,"No talks this month, just some geeks in the pub. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat.",8,2008-05-22 19:00:00 UTC
-Just Geeks in the Pub,april08,"No talks this month, just some geeks in the pub. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat.",1,2008-04-17 19:00:00 UTC
-MacRuby with Caius Durling,july10,"This month [Caius Durling](http://caius.name/) will be talking about [MacRuby](http://www.macruby.org/).
+Pub Meet: RubyConf Aftermath,november-2008-pub-meet-rubyconf-aftermath,This month the meeting will be two weeks after RubyConf so we will all be getting together to discuss any exciting news that may have found it’s way out onto the blogs. Maybe drink some curry and beer too!,8,2008-11-20 19:00:00 UTC
+Just Geeks in the Pub (again),may-2008-just-geeks-in-the-pub-again,"No talks this month, just some geeks in the pub. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat.",8,2008-05-22 19:00:00 UTC
+Just Geeks in the Pub,april-2008-just-geeks-in-the-pub,"No talks this month, just some geeks in the pub. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat.",1,2008-04-17 19:00:00 UTC
+MacRuby with Caius Durling,july-2010-macruby-with-caius-durling,"This month [Caius Durling](http://caius.name/) will be talking about [MacRuby](http://www.macruby.org/).
 
 There is sponsorship from [Brightbox](http://www.brightbox.co.uk/) this month so there will be free pizza in Odder over the road from the venue after the talks. There will be no poetry.
 
@@ -60,7 +39,7 @@ There is sponsorship from [Brightbox](http://www.brightbox.co.uk/) this month so
 ## Sign up
 
 If you would like to attend this event please [sign up here](http://spreadsheets.google.com/viewform?hl=en&formkey=cG9TNWpCQXVlamg5eGJYZEJNWkxLQ3c6MA) as the BBC need a list of attendees before the event and I need numbers for the food order.",10,2010-07-15 18:30:00 UTC
-"Ruby, Cloud Infrastructure & Heroku",september10,"This month Paul Robinson of [Ticket Sense](http://ticketsense.co.uk/) will be talking on Ruby, Cloud Infrastructure & Heroku.
+"Ruby, Cloud Infrastructure & Heroku",september-2010-ruby-cloud-infrastructure-heroku,"This month Paul Robinson of [Ticket Sense](http://ticketsense.co.uk/) will be talking on Ruby, Cloud Infrastructure & Heroku.
 
 Sponsorship is kindly provided this month by [Ticket Sense](http://ticketsense.co.uk/), so free pizza will be available after the talk.
 
@@ -69,7 +48,7 @@ Sponsorship is kindly provided this month by [Ticket Sense](http://ticketsense.c
 - 6:00pm :: Welcome & Pre-session bar visit.
 - 6:30pm :: Ruby, Cloud Infrastructure & Heroku with Paul Robinson
 - 8:00pm :: Off to the bar across the road for free pizza sponsored by [Ticket Sense](http://ticketsense.co.uk/)",10,2010-09-16 18:00:00 UTC
-"Synthesis, Connecting the Dots",june08,"Currently we believe that developers are writing unnecessary dependency wired tests to cover uncertainty about the validity of simulated interactions in their dependency neutral tests. In other words, we cannot be certain that all our simulated interaction based tests ‘join up’. If it were possible to correlate the simulated interactions in our tests, then we should be able to do away with the need to write large numbers of complex, slow and brittle wired tests (apart from those which interact with the boundaries of the SUT).
+"Synthesis, Connecting the Dots",june-2008-synthesis-connecting-the-dots,"Currently we believe that developers are writing unnecessary dependency wired tests to cover uncertainty about the validity of simulated interactions in their dependency neutral tests. In other words, we cannot be certain that all our simulated interaction based tests ‘join up’. If it were possible to correlate the simulated interactions in our tests, then we should be able to do away with the need to write large numbers of complex, slow and brittle wired tests (apart from those which interact with the boundaries of the SUT).
 
 Synthesis combines lightweight tests to build confidence that the system under test is complete and reduces the need for large, overarching tests.
 
@@ -78,7 +57,7 @@ Synthesis combines lightweight tests to build confidence that the system under t
 - 6:30pm :: Welcome & Registration
 - 7:00pm :: Synthesis, Connecting the Dots, Stuart Caborn, George Malamidis & Alex Scordellis of [Thoughtworks](http://www.thoughtworks.co.uk/)
 - 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2008-06-24 18:30:00 UTC
-Building Brightbox,january08,"The NWRUG has a new web host and you would not be reading this right now without the services kindly donated by [Brightbox](https://www.brightbox.co.uk/a/zr3hp). This month Jeremy Jarvis and John Leach from Brightbox are going to be telling us all about building the service and the business from the ground up, covering all aspects of the process.
+Building Brightbox,january-2008-building-brightbox,"The NWRUG has a new web host and you would not be reading this right now without the services kindly donated by [Brightbox](https://www.brightbox.co.uk/a/zr3hp). This month Jeremy Jarvis and John Leach from Brightbox are going to be telling us all about building the service and the business from the ground up, covering all aspects of the process.
 
 ## The schedule
 
@@ -87,17 +66,7 @@ Building Brightbox,january08,"The NWRUG has a new web host and you would not be 
 - 8:00pm :: Break
 - 8:15pm :: [Contact me](http://www.shinydevelopment.com/contact) if you would like to do a 15 minute short presentation.
 - 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2008-01-29 18:30:00 UTC
-Search in Your Rails App,march09,"Search is an essential part of most web applications and building up ‘like’ clauses in code just doesn’t cut it. This month we have three talks on three different search daemons so you have the knowledge to go away and add quality search to your app.
-
-This month we have sponsorship from [Brightbox](http://www.brightbox.co.uk/) so there will be free Pizza, Beer and soft drinks after the talks, and maybe some T-Shirts and stickers too.
-
-## The schedule
-
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: Talks on Sphinx, Solr & Ferret by Will Jessop, Asa Calow & John Leach
-- 7:45pm :: Pizzas/Beer/Soft-drinks provided by [Brightbox](http://www.brightbox.co.uk/)
-- 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00",10,2009-03-19 18:30:00 UTC
-Nanite (and an Introduction to Cloud Computing),february09,"This Month Will Jessop will be talking on Nanite. Nanite is a new way of thinking about building cloud ready web applications. Having a scalable message queueing back-end with all the discovery and dynamic load based dispatch that Nanite has is a very scalable way to construct web application back-ends. There will also be a brief introduction to cloud computing.
+Nanite (and an Introduction to Cloud Computing),february-2009-nanite-and-an-introduction-to-cloud-computing,"This Month Will Jessop will be talking on Nanite. Nanite is a new way of thinking about building cloud ready web applications. Having a scalable message queueing back-end with all the discovery and dynamic load based dispatch that Nanite has is a very scalable way to construct web application back-ends. There will also be a brief introduction to cloud computing.
 
 ## The schedule
 
@@ -106,22 +75,10 @@ Nanite (and an Introduction to Cloud Computing),february09,"This Month Will Jess
 - 7:45pm :: Pizzas/Beer/Soft-drinks provided by [Engine Yard](http://www.engineyard.com/)
 - 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)
 ",6,2009-02-19 18:30:00 UTC
-Going for a Ruby,may09,"No talks this month, we’re taking a short break though talks should be back on next month. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat. Thursdays is always Curry night at The Paramount and the food is pretty good.",8,2009-05-21 19:00:00 UTC
-Pub Meet: new() Years Resolutions,January09,"Another pub meet this month on Thursday the 15th January. But closely followed by two months of talks! Not that that should put you off coming this month that is, Wetherspoons beer is even cheaper!",8,2009-01-15 19:00:00 UTC
-Pub Meet: Continuing the Success,december08,"Continuing the success of the regular monthly meetings we will be meeting again on the 18th December. This month all discussion of COBOL, Coldfusion or the vast riches to be made as a sendmail consultant will be banned. Limited discussion of Erlang will be permitted, because it’s cool.",8,2008-12-18 19:00:00 UTC
-Uses and Abuses of Mocks and Stubs,october09,"This month [Ashley Moran](http://www.patchspace.co.uk/) will be talking about Uses and Abuses of Mocks and Stubs.
-
-Thanks to [http://www.boxedup.com/](http://www.boxedup.com/) for sponsoring the meetup this month, there will be pizzas and maybe a beer or two provided in the Odder bar across the road after the talks.
-
-## The schedule
-
-Please note we’re back on our old start time of 6:30pm
-
-- 6:30pm :: Welcome & Pre-session bar visit.
-- 7:00pm :: Uses and Abuses of Mocks and Stubs by [Ashley Moran](http://www.patchspace.co.uk/)
-- 7:30pm :: Drinks at the BBC bar
-- 8:00pm :: Off to Odder across the road for pizzas and maybe a beer or two sponsored by [http://www.boxedup.com/](http://www.boxedup.com/)",10,2009-10-15 18:30:00 UTC
-Source Control Stand-off,july09,"This month [Tekin Suleyman](http://tekin.co.uk/) and [Ashley Moran](http://www.patchspace.co.uk/) will be helping us get started with, and comparing, the Git and Darcs SCM systems.
+Going for a Ruby,may-2009-going-for-a-ruby,"No talks this month, we’re taking a short break though talks should be back on next month. Feel free to bring a laptop and anything ruby or just turn up and have a beer and a chat. Thursdays is always Curry night at The Paramount and the food is pretty good.",8,2009-05-21 19:00:00 UTC
+Pub Meet: new() Years Resolutions,january-2009-pub-meet-new-years-resolutions,"Another pub meet this month on Thursday the 15th January. But closely followed by two months of talks! Not that that should put you off coming this month that is, Wetherspoons beer is even cheaper!",8,2009-01-15 19:00:00 UTC
+Pub Meet: Continuing the Success,december-2008-pub-meet-continuing-the-success,"Continuing the success of the regular monthly meetings we will be meeting again on the 18th December. This month all discussion of COBOL, Coldfusion or the vast riches to be made as a sendmail consultant will be banned. Limited discussion of Erlang will be permitted, because it’s cool.",8,2008-12-18 19:00:00 UTC
+Source Control Stand-off,july-2009-source-control-stand-off,"This month [Tekin Suleyman](http://tekin.co.uk/) and [Ashley Moran](http://www.patchspace.co.uk/) will be helping us get started with, and comparing, the Git and Darcs SCM systems.
 
 Sponsorship is kindly provided this month by [Liquid Bronze](http://www.liquidbronze.com/), so free pizza will once again be available.
 
@@ -133,7 +90,7 @@ Sponsorship is kindly provided this month by [Liquid Bronze](http://www.liquidbr
 - 7:00pm :: How to do things in Darcs by [Ashley Moran](http://www.patchspace.co.uk/)
 - 7:30pm :: Free pizza sponsored by [Liquid Bronze](http://www.liquidbronze.com/)
 - 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00.",10,2009-07-16 18:00:00 UTC
-Capistrano: from noob to winner,august09,"This month [Sam Phillips](http://twitter.com/samsworldofno) and [Lee Hambley](http://twitter.com/leehambley) of [Setfire Media](http://www.setfiremedia.com/) will be taking us through Capistrano from just starting out to advanced usage.
+Capistrano: from noob to winner,august-2009-capistrano-from-noob-to-winner,"This month [Sam Phillips](http://twitter.com/samsworldofno) and [Lee Hambley](http://twitter.com/leehambley) of [Setfire Media](http://www.setfiremedia.com/) will be taking us through Capistrano from just starting out to advanced usage.
 
 Sponsorship is kindly provided this month by [Setfire Media](http://www.setfiremedia.com/), so free pizza will once again be available.
 
@@ -148,38 +105,18 @@ Please note we’re back on our old start time of 6:30pm
 - 8:10pm :: Free pizza sponsored by [Setfire Media](http://www.setfiremedia.com/)
 - 9:00pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes.
 ",10,2009-08-20 18:30:00 UTC
-Unobtrusive JavaScript and Mystery Ruby,may07,"This month we have [Dave Verwer](http://shinydevelopment.com) talking about how to tame JavaScript into behaving in your Rails applications with “Unobtrusive JavaScript with Rails” and [Paul Robinson](http://vagueware.com) doing a “Mystery Ruby” session.
+Easter.js,april-2014-easter-js,"Our April meet has a JavaScript flavour. Lightning talks from two of our members:
 
-### Unobtrusive JavaScript with Dave Verwer
+Our speakers this month are:
 
-With every site you visit piling on more and more JavaScript and Ajax, what happens when a user comes along using a screen reader or mobile device that would choke on even a simple alert()? How can we take advantage of the power of these technologies without providing any barriers to users, this session will cover techniques to ensure that you can still serve up rich content without excluding users, all from one code base and will cover the [Unobtrusive JavaScript](http://ujs4rails.com) plug-in for Rails.
-
-### “Mystery Ruby” Session with Paul Robinson
-
-Ruby is a language that anybody can pick up the basics of within an hour or so, and most Rails programmers will have a working application up and running before they need to even learn what iterators are available. This talk scratches below the surface, and promises to teach a few corners of Ruby and Rails you might not have seen before (and if you have seen them, we promise not to bore you to death). We’ll go in-depth on some basics everybody should know – :like :what :those :funny :symbols :actually :are – and run through a cheat-sheet of tricks and hints that give a clue as to where to dig a little further.
+- [Sławomir Wdówka](http://twitter.com/gl0wa) — Things I’ve learned when creating JS widgets at Fatsoma
+- [Joseph Le Brech](http://twitter.com/jlebrech) — Interacting with 3rd party websites with CasperJS
 
 ## The schedule
 
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: Unobtrusive JavaScript by [Dave Verwer](http://shinydevelopment.com)
-- 7:45pm :: Break
-- 8:00pm :: Mystery Ruby by [Paul Robinson](http://vagueware.com)
-- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2007-05-22 18:30:00 UTC
-Smooth web apps with Varnish,september09,"### <link>
-
-This month [David Smalley](http://davidsmalley.com/) of [Litmus](http://litmusapp.com/) will be talking about [Varnish](http://varnish.projects.linpro.no/), the high-performance HTTP accelerator that makes [doctype](http://doctype.com/) fly.
-
-No sponsorship this month, but never fear, the BBC bar is fairly cheap and the Odder bar across the road serves nice pizzas.
-
-## The schedule
-
-Please note we’re back on our old start time of 6:30pm
-
-- 6:30pm :: Welcome & Pre-session bar visit.
-- 7:00pm :: Everything you ever wanted to know about Varnish by [David Smalley](http://davidsmalley.com/) of [Litmus](http://litmusapp.com/)
-- 7:30pm :: Drinks at the BBC bar
-- 8:00pm :: Off to Odder across the road. Odder serves food until 8:30.",10,2009-09-17 18:30:00 UTC
-All things Mongo with Adam Holt,june10,"This month [Adam Holt](http://adamholt.co.uk/) will be talking about all things Mongo.
+- 7:00pm :: Lightning Talks
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Common.",1,2014-04-17 19:00:00 UTC
+All things Mongo with Adam Holt,june-2010-all-things-mongo-with-adam-holt,"This month [Adam Holt](http://adamholt.co.uk/) will be talking about all things Mongo.
 
 There is sponsorship from [On The Beach](http://www.onthebeach.co.uk/) this month so there will be free pizza in Odder over the road from the venue after the talks.
 
@@ -190,7 +127,7 @@ There is sponsorship from [On The Beach](http://www.onthebeach.co.uk/) this mont
 - 7:30pm :: Drinks at the BBC bar
 - 8:00pm :: Off to Odder across the road for free pizzas sponsored by [On The Beach](http://www.onthebeach.co.uk/).
 ",10,2010-06-17 18:30:00 UTC
-oAuth and xAuth with Asa Calow,may10,"This month [Asa Calow](http://www.workingwithrails.com/person/12991-asa-calow) will be talking about oAuth and xAuth.
+oAuth and xAuth with Asa Calow,may-2010-oauth-and-xauth-with-asa-calow,"This month [Asa Calow](http://www.workingwithrails.com/person/12991-asa-calow) will be talking about oAuth and xAuth.
 
 There is sponsorship from [Super Shiny Robot](http://supershinyrobot.com/) this month so there will be free pizza in Odder over the road from the venue after the talks.
 
@@ -200,34 +137,18 @@ There is sponsorship from [Super Shiny Robot](http://supershinyrobot.com/) this 
 - 7:00pm :: oAuth and xAuth by [Asa Calow](http://www.workingwithrails.com/person/12991-asa-calow)
 - 7:30pm :: Drinks at the BBC bar
 - 8:00pm :: Off to Odder across the road for free pizzas sponsored by [Super Shiny Robot](http://supershinyrobot.com/).",10,2010-05-20 18:30:00 UTC
-Social Meet,april10,"We couldn’t get a room for the meeting, so we’re going to head to Common just across the road.",4,2010-04-15 19:00:00 UTC
-Social Meet,March10,"A social meeting this month, there should be a lot to talk about with the imminent release of Rails 3.",8,2010-03-18 19:00:00 UTC
-Hanging out at the MadLab,february10,"This month we are in MabLab in Manchester’s Northern Quarter, no talks planned but we may abuse the projector.",1,2010-02-18 19:00:00 UTC
-Code Kwoon,november09,"This month [Ashley Moran](http://www.patchspace.co.uk/) will leading a Coding Kwoon!
-
-The Coding Kwoon is a place to practice software design. The training tool will be RSpec and the output of the exercise will be Ruby code. No experience of either is required to take part.
-
-A problem will be announced on the day that will be solved using Ruby.
-
-Two coders will sit at the front. They will pair program a behaviour-driven solution to the problem, explaining what they are thinking, what they are doing, and why they are doing it. Every five minutes, one of the pair will be swapped out with a volunteer from the audience. At all times, one of the pair will be a coder experienced in RSpec.
-
-#### The structure will be:
-
-- 6:30pm :: Welcome & Pre-session bar visit.
-- 7:00pm :: Introduction & 1st Coding session
-- 7:45pm :: Break
-- 7:55pm :: 2nd Coding session
-- 8:35pm :: Retrospective
-- 8:45pm :: Off to Odder across the road for a beer and a chat",10,2009-11-19 18:30:00 UTC
-Making Money From Your Side-Project,april11,"This month we are in MabLab in Manchester’s Northern Quarter, with Dom Hodgson who will be spilling the secrets to making money from your side-project
+Social Meet,april-2010-social-meet,"We couldn’t get a room for the meeting, so we’re going to head to Common just across the road.",4,2010-04-15 19:00:00 UTC
+Social Meet,march-2010-social-meet,"A social meeting this month, there should be a lot to talk about with the imminent release of Rails 3.",8,2010-03-18 19:00:00 UTC
+Hanging out at the MadLab,february-2010-hanging-out-at-the-madlab,"This month we are in MabLab in Manchester’s Northern Quarter, no talks planned but we may abuse the projector.",1,2010-02-18 19:00:00 UTC
+Making Money From Your Side-Project,april-2011-making-money-from-your-side-project,"This month we are in MabLab in Manchester’s Northern Quarter, with Dom Hodgson who will be spilling the secrets to making money from your side-project
 
 Dom is a blogger, conference organiser, conference speaker, award winning singer / songwriter, bagel delivery bloke, bowler, barcamp addict, web developer, loud mouthed git, entrepreneur, drinker, hugger, Nintendo lover (not in that way of course). At least according to [himself](http://www.thehodge.co.uk/about-dom-the-hodge).
 ",1,2011-04-21 19:00:00 UTC
-Social Meetup,march11,A social meetup this month at the Paramount.,8,2011-03-17 18:00:00 UTC
-NWRUG Curry Night,november10,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-11-18 18:30:00 UTC
-NWRUG Curry Night,october10,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-10-18 18:30:00 UTC
-NWRUG Curry Night,august10,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-08-19 18:30:00 UTC
-Introduction to Pure Data,february17,"A first look at Pure Data, the graphic programming language, geared towards digital art with real-time results.
+Social Meetup,march-2011-social-meetup,A social meetup this month at the Paramount.,8,2011-03-17 18:00:00 UTC
+NWRUG Curry Night,november-2010-nwrug-curry-night,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-11-18 18:30:00 UTC
+NWRUG Curry Night,october-2010-nwrug-curry-night,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-10-18 18:30:00 UTC
+NWRUG Curry Night,august-2010-nwrug-curry-night,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night (and it’s pretty good curry too).",8,2010-08-19 18:30:00 UTC
+Introduction to Pure Data,february-2011-introduction-to-pure-data,"A first look at Pure Data, the graphic programming language, geared towards digital art with real-time results.
 
 This talk will be optionally interactive. If you want to join in then please bring along a laptop with [Pure Data installed](http://madlab.org.uk/content/manchester-free-software-7/).
 
@@ -244,7 +165,7 @@ The talk will include:
 - 6:00pm :: Welcome & Pre-session bar visit.
 - 6:30pm :: Introduction to Pure Data with Andrew Faraday.
 - 8:00pm :: Off to the bar across the road.",10,2011-02-17 18:00:00 UTC
-Clojure,january11,"This month Rick Moynihan will be talking on Clojure
+Clojure,january-2011-clojure,"This month Rick Moynihan will be talking on Clojure
 
 Sponsorship is kindly provided this month by Ashley Moran (of [PatchSpace](http://www.patchspace.co.uk/) and [ShRUG](http://shrug.org)) who is preparing Ruby training courses for 2011, so free pizza will be available after the talk.
 
@@ -258,23 +179,11 @@ Sponsorship is kindly provided this month by Ashley Moran (of [PatchSpace](http:
 
 If you would like to attend this event please [sign up here](http://spreadsheets.google.com/viewform?hl=en&formkey=cG9TNWpCQXVlamg5eGJYZEJNWkxLQ3c6MA) as the BBC need a list of attendees before the event and I really need to know the numbers so I can order the right amount of food and drink.
 ",10,2011-01-20 18:00:00 UTC
-The Lightning Round,november11,"We have three, count them, three talks lined up for this week. “Hello Rubinius” by [Adam Holt](http://adamholt.co.uk), “Scamp: A Campfire Bot Framework” by [Will Jessop](http://willj.net) and “Meet Hubot” by [Tom Bell](http://tombell.org.uk). The Venue is [MDDA](http://www.manchesterdda.com/), on Portland Street.
-
-After the talks we will have our regular drinking and discussion sessions, so come to learn about new things, and for talk of Ruby, Rails and other interesting topics.
-
-Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror! you don’t program ruby!
-
-## The schedule
-
-- 6:30pm :: Meet at [MDDA](http://www.manchesterdda.com/)
-- 7:00pm :: Hello Rubinius by [Adam Holt](http://adamholt.co.uk)
-- 7:15pm :: Scamp: A Campfire Bot Framework by [Will Jessop](http://willj.net)
-- 7:30pm :: Meet Hubot by [Tom Bell](http://tombell.org.uk)",6,2011-11-17 18:30:00 UTC
-Meet the EngineYard Crew,June11-meet-engineyard,"EngineYard are in town, we’re having an extra social  meetup to welcome them to Manchester.",9,2011-06-28 18:00:00 UTC
-Social Meetup,september11,A social meetup this month.,8,2011-09-15 18:00:00 UTC
-NWRUG Curry Night,july11,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night. Come for talk of Ruby, Rails and other interesting things that may or may not be Ruby related.
+Meet the EngineYard Crew,june-2011-meet-the-engineyard-crew,"EngineYard are in town, we’re having an extra social  meetup to welcome them to Manchester.",9,2011-06-28 18:00:00 UTC
+Social Meetup,september-2011-social-meetup,A social meetup this month.,8,2011-09-15 18:00:00 UTC
+NWRUG Curry Night,july-2011-nwrug-curry-night,"It’s a social meet this month, we will be meeting at Wetherspoons where it’s curry night. Come for talk of Ruby, Rails and other interesting things that may or may not be Ruby related.
 ",8,2011-07-21 18:30:00 UTC
-The Training Edition,august11,"A bit of a different meet this month. This month we are hooking up with long time NWRUG members, [Ric Roberts](http://ricroberts.com) and [Tekin Suleyman](http://tekin.co.uk) for their new Ruby on Rails Bootcamp course over at [MadLab](http://madlab.org.uk).
+The Training Edition,august-2011-the-training-edition,"A bit of a different meet this month. This month we are hooking up with long time NWRUG members, [Ric Roberts](http://ricroberts.com) and [Tekin Suleyman](http://tekin.co.uk) for their new Ruby on Rails Bootcamp course over at [MadLab](http://madlab.org.uk).
 
 It will be a social meet of sorts, but with a chance for the students of the course to come face to face with some experienced ruby developers from the local Ruby community.
 
@@ -285,7 +194,7 @@ Anyone is welcome, whether you are an experienced Ruby developer, a course stude
 - 6:30pm :: Social meeting at [MadLab](http://madlab.org.uk), bring a beer or two
 - Some time after :: Go to a bar for more drinks.
 ",1,2011-08-18 18:30:00 UTC
-Client-side MVC: An Introduction to Backbone.js,15th-march-client-side-mvc-an-introduction-to-backbone-js,"I’ve seen the future and the future is Client-side MVC! In this talk, Tom Bell will give a gentle introduction to Backbone.js, explaining how you can use it to add structure and finesse to your front-end code.
+Client-side MVC: An Introduction to Backbone.js,march-2012-client-side-mvc-an-introduction-to-backbone-js,"I’ve seen the future and the future is Client-side MVC! In this talk, Tom Bell will give a gentle introduction to Backbone.js, explaining how you can use it to add structure and finesse to your front-end code.
 
 This month’s NWRUG is kindly sponsored by [Capsule CRM](http://capsulecrm.com/).
 
@@ -295,21 +204,7 @@ This month’s NWRUG is kindly sponsored by [Capsule CRM](http://capsulecrm.com/
 - 7:00pm :: Meet at [The MadLab](http://madlab.org.uk/)
 - 7:15pm :: TALK: An Introduction to Backbone.js by Tom Bell
 - 8:00pm :: Post-talk drinks back at [Common](http://www.aplacecalledcommon.co.uk/)",1,2012-03-15 18:30:00 UTC
-The New Year Lightning Round,19th-january-the-new-year-lightning-round,"Start the new year as you mean to go and nourish your brain with Ruby goodness! At this month's NWRUG, we have a series of 5 minute lightning talks from [Adam Holt](http://adamholt.co.uk), [Tom Clements](http://tom-clements.com) and [Will Jessop](http://willj.net).
-
-Melbourne Host have sponsored this month’s NWRUG, so there will be beer and soft drinks (No food, sorry!) on the night for everyone attending. Melbourne Host are currently looking for a Ruby on Rails developer in Manchester if you’re looking for a job ( [more info](http://www.melbourne.co.uk/about-melbourne/careers-at-melbourne/front-end-ruby-on-rails-developer/)).
-
-#### Got an Idea for a Lightning Talk?
-
-We’ve still got room for a couple more talks, so if you have an interesting Ruby-related topic you’d like to talk about for 5 minutes, let us know and we’ll add you to the lineup.
-
-## The schedule
-
-- 6:30pm :: Pre-talk drinks at [Common](http://www.aplacecalledcommon.co.uk/)
-- 7:00pm :: Meet at [The MadLab](http://madlab.org.uk/)
-- 7:15pm :: Let the Lightning talks commence!
-- 8:00pm :: Post-talk drinks somewhere in the vicinity",1,2012-01-19 18:30:00 UTC
-Crash Course in Scala,july12,"This month we have the [CapsuleCRM](http://capsulecrm.com/) guys, [Duncan Stockdill](http://twitter.com/duncanstockdill) and [Phillip Haines](http://twitter.com/philliphaines), giving us an introduction to [Scala](http://www.scala-lang.org/), a general purpose programming language built on the JVM, most famous for Rubyists for replacing ruby at Twitter
+Crash Course in Scala,july-2012-crash-course-in-scala,"This month we have the [CapsuleCRM](http://capsulecrm.com/) guys, [Duncan Stockdill](http://twitter.com/duncanstockdill) and [Phillip Haines](http://twitter.com/philliphaines), giving us an introduction to [Scala](http://www.scala-lang.org/), a general purpose programming language built on the JVM, most famous for Rubyists for replacing ruby at Twitter
 
 [CapsuleCRM](http://capsulecrm.com/) are also sponsoring the event, so beer will be provided across the road at Common during our regular post-talk discussion sessions, make sure to thank them!
 
@@ -322,7 +217,7 @@ Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, 
 - 7:30pm :: Q&A
 - After :: Post-talk drinks and discussion in Common
 ",1,2012-07-19 18:30:00 UTC
-Celluloid with Adam Holt,june12,"This month [Adam Holt](http://adamholt.co.uk/) will be talking about [Celluloid](http://celluloid.io/).
+Celluloid with Adam Holt,june-2012-celluloid-with-adam-holt,"This month [Adam Holt](http://adamholt.co.uk/) will be talking about [Celluloid](http://celluloid.io/).
 
 Celluloid is an implementation of the Actor pattern in ruby, inspired heavily by Erlang. The meeting will be held at Madlab, followed by drinks across the road in Common.
 
@@ -338,7 +233,7 @@ We will dive into Celluloid, touching briefly on DCell, Celluloid::IO and Reel.
 - 7:00pm :: [Celluloid](http://celluloid.io/) by [Adam Holt](http://Adam) at Madlab
 - 7:30pm :: Q&A
 - After :: To Common bar across the road for drinks and discussion.",1,2012-06-21 18:30:00 UTC
-The Python Experiment,may12,"A special edition of NWRUG this month, as we will be sharing with the Python User Group. There will be plenty of discussion, and some work on Ruby and Python Katas to get you started with Python.
+The Python Experiment,may-2012-the-python-experiment,"A special edition of NWRUG this month, as we will be sharing with the Python User Group. There will be plenty of discussion, and some work on Ruby and Python Katas to get you started with Python.
 
 Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, **shock horror** , you don’t program ruby!
 
@@ -348,7 +243,524 @@ Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, 
 - 7:00pm :: Intro to Python and Ruby Language Syntax
 - 7:15pm :: Group Ruby and Python Katas
 - After :: Drinks in Common",1,2012-05-17 18:30:00 UTC
-Rails 4 Streaming,18th-october-rails-4-streaming-with-sawomir-wdwka,"A few months ago, [Aaron Patterson](http://twitter.com/tenderlove) introduced us to a new feature in the upcoming Rails 4, [Live Streaming](http://tenderlovemaking.com/2012/07/30/is-it-live.html). This month, [Sławomir Wdówka](https://twitter.com/gl0wa) from [Fatsoma](http://www.fatsoma.com/) will be giving us the low down on this new feature!
+What Does This Button Do?,april-2015-what-does-this-button-do,"This month at NWRUG, [Jim Mackenzie](https://twitter.com/mackesque) is going to be talking about how developers do support at Basecamp, curiosity, friendship, and some techniques to make supporting a software project easier. Whether you are working with a dedicated support team, or answering emails yourself while writing code, there should be something useful for you. This month’s talk is kindly sponsored by [Basecamp](https://basecamp.com/).
+
+## The speaker
+
+Jim joined the Basecamp support crew in 2012, and introduced them to the correct spelling of favourite. He investigates bugs and writes little fixes, mostly in Ruby.
+
+## The schedule (Thursday 16th April)
+
+- 6:30pm - Doors open
+- 7:00pm - The talk; What does this button do?
+- After - To the pub for post-event socialising
+",3,2015-04-16 18:30:00 UTC
+Parsing for Fun & Profit,february-2013-parsing-for-fun-profit,"Parsers aren’t just useful for building compilers and interpreters. They can also come in handy for much simpler applications, e.g. transforming data structures, calculating metrics or minifying code. During this talk, Ash will guide us through the process of building a syntax highlighter for Ruby, in Ruby! He’ll show us how to:
+
+- Define the syntax for a simple subset of Ruby
+- Write a grammar file in [Treetop](http://treetop.rubyforge.org/) one rule at a time (doing it TDD with [RSpec](http://rspec.info/), of course)
+- Walk the data structure constructed by the Treetop parser
+- Transform this syntax tree into HTML, to be syntax highlighted with CSS
+
+## The speaker
+
+[Ash Moran](http://www.linkedin.com/in/ashmoran) is a freelance software developer & agile coach based in Manchester, and owner of [PatchSpace Ltd](http://www.patchspace.co.uk). He has been using Ruby for many years, and has yet to find another language that makes writing high quality software so much fun.
+
+As always, all are welcome; whether you’re a Ruby pro or a complete noob.
+
+## The schedule
+
+- 6:00pm :: Ruby/Rails Advice Drop-in Session – All levels welcome.
+- 7:00pm :: Talk: Parsing for Fun & Profit by Ash Moran
+- 7:45pm :: Q&A
+- After :: Post-talk drinks and discussion in Common",1,2013-02-21 18:00:00 UTC
+The Hacker Edition,january-2013-the-hacker-edition,"This month we will be running our regular drop in session, combined with a social in common. Also Adam Holt will be providing a brief intro to the ease of exploitation the recent XML/YAML parsing vulnerability, and why you should patch this issue immediately if you have not done so.
+
+Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror, you don’t program ruby!
+
+## The schedule
+
+- 6:00pm :: Drop in session at MadLab
+- 7:00pm :: Drinks in Common.",1,2013-01-17 18:00:00 UTC
+Social Meetup,june-2013-social-meetup,"It’s a social meet this month, meet from 6:00 onwards at [kosmonaut](http://kosmonaut.co/) for drinks and much nerdy discussion.",5,2013-06-20 18:00:00 UTC
+"How to Make Your Objects Selfish, Ignorant, and Lazy in One Easy Step",april-2013-how-to-make-your-objects-selfish-ignorant-and-lazy-in-one-easy-step,"“Tell Don’t Ask”, “Single Responsibility Principle”, “Composition Over Inheritance”. These OO guidelines ride shotgun with us as we code, sitting on our shoulder and whispering in our ear.
+
+At April’s NWRUG I’ll add one more to this list – an idea that helps yield cleaner code. But be warned: we’re going to touch Ruby’s third rail.
+
+Sponsored by Pivotal Labs.
+
+## The speaker
+
+[JB Steadman](https://twitter.com/jbsteadman) is the Director of Pivotal Labs London, and is here on a mission to bring Pivotal’s unique brand of software development to the good people of the UK.
+
+## The schedule
+
+- 6:00pm :: Ruby/Rails Advice Drop-in Session - All levels welcome.
+- 7:00pm :: How to Make Your Objects Selfish, Ignorant, and Lazy in One Easy Step
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace sponsored by [Pivotal Labs](http://pivotallabs.com).",1,2013-04-18 18:00:00 UTC
+Social Meet,may-2014-social-meet,It's a social meet this month. Meet at 57 Thomas Street from about 6:30.,2,2014-05-15 18:30:00 UTC
+Lightning Talks,february-2014-lightning-talks,"For our February meet we shall mostly be having lightning talks from our lovely members. Our speakers this month are:
+
+- [Adam Holt](http://twitter.com/adamholt) — Writing API clients with Cistern
+- [Eve Barabas](http://twitter.com/b_seven_e) — Experiences in mentoring a young offender
+- [Sławomir Wdówka](http://twitter.com/gl0wa) — An intro to Boxen
+- [Chris Seaton](http://twitter.com/ChrisGSeaton) — Demoing Ruby Truffle
+- [Alex Lynham](http://twitter.com/hipsters_unite) — Five(ish) things learned about JS with Rails
+- [Brent Murphy](http://twitter.com/burtmurphy) — To a service-oriented architecture on Rails
+
+This month’s event is kindly sponsored by [Fatsoma](http://fatsoma.com).
+
+## The schedule
+
+- 7:00pm :: Lightning Talks
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace, sponsored by [Fatsoma](http://fatsoma.com).",1,2014-02-20 19:00:00 UTC
+Social Meetup,december-2013-social-meetup,"This month we have a social meetup. Meet in Common bar from 7:00.
+",4,2013-12-19 19:00:00 UTC
+NWRUG Social,march-2014-nwrug-social,"In lieu of a talk this month we are having a social meet at Common. [Will Jessop](http://twitter.com/will_j) will be there from 7pm so keep an eye out for him.
+
+Normal service will resume in April.",4,2014-03-20 19:00:00 UTC
+A Very Fast Ruby on the JVM,september-2013-a-very-fast-ruby-on-the-jvm,"This month we’re going deep down into the interpreter with a talk from [Chris Seaton](http://www.chrisseaton.com/) on how he’s used Truffle, AST parsing and type specialisation to write a new high-performance Ruby implementation that benchmarks faster than JRuby.
+
+Chris is a PhD student at the [University of Manchester](http://www.man.ac.uk/), where his researching programming languages and irregular parallelism. He is also a member of the Virtual Machine research group at [Oracle Labs](http://labs.oracle.com/), where he works on implementing programming languages using the next generation of Java Virtual Machine.
+
+## The schedule
+
+- 7:00pm :: A Very Fast Ruby on the JVM
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion",1,2013-09-19 19:00:00 UTC
+Social: new() Years Resolutions,january-2015-social-new-years-resolutions,"A social meet this month. Meet in Marble Beers on Thomas Street (Close to MadLab) from about 6:30.
+",2,2015-01-15 18:30:00 UTC
+Social Meet,september-2014-social-meet,Another social this month. Meeting in 57 Thomas Street from about 7:00.,2,2014-09-18 19:00:00 UTC
+Social Meet,august-2014-social-meet,"### <link>
+
+A social meet this month
+
+Meet in Marble Beers on Thomas Street (Close to MadLab) from about 6:30:
+
+http://www.marblebeers.com/57thomas-street/
+
+",2,2014-08-21 06:30:00 UTC
+Xmas Jumper Party,december-2014-xmas-jumper-party,"Nothing says Christmas like a cheap, sweaty, acrylic jumper with a garish picture of a reindeer on it!
+
+Thats right, this month we will be doing an Xmas Jumper Party.
+
+![](http://i2.cdnds.net/12/47/618x688/showbiz_jon_snow_1.jpg)
+
+Get your best Xmas jumper on\* and meet us at Marble on Thomas street a 7pm. There will be prizes (free drinks) for best jumpers.
+
+Jumper not required to join in, but… Bah humbug!",2,2014-12-18 19:00:00 UTC
+The Circuit Breaker Pattern,november-2014-the-circuit-breaker-pattern,"One constant in life is that shit goes wrong. When there’s an electrical surge in your house, every appliance doesn’t blow up because of a variety of fail safes, most commonly, fuses and circuit breakers.
+
+In software systems, the Circuit Breaker pattern helps to keep misbehaving systems/resources from bringing down the entire estate. Restoring everything to normal once the offending resource starts behaving again.
+
+The Circuit Breaker is a simple pattern that helps us to build robust, self healing systems that don’t require manual intervention to keep running. So sleep tight.
+
+This month, [Ash Moran](http://blog.patchspace.co.uk) and [Mark Kirschstein](https://twitter.com/markkirschstein) will lead a practical hands-on session into the circuit breaker pattern.
+
+Participating isn’t compulsory, but you’ll get the most out of the session if you bring along a laptop with ruby installed. Try and make sure you’re fully charged as we cannot guarantee access to plug sockets.
+
+## The speakers
+
+Ash is a software developer of 10 years. He likes making things that don’t fall on their arse at the first sign of trouble, so he was enthusiastic about working with Mark to bring the Circuit Breaker pattern to Ruby.
+
+Mark is a Manchester-based developer who helps organise [XP Manchester](http://xpmanchester.wordpress.com)
+
+## The schedule
+
+- 7:00pm :: Meet at [Federation House](http://goo.gl/w3IHld)
+- 7:15pm :: Circuit breaker pattern session begins",3,2014-11-16 19:00:00 UTC
+How Basecamp Handled a DDoS Attack,june-2014-how-basecamp-handled-a-ddos-attack,"This month at NWRUG, [Will Jessop](https://twitter.com/will_j) talking about [DDoS attacks](http://en.wikipedia.org/wiki/Denial-of-service_attack). We’ll hear how Basecamp were hit by them, how they recovered, and what they’ve done since to handle future attacks. This month’s talk is kindly sponsored by [Basecamp](http://basecamp.com).
+
+## The speaker
+
+Will Jessop is a Rubyist and Ops guy at [Baseamp](http://basecamp.com). When he’s not defending their servers against nasty hackers, he’s building [ping-pong ball collecting robots](http://blog.willj.net/2013/11/02/prototype-lifter-arm/) for fun and… well, mostly fun.
+
+## The schedule
+
+- 7:00pm :: How Basecamp Handled a DDoS Attack
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks sponsored by [Basecamp](http://basecamp.com) (venue TBC).",1,2014-06-19 19:00:00 UTC
+A Practical Introduction to Docker,july-2014-a-practical-introduction-to-docker,"Docker has now reached v1.0+, and is consequently production-ready. In this talk, I’ll whiz through some of the key Docker concepts, why you might want to use it, and hopefully show some practical code examples of how to make use of it in a Ruby/Rails stack.
+
+## The speaker
+
+Alex Lynham works at Swirrl as a software engineer and was asked to Dockerize all the things in order to simplify their devops workflow, help with horizontal or vertical scaling and disaster management.
+
+## The sponsors
+
+[Swirrl](http://www.swirrl.com) is a small but growing Manchester-based company, creating beautiful and powerful data solutions for organisations who want to open up their data for both humans and machines
+
+They are currently searching for more engineers to join their excellent team of friendly nerds: [www.swirrl.com/jobs](http://www.swirrl.com/jobs).
+
+## The schedule
+
+- 7:00pm :: A Practical Introduction to Docker
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks sponsored by [Swirrl](http://www.swirrl.com)   ",1,2014-07-17 19:00:00 UTC
+Social Meetup,june-2015-social-meetup,"It’s a social meet this month, meet from 6:00 onwards at [57 Thomas street](http://www.marblebeers.com/57thomas-street/) for beer and much nerdy discussion.
+
+If you want more information, email [me](will@willj.net) or tweet [@nwrug](http://twitter.com/nwrug).
+
+",2,2015-06-18 18:00:00 UTC
+Message Queues for Everyone,november-2013-message-queues-for-everyone,"This month, Glen Mailer will be giving us a practical introduction to how and why you should be using a real message queue - at any scale.
+
+We’ll have a short introduction to message queue concepts and architecture using AMQP and RabbitMQ, exploring why this is helpful and what queues can be used for. We’ll then have a workshop session where attendees can write queue consumers and publishers against a sample server, giving you a taste of working with a system like this.
+
+As this will be an interactive session, please feel free to bring your laptops if you wish to participate. Ideally you should arrive with Ruby 1.9 installed as well as installing the “bunny” gem with ‘gem install bunny’.
+
+## The speaker
+
+[Glen Mailer](http://stainlessed.co.uk/) is a Sheffield-based Developer and Consultant.
+
+## The schedule
+
+- 7:00pm :: Talk: Messages queues for everyone 
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace, sponsorship from [EngineYard](https://www.engineyard.com/).",1,2013-11-21 19:00:00 UTC
+Concurrent Ruby,may-2015-concurrent-ruby,"Historically it’s been up to languages other than Ruby to come up with new approaches for handling concurrency, but now that leaves Ruby in a position to provide lots of the good ideas in one place. The [Concurrent Ruby gem](https://rubygems.org/gems/concurrent-ruby) provides a wide range of tools with many different ways to look at concurrency. Actors, agents, async, futures, dataflow, promises, tasks, channels, thread pools, conditions, barriers, exchangers, semaphores, atomics and more, all in one place.
+
+We’ll look at what the gem provides, how to pick what you need, how to use some of them, and what kind of scalability and performance you can get from them. **[Sign-up to attend](http://attending.io/events/nwrug-may-concurrent-ruby)**.
+
+Sponsorship this month is provided by [Sage UK](http://sage.co.uk).
+
+## The speaker
+
+[Chris Seaton](http://www.chrisseaton.com) is a PhD student in concurrency and parallelism at the University of Manchester, a Research Manager at Oracle labs working on dynamic languages, and a core committer to JRuby and Concurrent Ruby.
+
+## The Schedule (Thursday 21st May)
+
+- 6:30pm - Doors open
+- 7:00pm - The talk; Concurrent Ruby
+- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks, sponsored by [Sage UK](http://sage.co.uk)",1,2015-05-21 18:30:00 UTC
+An Intro to Docker,july-2015-an-intro-to-docker,"You may have heard of Docker: its a way to package, distribute and run software. It has seen rapid growth, and coupled with the micro-service architecture perhaps it will replace VMs as the king in the future of cloud computing.
+
+This talk aims to introduce newcomers to Docker: what it is and where you might use it and how to get started. In the process we will build and run a Rails app in a container, which will be a good way to demonstrate the basics and give you a head start to play with Docker yourself.
+
+## The speaker
+
+Val (Valentin Arkhipov) is a freelance Ruby developer by night and a humble car mechanic by day, with over 13 years of living this double life he still has issues extracting sheared bolts and writing in 3rd person.
+
+## The schedule
+
+- 6:30pm - Doors open
+- 7:00pm - The talk; An Intro to Docker
+- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks
+",1,2015-07-16 06:30:00 UTC
+TDD and ‘Self’-Shunt,july-2013-tdd-and-self-shunt,"Leave your mocking frameworks at home, as Gemma Cameron and Iain Mitchell take us on a journey through ‘self’-shunt testing.
+
+This month [Gemma Cameron](https://twitter.com/ruby_gem) and [Iain Mitchell](https://twitter.com/iainjmitchell) will be demonstrating an alternative to using mocking frameworks in your tests using the ‘self’-shunt testing pattern. They will be working through the [checkout kata](http://codekata.pragprog.com/2007/01/kata_nine_back_.html), test driving it as if they really meant it, and showing how to drive out good design from the beginning by telling and not asking. There will be a huge focus on tiny, incremental changes and refactoring to the nth degree. Expect lots of code smells to be neutralised whilst they sip gin between commits.
+
+## The schedule
+
+- 7:00pm :: TDD and ‘Self’-Shunt
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in the pub",1,2013-07-18 19:00:00 UTC
+The Life of a Rails Freelancer,march-2008-the-life-of-a-rails-freelancer,"A lot of people inspired by Ruby on Rails have thought about setting up on their own either as a freelancer, a contractor or maybe creating a business started with an idea that Rails put within their grasp. [Paul Robinson](http://vagueware.com) started out with a load of business ideas, started freelancing and even contemplated contracting, and is now seeking investment for a new business all over again.
+
+In the process he almost went bankrupt – twice – re-wrote his business plan (he didn’t start with one he admits, beyond “make a living”) and learned the hard way about cash-flow/finance, legal structures, tax, finding work, keeping customers happy, what the Rails market is really like to work in and why being your own boss is worth the occasional pain.
+
+In this talk, he shares as much as can fit into the time allowed and encourages you to learn from his mistakes when starting out as your own boss.
+
+### Living and Breathing RSpec
+
+Doug Livesey talks on adventures with RSpec, more details coming soon!
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: The Life of a Rails Freelancer, [Paul Robinson](http://vagueware.com)
+- 8:00pm :: Break
+- 8:15pm :: Living and Breathing RSpec, Doug Livesey
+- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2008-03-20 18:30:00 UTC
+The Effects of Gravity on Software,november-2007-the-effects-of-gravity-on-software,"This month we are lucky enough to have [Kevin Rutherford](http://silkandspinach.net/) speaking on “The Effects of Gravity on Software”, very much a discussion based session taking a fresh look at ways to design software that might not be that traditional fully tiered model that we are all so used to. We also have [Dave Verwer](http://daveverwer.com) giving us a very brief look at [IronRuby](http://www.ironruby.net) and the new Microsoft MVC framework.
+
+### The Effects of Gravity on Software – [Kevin Rutherford](http://silkandspinach.net/)
+
+Do prices really rise? Is it really possible to bring a meeting forward? Can an argument hold water? What lurks around the corner? Well, here are my two cents worth: Metaphor shapes not only our language, but our thoughts too. So much so, that some of the common, deeply-ingrained metaphors of software development can actually prevent us from achieving good design. In this session we’ll lift the lid on the fascinating world of metaphors, and along the way we’ll discover a six-sided shape that has the answer to our prayers.
+
+Kevin Rutherford has over twenty-five years’ experience in software development and has spent the last ten years as an agile coach. During the same period he has been a leading speaker on the agile conference circuit, including XP2000, SPA2006, AgileNorth 2005 and various XPdays around Europe. Kevin founded AgileNorth, Manchester’s agile software development interest group. Kevin is a Certified ScrumMaster, a CEng and a CITP, and is currently looking to turn away from coaching and return to development, which is a proper job.
+
+### IronRuby and the ASP.NET MVC Framework – [Dave Verwer](http://daveverwer.com/)
+
+This will be a lightning quick 15 minute overview of [IronRuby](http://www.ironruby.net/) and the new MVC framework from Microsoft which, together should be a fairly familiar sight to anyone who has used Ruby on Rails.
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: The Effects of Gravity on Software, Kevin Rutherford
+- 8:00pm :: Break
+- 8:15pm :: IronRuby and the Microsoft MVC Framework, Dave Verwer
+- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2007-11-20 18:30:00 UTC
+REST & Women in Engineering,february-2007-rest-women-in-engineering,"We are lucky to have two speakers to entertain us this month! First up is [Rob Lee](http://monkeyhelper.com) speaking on “Take a REST with Rails”, followed by Gemma Cameron speaking about “Women in Engineering”.
+
+### Take a REST with Rails with Rob Lee
+
+A look at the new features in Rails 1.2 that support the REST architectural style. Starting with a basic overview of REST and then looking at the modifications to routing, generators and the shift in conceptual design to deploy RESTful applications on Rails. To finish, we’ll take a (quick) look at consuming RESTFul resources with ActiveResource.
+
+### Women in Engineering with Gemma Cameron
+
+My experiences of being a minority within the software engineering field. My thoughts on why it seems to be white, middle class, male dominated and what I think we can do to help diversify the demographic. Please bring along your own opinion on this as there will be plenty of time for questions and debate!
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: Take a REST with Rails by [Rob Lee](http://monkeyhelper.com)
+- 8:00pm :: Break
+- 8:15pm :: Women in Engineering by Gemma Cameron
+- 8:45pm :: Drinks at the [Gallery Bar](http://www.novotel.com/novotel/fichehotel/gb/nov/3145/fiche_restaurant.shtml) <small>(Opposite the <span class=""caps"">MDDA</span>)</small>",6,2007-02-21 18:30:00 UTC
+UNIX: Rediscovering the Wheel,january-2010-unix-rediscovering-the-wheel,"This month John Leach of [Brightbox](http://www.brightbox.co.uk/) will be talking on UNIX: Rediscovering the wheel.
+
+“Those who don’t understand UNIX are condemned to reinvent it, poorly.”
+
+We in the Ruby Community seem to have a habit of re-inventing things. Sometimes this is for good reason, but in some cases we don’t know we’re even doing it! We’re wasting valuable time that could be spent learning Erlang!
+
+UNIX-like operating systems have been around for decades and lots of problems have come and gone in that time. I’m going to talk about some of the tools available that can be used to solve common Ruby and Rails deployment and development problems.
+
+Brightbox will also be sponsoring the event so there will be pizzas available after the meeting in Odder across the road from the meeting.
+
+## The schedule
+
+- 6:30pm :: Welcome & Pre-session bar visit.
+- 7:00pm :: UNIX: Rediscovering the wheel by John Leach of [Brightbox](http://www.brightbox.co.uk/)
+- 7:45pm :: Pizzas at the Odder bar across the road sponsored by [Brightbox](http://www.brightbox.co.uk/)",10,2010-01-21 18:30:00 UTC
+Search in Your Rails App,march-2009-search-in-your-rails-app,"Search is an essential part of most web applications and building up ‘like’ clauses in code just doesn’t cut it. This month we have three talks on three different search daemons so you have the knowledge to go away and add quality search to your app.
+
+This month we have sponsorship from [Brightbox](http://www.brightbox.co.uk/) so there will be free Pizza, Beer and soft drinks after the talks, and maybe some T-Shirts and stickers too.
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: Talks on Sphinx, Solr & Ferret by Will Jessop, Asa Calow & John Leach
+- 7:45pm :: Pizzas/Beer/Soft-drinks provided by [Brightbox](http://www.brightbox.co.uk/)
+- 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00",10,2009-03-19 18:30:00 UTC
+"BDD, You Know You Should be Doing it",april-2009-bdd-you-know-you-should-be-doing-it,"So, you’re testing your code right? Of course you are! But are you testing your code as well as it can be tested? This month Ashley Moran, Testing Maven, will be giving a talk and practical session on Behaviour Driven Development and how it should be done right.
+
+We’re starting 30 minutes earlier this month due to the practical nature of the session.
+
+This month we have sponsorship from [Engine Yard](http://engineyard.com/) so there will be free Pizza (and maybe Beer and soft drinks, depending on the numbers) during the talks.
+
+## The schedule
+
+- 6:00pm :: Welcome & Pre-session bar visit
+- 6:30pm :: BDD, why you should be doing it and how. Pizzas provided by [Engine Yard](http://engineyard.com/) will be served during the session
+- 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00",10,2009-04-16 18:00:00 UTC
+Tokyo Cabinet and Couch DB,december-2009-tokyo-cabinet-and-couch-db,"This month we have two talks on database alternatives, Tokyo Cabinet (by Mihai Anca) and CouchDB (by Ben Aldred).
+
+Due to the proximity of Christmas the meeting will be on Thursday December 10th, a week earlier than usual.
+
+## The schedule
+
+- 6:30pm :: Welcome & Pre-session bar visit.
+- 7:00pm :: Tokyo Cabinet by Mihai Anca
+- 7:30pm :: Break
+- 7:45pm :: CouchDB by Ben Aldred
+- 8:15pm :: Drinks somewhere!
+
+It’s the Geekup Christmas party on the same night and so fair number of people will be heading to that after the talks, [you have to register, but it is free](http://geekup.org/events/177/). Alternatively there is always the odder bar across the road.",10,2009-12-10 18:30:00 UTC
+The MagRails Social,october-2011-the-magrails-social,"We are moving this months NWRUG forward a week in order to coincide with the [MagRails](http://magrails.com/) conference in manchester, and we are throwing a pre-conference party in it’s honour!
+
+We have already secured sponsorship from [Engine Yard](http://www.engineyard.com/) so there will be money behind the bar for drinks.
+
+Anyone is welcome to come join us, whether you are at the conference or not. There will be much discussion regarding Ruby, Rails and recent events in the tech world, and is a perfect excuse to come and mingle with the conference delegates.",7,2011-10-13 19:30:00 UTC
+Introduction To CoffeeScript,june-2011-introduction-to-coffeescript,"This month we will be taking a glimpse into [CoffeeScript](http://jashkenas.github.com/coffee-script/), a little language that compiles into JavaScript. Recently announced as a default in Rails 3.1, we will look at general syntax and usage as well as more complex features such as function binding, splats, array comprehension and destructuring assignments.
+
+[On The Beach](http://www.onthebeach.co.uk) have kindly offered to sponsor the group this month, so free food will be provided after the talk.
+
+## The speaker
+
+Adam Holt is a Ruby developer at On The Beach, likes hacking around with NoSQL databases, Functional programming languages and all kinds of shiny new tech!
+
+## The schedule
+
+- 6:30pm :: Welcome & Pre-session chat.
+- 7:00pm :: Introduction To [CoffeeScript](http://jashkenas.github.com/coffee-script/) by [Adam Holt](http://adamholt.co.uk/)
+- 8:00pm :: Off to [The Bay Horse Pub](http://www.thebayhorsepub.co.uk/) around the corner for free pizzas sponsored by [On The Beach](http://www.onthebeach.co.uk/).
+",1,2011-06-16 18:30:00 UTC
+The Lightning Round,april-2012-the-lightning-round,"We have a couple of lightning talks this month, one about [Spinach](http://codegram.github.com/spinach/), a BDD framework in the spirit of Cucumber, by [Matt House](http://twitter.com/#!/eightbitraptor), and a talk about [Goliath](http://goliath.io), an open source version of the non-blocking (asynchronous) Ruby web server framework powering PostRank (now part of Google Analytics) by [Tom Clements](http://twitter.com/#!/seenmyfate).
+
+Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, **shock horror** , you don’t program ruby!
+
+## The schedule
+
+- 6:30pm :: Meet at [Madlab](http://madlab.org.uk/)
+- 7:00pm :: Acceptance Testing with [Spinach](http://codegram.github.com/spinach/) – And Why It Sucks! by [Matt House](http://twitter.com/#!/eightbitraptor)
+- 7:15pm :: [Goliath](http://goliath.io) – An async Ruby web server framework by [Tom Clements](http://twitter.com/#!/seenmyfate)
+- 7:30pm :: Q&A 
+- After :: Drinks in Common – Sponsored by [On The Beach](http://www.onthebeach.co.uk)",1,2012-04-19 18:30:00 UTC
+What's New in Rails 1.2,january-2007-what-s-new-in-rails-1-2,"[Michael Josephson](http://josephson.org) will be giving a talk about the new features available in the imminent 1.2 release of Rails.
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: Talk starts
+- 8:30pm :: Move to The Paramount pub",6,2007-01-17 18:30:00 UTC
+Ruby and Rails Mini Conference,september-2006-ruby-and-rails-mini-conference,"NWRUG was launched at the [GeekUp](http://geekup.org) Ruby and Rails mini-conference held on 30th September at the [MDDA](http://manchesterdda.com) in Manchester.
+
+More details about the event can be found at the [Ruby and Rails Day mini-site](http://geekup.org/rubyandrails).
+
+## Download the Slides
+
+All of the slides from the day have been made available for download here.
+
+1. [Introduction to Ruby on Rails](http://files.nwrug.org/GeekUpRubyAndRails/IntroductionToRailsByDaveVerwer.pdf) by [Dave Verwer](http://shinydevelopment.com)
+2. [Ruby for Existing Programmers](http://files.nwrug.org/GeekUpRubyAndRails/RubyForExistingProgrammersByCarlDrinkwater.pdf) by [Carl Drinkwater](http://29degrees.co.uk)
+3. [Javascript, Ajax and script.aculo.us on Rails](http://monkeyhelper.com/downloads/s5-railsajax) by [Rob Lee](http://monkeyhelper.com)
+4. [Hosting and Deploying Rails](http://files.nwrug.org/GeekUpRubyAndRails/HostingAndDeployingRailsByDaveVerwer.pdf) by [Dave Verwer](http://shinydevelopment.com)
+5. [WATIR – Web Application Testing in Ruby](http://files.nwrug.org/GeekUpRubyAndRails/WATIRByPhilWinstanley.pdf) by [Phil Winstanley](http://weblogs.asp.net/plip)
+",6,2006-09-30 09:30:00 UTC
+An intro to Varnish sponsored by Creative Lynx,august-2012-an-intro-to-varnish-sponsored-by-creative-lynx,"This month we have [Mike Smith](http://twitter.com/mikespokefire) with an Introduction to Varnish. Varnish is a web application accelerator. You install it in front of your web application and it will speed it up significantly.
+
+Sponsorship is generously provided by [Creative Lynx](http://www.creativelynx.co.uk/).
+
+Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror! you don’t program ruby!
+
+## The schedule
+
+- 6:30pm :: Meet at Common for pre-talk drinks
+- 7:00pm :: Introduction to Varnish by [Mike Smith](http://twitter.com/mikespokefire)
+- 7:30pm :: Q&A
+- After :: Post-talk drinks and discussion in Common sponsored by [Creative Lynx](http://www.creativelynx.co.uk/)
+",1,2012-08-16 18:30:00 UTC
+Bug Free Code,august-2015-bug-free-code,"### <link>
+
+This month at NWRUG, [Gemma Cameron](https://twitter.com/ruby_gem) with Bug Free Code.
+
+For the last two years at Allegro we’ve been working with No Backlog. When I share the experience of this with people they often ask “what about the bugs?” and my response “we don’t have bugs”. This talk explains the concept in more depth.
+
+## The speaker
+
+[Gemma Cameron](http://rubygem.me/) ( [@ruby\_gem](https://twitter.com/ruby_gem)), developer, event organiser and Queen Bee of the [NW tech event organisers](http://technw.uk/).
+
+## The schedule (Thursday 20th August)
+
+- 6:30pm - Doors open
+- 7:00pm - The talk: Bug Free Code
+- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks
+
+#### Location
+
+[MadLab](http://madlab.org.uk), 36-40 Edge Street, Manchester, M4 1HN. [How to get there](http://madlab.org.uk/find-us/)
+
+For more information, email [Tekin Suleyman](mailto:tekin@tekin.co.uk) or tweet [@nwrug](http://twitter.com/nwrug).
+
+",1,2015-08-20 18:30:00 UTC
+Bootstrapping for Developers,march-2013-bootstrapping-for-developers,"Do you have ambitions to be your own boss? Have you ever had a side-project that you wanted to turn into a product and charge people money for? Well then this talk is for you…
+
+#### Whats the Deal?
+
+Most developers at some point or another have had an idea for an app or side project and wondered if they could take things a step further and turn it into an actual business. This talk will explore some of the ideas and common pitfalls that developers will face when trying to build a business like this in their spare time.
+
+## The speaker
+
+[Tekin Suleyman](http://twitter.com/tekin) is a Ruby freelancer and founder of [crowd.fm](http://crowd.fm). He is also one of the founders and organiser of [Bootstrap Business Club](http://bootstrapbusinessclub.co.uk), a group for aspiring startup founders trying to build their own bootstrapped startups. He will be talking about bootstrapping as a developer at this year’s Nordic Ruby Conference. This talk will explore some of the ideas he’ll be presenting there this summer. This month’s talk is kindly sponsored by [37signals](http://37signals.com).
+
+## The schedule
+
+- 6:00pm :: Ruby/Rails Advice Drop-in Session - All levels welcome.
+- 7:00pm :: Bootstrapping for Developers
+- 7:30pm :: Q&A
+- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Common sponsored by [37signals](http://37signals.com).
+",1,2013-03-21 18:00:00 UTC
+A RubyConf 2012 Review with Will Jessop,november-2012-a-rubyconf-2012-review-with-will-jessop,"After returning from RubyConf 2012, [Will Jessop](https://twitter.com/will_j) will be giving us a rundown of the discussion happening around Ruby, Ruby 2.0, jRuby and Rubinius, amongst other Ruby related subjects.
+
+This month we’ll also be holding a **Ruby/Rails advice drop-in session** before the main talk. If you are new to Ruby or Rails, or maybe you’re just having a problem with a particular bit of code, drop in at MadLab from 6pm for help and advice from some seasoned Ruby developers.
+
+Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror, you don’t program ruby!
+
+## The schedule
+
+- 6:00pm :: Ruby/Rails Advice Drop-in Session – All levels welcome.
+- 7:00pm :: A RubyConf 2012 Review with [Will Jessop](https://twitter.com/will_j)
+- 7:30pm :: Q&A
+- After :: Post-talk drinks and discussion in Common sponsored by [Fatsoma](http://www.fatsoma.com/)",1,2012-11-15 18:00:00 UTC
+Social Meet,september-2015-social-meet,Meet at 57 Thomas St (Close to MadLab) from about 6:00.,2,2015-09-17 18:00:00 UTC
+Uses and Abuses of Mocks and Stubs,october-2009-uses-and-abuses-of-mocks-and-stubs,"This month [Ashley Moran](http://www.patchspace.co.uk/) will be talking about Uses and Abuses of Mocks and Stubs.
+
+Thanks to [http://www.boxedup.com/](http://www.boxedup.com/) for sponsoring the meetup this month, there will be pizzas and maybe a beer or two provided in the Odder bar across the road after the talks.
+
+## The schedule
+
+Please note we’re back on our old start time of 6:30pm
+
+- 6:30pm :: Welcome & Pre-session bar visit.
+- 7:00pm :: Uses and Abuses of Mocks and Stubs by [Ashley Moran](http://www.patchspace.co.uk/)
+- 7:30pm :: Drinks at the BBC bar
+- 8:00pm :: Off to Odder across the road for pizzas and maybe a beer or two sponsored by [http://www.boxedup.com/](http://www.boxedup.com/)",10,2009-10-15 18:30:00 UTC
+Unobtrusive JavaScript and Mystery Ruby,may-2007-unobtrusive-javascript-and-mystery-ruby,"This month we have [Dave Verwer](http://shinydevelopment.com) talking about how to tame JavaScript into behaving in your Rails applications with “Unobtrusive JavaScript with Rails” and [Paul Robinson](http://vagueware.com) doing a “Mystery Ruby” session.
+
+### Unobtrusive JavaScript with Dave Verwer
+
+With every site you visit piling on more and more JavaScript and Ajax, what happens when a user comes along using a screen reader or mobile device that would choke on even a simple alert()? How can we take advantage of the power of these technologies without providing any barriers to users, this session will cover techniques to ensure that you can still serve up rich content without excluding users, all from one code base and will cover the [Unobtrusive JavaScript](http://ujs4rails.com) plug-in for Rails.
+
+### “Mystery Ruby” Session with Paul Robinson
+
+Ruby is a language that anybody can pick up the basics of within an hour or so, and most Rails programmers will have a working application up and running before they need to even learn what iterators are available. This talk scratches below the surface, and promises to teach a few corners of Ruby and Rails you might not have seen before (and if you have seen them, we promise not to bore you to death). We’ll go in-depth on some basics everybody should know – :like :what :those :funny :symbols :actually :are – and run through a cheat-sheet of tricks and hints that give a clue as to where to dig a little further.
+
+## The schedule
+
+- 6:30pm :: Welcome & Registration
+- 7:00pm :: Unobtrusive JavaScript by [Dave Verwer](http://shinydevelopment.com)
+- 7:45pm :: Break
+- 8:00pm :: Mystery Ruby by [Paul Robinson](http://vagueware.com)
+- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2007-05-22 18:30:00 UTC
+Smooth web apps with Varnish,september-2009-smooth-web-apps-with-varnish,"### <link>
+
+This month [David Smalley](http://davidsmalley.com/) of [Litmus](http://litmusapp.com/) will be talking about [Varnish](http://varnish.projects.linpro.no/), the high-performance HTTP accelerator that makes [doctype](http://doctype.com/) fly.
+
+No sponsorship this month, but never fear, the BBC bar is fairly cheap and the Odder bar across the road serves nice pizzas.
+
+## The schedule
+
+Please note we’re back on our old start time of 6:30pm
+
+- 6:30pm :: Welcome & Pre-session bar visit.
+- 7:00pm :: Everything you ever wanted to know about Varnish by [David Smalley](http://davidsmalley.com/) of [Litmus](http://litmusapp.com/)
+- 7:30pm :: Drinks at the BBC bar
+- 8:00pm :: Off to Odder across the road. Odder serves food until 8:30.",10,2009-09-17 18:30:00 UTC
+Code Kwoon,november-2009-code-kwoon,"This month [Ashley Moran](http://www.patchspace.co.uk/) will leading a Coding Kwoon!
+
+The Coding Kwoon is a place to practice software design. The training tool will be RSpec and the output of the exercise will be Ruby code. No experience of either is required to take part.
+
+A problem will be announced on the day that will be solved using Ruby.
+
+Two coders will sit at the front. They will pair program a behaviour-driven solution to the problem, explaining what they are thinking, what they are doing, and why they are doing it. Every five minutes, one of the pair will be swapped out with a volunteer from the audience. At all times, one of the pair will be a coder experienced in RSpec.
+
+#### The structure will be:
+
+- 6:30pm :: Welcome & Pre-session bar visit.
+- 7:00pm :: Introduction & 1st Coding session
+- 7:45pm :: Break
+- 7:55pm :: 2nd Coding session
+- 8:35pm :: Retrospective
+- 8:45pm :: Off to Odder across the road for a beer and a chat",10,2009-11-19 18:30:00 UTC
+The Lightning Round,november-2011-the-lightning-round,"We have three, count them, three talks lined up for this week. “Hello Rubinius” by [Adam Holt](http://adamholt.co.uk), “Scamp: A Campfire Bot Framework” by [Will Jessop](http://willj.net) and “Meet Hubot” by [Tom Bell](http://tombell.org.uk). The Venue is [MDDA](http://www.manchesterdda.com/), on Portland Street.
+
+After the talks we will have our regular drinking and discussion sessions, so come to learn about new things, and for talk of Ruby, Rails and other interesting topics.
+
+Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror! you don’t program ruby!
+
+## The schedule
+
+- 6:30pm :: Meet at [MDDA](http://www.manchesterdda.com/)
+- 7:00pm :: Hello Rubinius by [Adam Holt](http://adamholt.co.uk)
+- 7:15pm :: Scamp: A Campfire Bot Framework by [Will Jessop](http://willj.net)
+- 7:30pm :: Meet Hubot by [Tom Bell](http://tombell.org.uk)",6,2011-11-17 18:30:00 UTC
+The New Year Lightning Round,january-2012-the-new-year-lightning-round,"Start the new year as you mean to go and nourish your brain with Ruby goodness! At this month's NWRUG, we have a series of 5 minute lightning talks from [Adam Holt](http://adamholt.co.uk), [Tom Clements](http://tom-clements.com) and [Will Jessop](http://willj.net).
+
+Melbourne Host have sponsored this month’s NWRUG, so there will be beer and soft drinks (No food, sorry!) on the night for everyone attending. Melbourne Host are currently looking for a Ruby on Rails developer in Manchester if you’re looking for a job ( [more info](http://www.melbourne.co.uk/about-melbourne/careers-at-melbourne/front-end-ruby-on-rails-developer/)).
+
+#### Got an Idea for a Lightning Talk?
+
+We’ve still got room for a couple more talks, so if you have an interesting Ruby-related topic you’d like to talk about for 5 minutes, let us know and we’ll add you to the lineup.
+
+## The schedule
+
+- 6:30pm :: Pre-talk drinks at [Common](http://www.aplacecalledcommon.co.uk/)
+- 7:00pm :: Meet at [The MadLab](http://madlab.org.uk/)
+- 7:15pm :: Let the Lightning talks commence!
+- 8:00pm :: Post-talk drinks somewhere in the vicinity",1,2012-01-19 18:30:00 UTC
+Rails 4 Streaming,october-2012-rails-4-streaming,"A few months ago, [Aaron Patterson](http://twitter.com/tenderlove) introduced us to a new feature in the upcoming Rails 4, [Live Streaming](http://tenderlovemaking.com/2012/07/30/is-it-live.html). This month, [Sławomir Wdówka](https://twitter.com/gl0wa) from [Fatsoma](http://www.fatsoma.com/) will be giving us the low down on this new feature!
 
 This month we’ll also be holding a **Ruby/Rails advice drop-in session** before the main talk. If you are new to Ruby or Rails, or maybe you’re just having a problem with a particular bit of code, drop in at MadLab from 6pm for help and advice from some seasoned Ruby developers.
 
@@ -360,7 +772,7 @@ Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, 
 - 7:00pm :: Rails 4 Streaming by [Sławomir Wdówka](https://twitter.com/gl0wa)
 - 7:30pm :: Q&A
 - After :: Post-talk drinks and discussion in Common sponsored by [Fatsoma](http://www.fatsoma.com/)",1,2012-10-18 18:00:00 UTC
-Christmas Social,20th-december-christmas-social,"After a fantastic year of Talks for NWRUG, we are finishing the year with a few drinks to look back and reminisce. We will be meeting at Common at 6pm for drinks and discussion, feel free to join us an celebrate a great 2012 of NWRUG; and a great 2013 to come!
+Christmas Social,december-2012-christmas-social,"After a fantastic year of Talks for NWRUG, we are finishing the year with a few drinks to look back and reminisce. We will be meeting at Common at 6pm for drinks and discussion, feel free to join us an celebrate a great 2012 of NWRUG; and a great 2013 to come!
 
 We'd like to extend my thanks to our speakers througout the year:
 
@@ -390,83 +802,7 @@ Finally, we'd like to thank our organisers for giving up their spare time and ma
 - [Tekin Suleyman](http://twitter.com/tekin)
 
 Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror, you don’t program ruby!",4,2012-12-20 18:00:00 UTC
-The Hacker Edition,17th-january---the-hacker-edition,"This month we will be running our regular drop in session, combined with a social in common. Also Adam Holt will be providing a brief intro to the ease of exploitation the recent XML/YAML parsing vulnerability, and why you should patch this issue immediately if you have not done so.
-
-Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror, you don’t program ruby!
-
-## The schedule
-
-- 6:00pm :: Drop in session at MadLab
-- 7:00pm :: Drinks in Common.",1,2013-01-17 18:00:00 UTC
-Social Meetup,thursday-20th-june-social-meetup,"It’s a social meet this month, meet from 6:00 onwards at [kosmonaut](http://kosmonaut.co/) for drinks and much nerdy discussion.",5,2013-06-20 18:00:00 UTC
-"How to Make Your Objects Selfish, Ignorant, and Lazy in One Easy Step",thursday-18th-april---how-to-make-your-objects-selfish-ignorant-and-lazy-in-one-easy-step,"“Tell Don’t Ask”, “Single Responsibility Principle”, “Composition Over Inheritance”. These OO guidelines ride shotgun with us as we code, sitting on our shoulder and whispering in our ear.
-
-At April’s NWRUG I’ll add one more to this list – an idea that helps yield cleaner code. But be warned: we’re going to touch Ruby’s third rail.
-
-Sponsored by Pivotal Labs.
-
-## The speaker
-
-[JB Steadman](https://twitter.com/jbsteadman) is the Director of Pivotal Labs London, and is here on a mission to bring Pivotal’s unique brand of software development to the good people of the UK.
-
-## The schedule
-
-- 6:00pm :: Ruby/Rails Advice Drop-in Session - All levels welcome.
-- 7:00pm :: How to Make Your Objects Selfish, Ignorant, and Lazy in One Easy Step
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace sponsored by [Pivotal Labs](http://pivotallabs.com).",1,2013-04-18 18:00:00 UTC
-Parsing for Fun & Profit,february-2013-parsing-for-fun-profit,"Parsers aren’t just useful for building compilers and interpreters. They can also come in handy for much simpler applications, e.g. transforming data structures, calculating metrics or minifying code. During this talk, Ash will guide us through the process of building a syntax highlighter for Ruby, in Ruby! He’ll show us how to:
-
-- Define the syntax for a simple subset of Ruby
-- Write a grammar file in [Treetop](http://treetop.rubyforge.org/) one rule at a time (doing it TDD with [RSpec](http://rspec.info/), of course)
-- Walk the data structure constructed by the Treetop parser
-- Transform this syntax tree into HTML, to be syntax highlighted with CSS
-
-## The speaker
-
-[Ash Moran](http://www.linkedin.com/in/ashmoran) is a freelance software developer & agile coach based in Manchester, and owner of [PatchSpace Ltd](http://www.patchspace.co.uk). He has been using Ruby for many years, and has yet to find another language that makes writing high quality software so much fun.
-
-As always, all are welcome; whether you’re a Ruby pro or a complete noob.
-
-## The schedule
-
-- 6:00pm :: Ruby/Rails Advice Drop-in Session – All levels welcome.
-- 7:00pm :: Talk: Parsing for Fun & Profit by Ash Moran
-- 7:45pm :: Q&A
-- After :: Post-talk drinks and discussion in Common",1,2013-02-21 18:00:00 UTC
-Social Meet,15th-may---social-meet,It's a social meet this month. Meet at 57 Thomas Street from about 6:30.,2,2014-05-15 18:30:00 UTC
-Lightning Talks,thursday-20th-february-lightning-talks,"For our February meet we shall mostly be having lightning talks from our lovely members. Our speakers this month are:
-
-- [Adam Holt](http://twitter.com/adamholt) — Writing API clients with Cistern
-- [Eve Barabas](http://twitter.com/b_seven_e) — Experiences in mentoring a young offender
-- [Sławomir Wdówka](http://twitter.com/gl0wa) — An intro to Boxen
-- [Chris Seaton](http://twitter.com/ChrisGSeaton) — Demoing Ruby Truffle
-- [Alex Lynham](http://twitter.com/hipsters_unite) — Five(ish) things learned about JS with Rails
-- [Brent Murphy](http://twitter.com/burtmurphy) — To a service-oriented architecture on Rails
-
-This month’s event is kindly sponsored by [Fatsoma](http://fatsoma.com).
-
-## The schedule
-
-- 7:00pm :: Lightning Talks
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace, sponsored by [Fatsoma](http://fatsoma.com).",1,2014-02-20 19:00:00 UTC
-Social Meetup,thursday-19th-december---social-meetup,"This month we have a social meetup. Meet in Common bar from 7:00.
-",4,2013-12-19 19:00:00 UTC
-NWRUG Social,thursday-20th-march-nwrug-social,"In lieu of a talk this month we are having a social meet at Common. [Will Jessop](http://twitter.com/will_j) will be there from 7pm so keep an eye out for him.
-
-Normal service will resume in April.",4,2014-03-20 19:00:00 UTC
-Easter.js,thursday-17th-april-easter-js,"Our April meet has a JavaScript flavour. Lightning talks from two of our members:
-
-Our speakers this month are:
-
-- [Sławomir Wdówka](http://twitter.com/gl0wa) — Things I’ve learned when creating JS widgets at Fatsoma
-- [Joseph Le Brech](http://twitter.com/jlebrech) — Interacting with 3rd party websites with CasperJS
-
-## The schedule
-
-- 7:00pm :: Lightning Talks
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Common.",1,2014-04-17 19:00:00 UTC
-Improve your Ruby Code with Dependency Injection,thursday-17th-october-improve-your-ruby-code-with-dependency-injection,"Most of us have heard the vague, hand waving spiel about why DI is important for writing flexible, reusable code. A little harder to come by are examples of how one actually goes about doing it in a (cost) effective manner.
+Improve your Ruby Code with Dependency Injection,october-2013-improve-your-ruby-code-with-dependency-injection,"Most of us have heard the vague, hand waving spiel about why DI is important for writing flexible, reusable code. A little harder to come by are examples of how one actually goes about doing it in a (cost) effective manner.
 
 Rather than a dry introduction to Dependency Injection, this talk will be packed full of code examples demonstrating practical techniques you can start using straight away; no gems, meta-programming or magic required. We’ll also explore how you might persuade your Rails app to benefit from DI.
 
@@ -483,102 +819,7 @@ This month’s NWRUG is proudly sponsored by [Melbourne Server Hosting](http://w
 - 7:00pm :: Talk: Improve your Ruby Code with Dependency Injection 
 - 7:30pm :: Q&A
 - After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace, sponsored by [Melbourne Server Hosting](http://www.melbourne.co.uk/).",1,2013-10-17 19:00:00 UTC
-A Very Fast Ruby on the JVM,thursday-19th-september-a-very-fast-ruby-on-the-jvm,"This month we’re going deep down into the interpreter with a talk from [Chris Seaton](http://www.chrisseaton.com/) on how he’s used Truffle, AST parsing and type specialisation to write a new high-performance Ruby implementation that benchmarks faster than JRuby.
-
-Chris is a PhD student at the [University of Manchester](http://www.man.ac.uk/), where his researching programming languages and irregular parallelism. He is also a member of the Virtual Machine research group at [Oracle Labs](http://labs.oracle.com/), where he works on implementing programming languages using the next generation of Java Virtual Machine.
-
-## The schedule
-
-- 7:00pm :: A Very Fast Ruby on the JVM
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion",1,2013-09-19 19:00:00 UTC
-Social: new() Years Resolutions,15th-january---social-new-years-resolutions,"A social meet this month. Meet in Marble Beers on Thomas Street (Close to MadLab) from about 6:30.
-",2,2015-01-15 18:30:00 UTC
-Social Meet,18th-september---social-meet,Another social this month. Meeting in 57 Thomas Street from about 7:00.,2,2014-09-18 19:00:00 UTC
-Social Meet,21-august---social-meet,"### <link>
-
-A social meet this month
-
-Meet in Marble Beers on Thomas Street (Close to MadLab) from about 6:30:
-
-http://www.marblebeers.com/57thomas-street/
-
-",2,2014-08-21 06:30:00 UTC
-Xmas Jumper Party,18th-december---xmas-jumper-party,"Nothing says Christmas like a cheap, sweaty, acrylic jumper with a garish picture of a reindeer on it!
-
-Thats right, this month we will be doing an Xmas Jumper Party.
-
-![](http://i2.cdnds.net/12/47/618x688/showbiz_jon_snow_1.jpg)
-
-Get your best Xmas jumper on\* and meet us at Marble on Thomas street a 7pm. There will be prizes (free drinks) for best jumpers.
-
-Jumper not required to join in, but… Bah humbug!",2,2014-12-18 19:00:00 UTC
-The Circuit Breaker Pattern,2oth-november---the-circuit-breaker-pattern,"One constant in life is that shit goes wrong. When there’s an electrical surge in your house, every appliance doesn’t blow up because of a variety of fail safes, most commonly, fuses and circuit breakers.
-
-In software systems, the Circuit Breaker pattern helps to keep misbehaving systems/resources from bringing down the entire estate. Restoring everything to normal once the offending resource starts behaving again.
-
-The Circuit Breaker is a simple pattern that helps us to build robust, self healing systems that don’t require manual intervention to keep running. So sleep tight.
-
-This month, [Ash Moran](http://blog.patchspace.co.uk) and [Mark Kirschstein](https://twitter.com/markkirschstein) will lead a practical hands-on session into the circuit breaker pattern.
-
-Participating isn’t compulsory, but you’ll get the most out of the session if you bring along a laptop with ruby installed. Try and make sure you’re fully charged as we cannot guarantee access to plug sockets.
-
-## The speakers
-
-Ash is a software developer of 10 years. He likes making things that don’t fall on their arse at the first sign of trouble, so he was enthusiastic about working with Mark to bring the Circuit Breaker pattern to Ruby.
-
-Mark is a Manchester-based developer who helps organise [XP Manchester](http://xpmanchester.wordpress.com)
-
-## The schedule
-
-- 7:00pm :: Meet at [Federation House](http://goo.gl/w3IHld)
-- 7:15pm :: Circuit breaker pattern session begins",3,2014-11-16 19:00:00 UTC
-How Basecamp Handled a DDoS Attack,thursday-19th-june---how-basecamp-handled-a-ddos-attack,"This month at NWRUG, [Will Jessop](https://twitter.com/will_j) talking about [DDoS attacks](http://en.wikipedia.org/wiki/Denial-of-service_attack). We’ll hear how Basecamp were hit by them, how they recovered, and what they’ve done since to handle future attacks. This month’s talk is kindly sponsored by [Basecamp](http://basecamp.com).
-
-## The speaker
-
-Will Jessop is a Rubyist and Ops guy at [Baseamp](http://basecamp.com). When he’s not defending their servers against nasty hackers, he’s building [ping-pong ball collecting robots](http://blog.willj.net/2013/11/02/prototype-lifter-arm/) for fun and… well, mostly fun.
-
-## The schedule
-
-- 7:00pm :: How Basecamp Handled a DDoS Attack
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks sponsored by [Basecamp](http://basecamp.com) (venue TBC).",1,2014-06-19 19:00:00 UTC
-A Practical Introduction to Docker,thursday-17th-july---a-practical-introduction-to-docker,"Docker has now reached v1.0+, and is consequently production-ready. In this talk, I’ll whiz through some of the key Docker concepts, why you might want to use it, and hopefully show some practical code examples of how to make use of it in a Ruby/Rails stack.
-
-## The speaker
-
-Alex Lynham works at Swirrl as a software engineer and was asked to Dockerize all the things in order to simplify their devops workflow, help with horizontal or vertical scaling and disaster management.
-
-## The sponsors
-
-[Swirrl](http://www.swirrl.com) is a small but growing Manchester-based company, creating beautiful and powerful data solutions for organisations who want to open up their data for both humans and machines
-
-They are currently searching for more engineers to join their excellent team of friendly nerds: [www.swirrl.com/jobs](http://www.swirrl.com/jobs).
-
-## The schedule
-
-- 7:00pm :: A Practical Introduction to Docker
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks sponsored by [Swirrl](http://www.swirrl.com)   ",1,2014-07-17 19:00:00 UTC
-Social Meetup,thursday-18th-june---social-meetup,"It’s a social meet this month, meet from 6:00 onwards at [57 Thomas street](http://www.marblebeers.com/57thomas-street/) for beer and much nerdy discussion.
-
-If you want more information, email [me](will@willj.net) or tweet [@nwrug](http://twitter.com/nwrug).
-
-",2,2015-06-18 18:00:00 UTC
-What Does This Button Do?,16th-april---what-does-this-button-do,"This month at NWRUG, [Jim Mackenzie](https://twitter.com/mackesque) is going to be talking about how developers do support at Basecamp, curiosity, friendship, and some techniques to make supporting a software project easier. Whether you are working with a dedicated support team, or answering emails yourself while writing code, there should be something useful for you. This month’s talk is kindly sponsored by [Basecamp](https://basecamp.com/).
-
-## The speaker
-
-Jim joined the Basecamp support crew in 2012, and introduced them to the correct spelling of favourite. He investigates bugs and writes little fixes, mostly in Ruby.
-
-## The schedule (Thursday 16th April)
-
-- 6:30pm - Doors open
-- 7:00pm - The talk; What does this button do?
-- After - To the pub for post-event socialising
-",3,2015-04-16 18:30:00 UTC
-The Ruby Code Challenge,19th-march---the-ruby-code-challenge,"We’re going to be running a Ruby coding challenge this month at Federation House. Participation isn’t required but you’ll definitely get the most out of the session if you take part.
+The Ruby Code Challenge,march-2015-the-ruby-code-challenge,"We’re going to be running a Ruby coding challenge this month at Federation House. Participation isn’t required but you’ll definitely get the most out of the session if you take part.
 
 ## How to take part
 
@@ -598,51 +839,7 @@ The session will run for around 2 hours from 7pm, plus some wrap up time. You sh
 - 7:00-9:00pm - Coding Challenge
 - 9:30pm - To the pub for post-event socialising
 ",3,2015-03-19 18:30:00 UTC
-Message Queues for Everyone,thursday-21th-november---messages-queues-for-everyone,"This month, Glen Mailer will be giving us a practical introduction to how and why you should be using a real message queue - at any scale.
-
-We’ll have a short introduction to message queue concepts and architecture using AMQP and RabbitMQ, exploring why this is helpful and what queues can be used for. We’ll then have a workshop session where attendees can write queue consumers and publishers against a sample server, giving you a taste of working with a system like this.
-
-As this will be an interactive session, please feel free to bring your laptops if you wish to participate. Ideally you should arrive with Ruby 1.9 installed as well as installing the “bunny” gem with ‘gem install bunny’.
-
-## The speaker
-
-[Glen Mailer](http://stainlessed.co.uk/) is a Sheffield-based Developer and Consultant.
-
-## The schedule
-
-- 7:00pm :: Talk: Messages queues for everyone 
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace, sponsorship from [EngineYard](https://www.engineyard.com/).",1,2013-11-21 19:00:00 UTC
-Concurrent Ruby,21st-may---concurrent-ruby,"Historically it’s been up to languages other than Ruby to come up with new approaches for handling concurrency, but now that leaves Ruby in a position to provide lots of the good ideas in one place. The [Concurrent Ruby gem](https://rubygems.org/gems/concurrent-ruby) provides a wide range of tools with many different ways to look at concurrency. Actors, agents, async, futures, dataflow, promises, tasks, channels, thread pools, conditions, barriers, exchangers, semaphores, atomics and more, all in one place.
-
-We’ll look at what the gem provides, how to pick what you need, how to use some of them, and what kind of scalability and performance you can get from them. **[Sign-up to attend](http://attending.io/events/nwrug-may-concurrent-ruby)**.
-
-Sponsorship this month is provided by [Sage UK](http://sage.co.uk).
-
-## The speaker
-
-[Chris Seaton](http://www.chrisseaton.com) is a PhD student in concurrency and parallelism at the University of Manchester, a Research Manager at Oracle labs working on dynamic languages, and a core committer to JRuby and Concurrent Ruby.
-
-## The Schedule (Thursday 21st May)
-
-- 6:30pm - Doors open
-- 7:00pm - The talk; Concurrent Ruby
-- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks, sponsored by [Sage UK](http://sage.co.uk)",1,2015-05-21 18:30:00 UTC
-An Intro to Docker,thurs-16th-july---an-intro-to-docker,"You may have heard of Docker: its a way to package, distribute and run software. It has seen rapid growth, and coupled with the micro-service architecture perhaps it will replace VMs as the king in the future of cloud computing.
-
-This talk aims to introduce newcomers to Docker: what it is and where you might use it and how to get started. In the process we will build and run a Rails app in a container, which will be a good way to demonstrate the basics and give you a head start to play with Docker yourself.
-
-## The speaker
-
-Val (Valentin Arkhipov) is a freelance Ruby developer by night and a humble car mechanic by day, with over 13 years of living this double life he still has issues extracting sheared bolts and writing in 3rd person.
-
-## The schedule
-
-- 6:30pm - Doors open
-- 7:00pm - The talk; An Intro to Docker
-- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks
-",1,2015-07-16 06:30:00 UTC
-Making Music with Ruby,19th-feb---making-music-with-ruby,"Alex is going to teach us how to use a Ruby DSL to make music! If you want to join in, bring your laptops.
+Making Music with Ruby,february-2015-making-music-with-ruby,"Alex is going to teach us how to use a Ruby DSL to make music! If you want to join in, bring your laptops.
 
 ## Tell me more!
 
@@ -662,16 +859,7 @@ Alex is a Ruby/Clojure dev for Swirrl and a gear-obsessed guitarist. After some 
 - 7:15pm :: Using a Ruby DSL to make music
 - After :: Go to the pub for great chat and good times
 ",3,2015-02-19 19:00:00 UTC
-TDD and ‘Self’-Shunt,thursday-18th-july---tdd-and-self-shunt,"Leave your mocking frameworks at home, as Gemma Cameron and Iain Mitchell take us on a journey through ‘self’-shunt testing.
-
-This month [Gemma Cameron](https://twitter.com/ruby_gem) and [Iain Mitchell](https://twitter.com/iainjmitchell) will be demonstrating an alternative to using mocking frameworks in your tests using the ‘self’-shunt testing pattern. They will be working through the [checkout kata](http://codekata.pragprog.com/2007/01/kata_nine_back_.html), test driving it as if they really meant it, and showing how to drive out good design from the beginning by telling and not asking. There will be a huge focus on tiny, incremental changes and refactoring to the nth degree. Expect lots of code smells to be neutralised whilst they sip gin between commits.
-
-## The schedule
-
-- 7:00pm :: TDD and ‘Self’-Shunt
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in the pub",1,2013-07-18 19:00:00 UTC
-Nils - what are your Options?,thursday-16th-may-nils-what-are-your-options,"Tony Hoare, inventor of the null reference, calls it his “billion dollar mistake”. Although Ruby goes some way to correcting it by making `nil` at least be a class with some reasonably helpful stuff on it, you’ll no doubt have been hit by a `NoMethodError: undefined method 'foo'` just as many times as me.
+Nils - what are your Options?,may-2013-nils-what-are-your-options,"Tony Hoare, inventor of the null reference, calls it his “billion dollar mistake”. Although Ruby goes some way to correcting it by making `nil` at least be a class with some reasonably helpful stuff on it, you’ll no doubt have been hit by a `NoMethodError: undefined method 'foo'` just as many times as me.
 
 At May’s NWRUG, [Russell Dunphy](http://twitter.com/rsslldnphy) will try to convince you of two thing:
 
@@ -690,75 +878,7 @@ Sponsored by [On The Beach](http://www.onthebeach.co.uk)
 - 7:00pm :: Nils - what are your Options?
 - 7:30pm :: Q&A
 - After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Terrace sponsored by [On The Beach](http://www.onthebeach.co.uk).",1,2013-05-16 18:00:00 UTC
-The Life of a Rails Freelancer,march08,"A lot of people inspired by Ruby on Rails have thought about setting up on their own either as a freelancer, a contractor or maybe creating a business started with an idea that Rails put within their grasp. [Paul Robinson](http://vagueware.com) started out with a load of business ideas, started freelancing and even contemplated contracting, and is now seeking investment for a new business all over again.
-
-In the process he almost went bankrupt – twice – re-wrote his business plan (he didn’t start with one he admits, beyond “make a living”) and learned the hard way about cash-flow/finance, legal structures, tax, finding work, keeping customers happy, what the Rails market is really like to work in and why being your own boss is worth the occasional pain.
-
-In this talk, he shares as much as can fit into the time allowed and encourages you to learn from his mistakes when starting out as your own boss.
-
-### Living and Breathing RSpec
-
-Doug Livesey talks on adventures with RSpec, more details coming soon!
-
-## The schedule
-
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: The Life of a Rails Freelancer, [Paul Robinson](http://vagueware.com)
-- 8:00pm :: Break
-- 8:15pm :: Living and Breathing RSpec, Doug Livesey
-- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2008-03-20 18:30:00 UTC
-The Effects of Gravity on Software,november07,"This month we are lucky enough to have [Kevin Rutherford](http://silkandspinach.net/) speaking on “The Effects of Gravity on Software”, very much a discussion based session taking a fresh look at ways to design software that might not be that traditional fully tiered model that we are all so used to. We also have [Dave Verwer](http://daveverwer.com) giving us a very brief look at [IronRuby](http://www.ironruby.net) and the new Microsoft MVC framework.
-
-### The Effects of Gravity on Software – [Kevin Rutherford](http://silkandspinach.net/)
-
-Do prices really rise? Is it really possible to bring a meeting forward? Can an argument hold water? What lurks around the corner? Well, here are my two cents worth: Metaphor shapes not only our language, but our thoughts too. So much so, that some of the common, deeply-ingrained metaphors of software development can actually prevent us from achieving good design. In this session we’ll lift the lid on the fascinating world of metaphors, and along the way we’ll discover a six-sided shape that has the answer to our prayers.
-
-Kevin Rutherford has over twenty-five years’ experience in software development and has spent the last ten years as an agile coach. During the same period he has been a leading speaker on the agile conference circuit, including XP2000, SPA2006, AgileNorth 2005 and various XPdays around Europe. Kevin founded AgileNorth, Manchester’s agile software development interest group. Kevin is a Certified ScrumMaster, a CEng and a CITP, and is currently looking to turn away from coaching and return to development, which is a proper job.
-
-### IronRuby and the ASP.NET MVC Framework – [Dave Verwer](http://daveverwer.com/)
-
-This will be a lightning quick 15 minute overview of [IronRuby](http://www.ironruby.net/) and the new MVC framework from Microsoft which, together should be a fairly familiar sight to anyone who has used Ruby on Rails.
-
-## The schedule
-
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: The Effects of Gravity on Software, Kevin Rutherford
-- 8:00pm :: Break
-- 8:15pm :: IronRuby and the Microsoft MVC Framework, Dave Verwer
-- 8:30pm :: Drinks at the [The Paramount](http://www.jdwetherspoon.co.uk/pubfinder/details.php?OutletNumber=422)",6,2007-11-20 18:30:00 UTC
-REST & Women in Engineering,february07,"We are lucky to have two speakers to entertain us this month! First up is [Rob Lee](http://monkeyhelper.com) speaking on “Take a REST with Rails”, followed by Gemma Cameron speaking about “Women in Engineering”.
-
-### Take a REST with Rails with Rob Lee
-
-A look at the new features in Rails 1.2 that support the REST architectural style. Starting with a basic overview of REST and then looking at the modifications to routing, generators and the shift in conceptual design to deploy RESTful applications on Rails. To finish, we’ll take a (quick) look at consuming RESTFul resources with ActiveResource.
-
-### Women in Engineering with Gemma Cameron
-
-My experiences of being a minority within the software engineering field. My thoughts on why it seems to be white, middle class, male dominated and what I think we can do to help diversify the demographic. Please bring along your own opinion on this as there will be plenty of time for questions and debate!
-
-## The schedule
-
-- 6:30pm :: Welcome & Registration
-- 7:00pm :: Take a REST with Rails by [Rob Lee](http://monkeyhelper.com)
-- 8:00pm :: Break
-- 8:15pm :: Women in Engineering by Gemma Cameron
-- 8:45pm :: Drinks at the [Gallery Bar](http://www.novotel.com/novotel/fichehotel/gb/nov/3145/fiche_restaurant.shtml) <small>(Opposite the <span class=""caps"">MDDA</span>)</small>",6,2007-02-21 18:30:00 UTC
-UNIX: Rediscovering the Wheel,january10,"This month John Leach of [Brightbox](http://www.brightbox.co.uk/) will be talking on UNIX: Rediscovering the wheel.
-
-“Those who don’t understand UNIX are condemned to reinvent it, poorly.”
-
-We in the Ruby Community seem to have a habit of re-inventing things. Sometimes this is for good reason, but in some cases we don’t know we’re even doing it! We’re wasting valuable time that could be spent learning Erlang!
-
-UNIX-like operating systems have been around for decades and lots of problems have come and gone in that time. I’m going to talk about some of the tools available that can be used to solve common Ruby and Rails deployment and development problems.
-
-Brightbox will also be sponsoring the event so there will be pizzas available after the meeting in Odder across the road from the meeting.
-
-## The schedule
-
-- 6:30pm :: Welcome & Pre-session bar visit.
-- 7:00pm :: UNIX: Rediscovering the wheel by John Leach of [Brightbox](http://www.brightbox.co.uk/)
-- 7:45pm :: Pizzas at the Odder bar across the road sponsored by [Brightbox](http://www.brightbox.co.uk/)",10,2010-01-21 18:30:00 UTC
-Code Surgery and an Introduction to Zsh,june09,"This month is the second NWRUG Code Surgery. Submit some code (see the discussion on the mailing list for how to do this) and we will have an evening of code reviews and our own little version of [The Rails Way](http://therailsway.com), NWRUG style. [Ashley Moran](http://www.patchspace.co.uk/) will also be giving a short introduction to [Zsh](http://www.zsh.org/).
+Code Surgery and an Introduction to Zsh,june-2009-code-surgery-and-an-introduction-to-zsh,"This month is the second NWRUG Code Surgery. Submit some code (see the discussion on the mailing list for how to do this) and we will have an evening of code reviews and our own little version of [The Rails Way](http://therailsway.com), NWRUG style. [Ashley Moran](http://www.patchspace.co.uk/) will also be giving a short introduction to [Zsh](http://www.zsh.org/).
 
 This month we are sponsored by [NQ Consulting](http://www.nqc.com/), so there will be Free pizza!
 
@@ -768,31 +888,7 @@ This month we are sponsored by [NQ Consulting](http://www.nqc.com/), so there wi
 - 6:30pm :: Introduction to [Zsh](http://www.zsh.org/) by [Ashley Moran](http://www.patchspace.co.uk/), Command Line Maven follwed by Pizza
 - 7:00pm :: Code Surgery – see the mailing list for details on submitting code
 - 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00",10,2009-06-18 18:00:00 UTC
-"BDD, You Know You Should be Doing it",april09,"So, you’re testing your code right? Of course you are! But are you testing your code as well as it can be tested? This month Ashley Moran, Testing Maven, will be giving a talk and practical session on Behaviour Driven Development and how it should be done right.
-
-We’re starting 30 minutes earlier this month due to the practical nature of the session.
-
-This month we have sponsorship from [Engine Yard](http://engineyard.com/) so there will be free Pizza (and maybe Beer and soft drinks, depending on the numbers) during the talks.
-
-## The schedule
-
-- 6:00pm :: Welcome & Pre-session bar visit
-- 6:30pm :: BDD, why you should be doing it and how. Pizzas provided by [Engine Yard](http://engineyard.com/) will be served during the session
-- 8:30pm :: Drinks at the BBC bar afterwards, then somewhere else nearby after that closes at about 21:00",10,2009-04-16 18:00:00 UTC
-Tokyo Cabinet and Couch DB,december09,"This month we have two talks on database alternatives, Tokyo Cabinet (by Mihai Anca) and CouchDB (by Ben Aldred).
-
-Due to the proximity of Christmas the meeting will be on Thursday December 10th, a week earlier than usual.
-
-## The schedule
-
-- 6:30pm :: Welcome & Pre-session bar visit.
-- 7:00pm :: Tokyo Cabinet by Mihai Anca
-- 7:30pm :: Break
-- 7:45pm :: CouchDB by Ben Aldred
-- 8:15pm :: Drinks somewhere!
-
-It’s the Geekup Christmas party on the same night and so fair number of people will be heading to that after the talks, [you have to register, but it is free](http://geekup.org/events/177/). Alternatively there is always the odder bar across the road.",10,2009-12-10 18:30:00 UTC
-The NWRUG Christmas Special,december11,"Fill your hearts with christmas cheer, this month NWRUG is a seasonal talk/dinner double bill!
+The NWRUG Christmas Special,december-2011-the-nwrug-christmas-special,"Fill your hearts with christmas cheer, this month NWRUG is a seasonal talk/dinner double bill!
 
 To start the evening off, our very own [Will Jessop](http://willj.net) (Sysadmin at 37signals) shall be giving a talk explaining why we should all be using PostgreSQL. This will be followed by a very special, three course NWRUG Christmas meal at the nearby [Angel Pub](http://theangelmanchester.com/).
 
@@ -809,37 +905,7 @@ If you’re interested in attending the Christmas meal, you must confirm your at
 - 6:30pm :: Pre-talk drinks at [Common](http://www.aplacecalledcommon.co.uk/)
 - 7:00pm :: Talk on PostgreSQL by [Will Jessop](http://willj.net) at [The MadLab](http://madlab.org.uk/)
 - 8:00pm :: NWRUG Christmas Meal at [The Angel Pub](http://theangelmanchester.com/)",1,2011-12-15 18:30:00 UTC
-The MagRails Social,october11,"We are moving this months NWRUG forward a week in order to coincide with the [MagRails](http://magrails.com/) conference in manchester, and we are throwing a pre-conference party in it’s honour!
-
-We have already secured sponsorship from [Engine Yard](http://www.engineyard.com/) so there will be money behind the bar for drinks.
-
-Anyone is welcome to come join us, whether you are at the conference or not. There will be much discussion regarding Ruby, Rails and recent events in the tech world, and is a perfect excuse to come and mingle with the conference delegates.",7,2011-10-13 19:30:00 UTC
-Introduction To CoffeeScript,june11,"This month we will be taking a glimpse into [CoffeeScript](http://jashkenas.github.com/coffee-script/), a little language that compiles into JavaScript. Recently announced as a default in Rails 3.1, we will look at general syntax and usage as well as more complex features such as function binding, splats, array comprehension and destructuring assignments.
-
-[On The Beach](http://www.onthebeach.co.uk) have kindly offered to sponsor the group this month, so free food will be provided after the talk.
-
-## The speaker
-
-Adam Holt is a Ruby developer at On The Beach, likes hacking around with NoSQL databases, Functional programming languages and all kinds of shiny new tech!
-
-## The schedule
-
-- 6:30pm :: Welcome & Pre-session chat.
-- 7:00pm :: Introduction To [CoffeeScript](http://jashkenas.github.com/coffee-script/) by [Adam Holt](http://adamholt.co.uk/)
-- 8:00pm :: Off to [The Bay Horse Pub](http://www.thebayhorsepub.co.uk/) around the corner for free pizzas sponsored by [On The Beach](http://www.onthebeach.co.uk/).
-",1,2011-06-16 18:30:00 UTC
-The Lightning Round,april12,"We have a couple of lightning talks this month, one about [Spinach](http://codegram.github.com/spinach/), a BDD framework in the spirit of Cucumber, by [Matt House](http://twitter.com/#!/eightbitraptor), and a talk about [Goliath](http://goliath.io), an open source version of the non-blocking (asynchronous) Ruby web server framework powering PostRank (now part of Google Analytics) by [Tom Clements](http://twitter.com/#!/seenmyfate).
-
-Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, **shock horror** , you don’t program ruby!
-
-## The schedule
-
-- 6:30pm :: Meet at [Madlab](http://madlab.org.uk/)
-- 7:00pm :: Acceptance Testing with [Spinach](http://codegram.github.com/spinach/) – And Why It Sucks! by [Matt House](http://twitter.com/#!/eightbitraptor)
-- 7:15pm :: [Goliath](http://goliath.io) – An async Ruby web server framework by [Tom Clements](http://twitter.com/#!/seenmyfate)
-- 7:30pm :: Q&A 
-- After :: Drinks in Common – Sponsored by [On The Beach](http://www.onthebeach.co.uk)",1,2012-04-19 18:30:00 UTC
-Test Driven Puppet Development by Matt House,test-driven-puppet-development-by-matt-house,"[Puppet](http://docs.puppetlabs.com/guides/introduction.html) is a configuration management system written in Ruby. It smooths the experience of setting up and maintaining servers. But how do you test your server configuration without blowing away a machine? This month Matt will be taking us through test driven Puppet development, using rspec-puppet, cucumber, vagrant and more to ensure you have total confidence in your Puppet manifests.
+Test Driven Puppet Development by Matt House,september-2012-test-driven-puppet-development-by-matt-house,"[Puppet](http://docs.puppetlabs.com/guides/introduction.html) is a configuration management system written in Ruby. It smooths the experience of setting up and maintaining servers. But how do you test your server configuration without blowing away a machine? This month Matt will be taking us through test driven Puppet development, using rspec-puppet, cucumber, vagrant and more to ensure you have total confidence in your Puppet manifests.
 
 This month we’ll also be holding a **Ruby/Rails advice drop-in session** before the main talk. If you are new to Ruby or Rails, or maybe you’re just having a problem with a particular bit of code, drop in at MadLab from 6pm for help and advice from some seasoned Ruby developers.
 
@@ -851,69 +917,3 @@ Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, 
 - 7:00pm :: Testing Puppet Automation by [Matt House](http://eightbitraptor.com)
 - 7:30pm :: Q&A
 - After :: Post-talk drinks and discussion in Common sponsored by [On The Beach](http://www.onthebeach.co.uk)",1,2012-09-20 18:00:00 UTC
-An intro to Varnish sponsored by Creative Lynx,august12,"This month we have [Mike Smith](http://twitter.com/mikespokefire) with an Introduction to Varnish. Varnish is a web application accelerator. You install it in front of your web application and it will speed it up significantly.
-
-Sponsorship is generously provided by [Creative Lynx](http://www.creativelynx.co.uk/).
-
-Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror! you don’t program ruby!
-
-## The schedule
-
-- 6:30pm :: Meet at Common for pre-talk drinks
-- 7:00pm :: Introduction to Varnish by [Mike Smith](http://twitter.com/mikespokefire)
-- 7:30pm :: Q&A
-- After :: Post-talk drinks and discussion in Common sponsored by [Creative Lynx](http://www.creativelynx.co.uk/)
-",1,2012-08-16 18:30:00 UTC
-Bug Free Code,thursday-20th-august---bug-free-code,"### <link>
-
-This month at NWRUG, [Gemma Cameron](https://twitter.com/ruby_gem) with Bug Free Code.
-
-For the last two years at Allegro we’ve been working with No Backlog. When I share the experience of this with people they often ask “what about the bugs?” and my response “we don’t have bugs”. This talk explains the concept in more depth.
-
-## The speaker
-
-[Gemma Cameron](http://rubygem.me/) ( [@ruby\_gem](https://twitter.com/ruby_gem)), developer, event organiser and Queen Bee of the [NW tech event organisers](http://technw.uk/).
-
-## The schedule (Thursday 20th August)
-
-- 6:30pm - Doors open
-- 7:00pm - The talk: Bug Free Code
-- After - To [Abel Heywood](http://abelheywood.co.uk) for post-talk drinks
-
-#### Location
-
-[MadLab](http://madlab.org.uk), 36-40 Edge Street, Manchester, M4 1HN. [How to get there](http://madlab.org.uk/find-us/)
-
-For more information, email [Tekin Suleyman](mailto:tekin@tekin.co.uk) or tweet [@nwrug](http://twitter.com/nwrug).
-
-",1,2015-08-20 18:30:00 UTC
-Bootstrapping for Developers,21st-march-bootstrapping-for-developers,"Do you have ambitions to be your own boss? Have you ever had a side-project that you wanted to turn into a product and charge people money for? Well then this talk is for you…
-
-#### Whats the Deal?
-
-Most developers at some point or another have had an idea for an app or side project and wondered if they could take things a step further and turn it into an actual business. This talk will explore some of the ideas and common pitfalls that developers will face when trying to build a business like this in their spare time.
-
-## The speaker
-
-[Tekin Suleyman](http://twitter.com/tekin) is a Ruby freelancer and founder of [crowd.fm](http://crowd.fm). He is also one of the founders and organiser of [Bootstrap Business Club](http://bootstrapbusinessclub.co.uk), a group for aspiring startup founders trying to build their own bootstrapped startups. He will be talking about bootstrapping as a developer at this year’s Nordic Ruby Conference. This talk will explore some of the ideas he’ll be presenting there this summer. This month’s talk is kindly sponsored by [37signals](http://37signals.com).
-
-## The schedule
-
-- 6:00pm :: Ruby/Rails Advice Drop-in Session - All levels welcome.
-- 7:00pm :: Bootstrapping for Developers
-- 7:30pm :: Q&A
-- After&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: Post-talk drinks and discussion in Common sponsored by [37signals](http://37signals.com).
-",1,2013-03-21 18:00:00 UTC
-A RubyConf 2012 Review with Will Jessop,15th-november---a-rubyconf-2012-review-with-will-jessop,"After returning from RubyConf 2012, [Will Jessop](https://twitter.com/will_j) will be giving us a rundown of the discussion happening around Ruby, Ruby 2.0, jRuby and Rubinius, amongst other Ruby related subjects.
-
-This month we’ll also be holding a **Ruby/Rails advice drop-in session** before the main talk. If you are new to Ruby or Rails, or maybe you’re just having a problem with a particular bit of code, drop in at MadLab from 6pm for help and advice from some seasoned Ruby developers.
-
-Anyone is welcome to come join us, whether you are a Ruby pro, a complete noob, or, shock horror, you don’t program ruby!
-
-## The schedule
-
-- 6:00pm :: Ruby/Rails Advice Drop-in Session – All levels welcome.
-- 7:00pm :: A RubyConf 2012 Review with [Will Jessop](https://twitter.com/will_j)
-- 7:30pm :: Q&A
-- After :: Post-talk drinks and discussion in Common sponsored by [Fatsoma](http://www.fatsoma.com/)",1,2012-11-15 18:00:00 UTC
-Social Meet,17th-september---social-meet,"Meet at 57 Thomas St (Close to MadLab) from about 6:00.",2,2015-09-17 18:00:00 UTC
