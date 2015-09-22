@@ -83,5 +83,6 @@ test:
 production:
   <<: *default
   database: nwrug_production
-  username: nwrug
+  username: admin
+  host: <%= ENV['DB_HOST'] %>
   password: <%= ENV['NWRUG_DATABASE_PASSWORD'] %>
