@@ -16,6 +16,9 @@ private
   helper_method :current_user
 
   def authorise
-    redirect_to signin_url unless current_user.present?
+    unless current_user.present?
+      flash[:intended_path] = request.fullpath
+      redirect_to signin_url
+    end
   end
 end

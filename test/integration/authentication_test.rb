@@ -31,4 +31,15 @@ class AuthenticationTest < ActionDispatch::IntegrationTest
     assert_path root_path
     refute page.has_content?('Sign out')
   end
+
+  test 'redirects to intended page after authentication' do
+    visit new_event_path
+    assert_path signin_path
+
+    fill_in :email, with: users(:admin).email
+    fill_in :password, with: default_password
+    click_on 'Sign in'
+
+    assert_path new_event_path
+  end
 end
