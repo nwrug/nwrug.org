@@ -10,20 +10,16 @@ folk interested in the Ruby programming language.
 After cloning the repository, run `bundle install` to install all the gem
 dependencies.
 
-### PostgreSQL
+### MySQL
 
 ```sh
-# install Postgres on Mac OS X
-brew install postgresql
+# install MySQL on Mac OS X
+brew install mysql
 
 # or on Ubuntu
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 
-# check if it's running
-psql postgres # exit with \q
-
-# create user and database
-createuser -Ps postgres
+# setup the database
 bundle exec rake db:setup
 ```
 
