@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: mysql
+  adapter: mysql2
   encoding: utf8
   username: development
   password: devpassword
