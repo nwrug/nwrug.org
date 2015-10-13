@@ -102,4 +102,5 @@ Rails.application.routes.draw do
   get '/events/17th-september---social-meet', to: redirect('/events/september-2015-social-meet')
 
   resources :events
+  resources :quizzes, except: [:index, :destroy]
 end

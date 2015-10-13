@@ -1,0 +1,28 @@
+<%= form_for quiz do |form| %>
+  <% if quiz.errors.any? %>
+    <ul>
+    <% quiz.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <section>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </section>
+
+  <section>
+    <%= form.label :slug %>
+    <%= form.text_field :slug %>
+  </section>
+
+  <section>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </section>
+
+  <section>
+    <%= form.submit 'Save' %> or <%= link_to 'cancel', quizzes_path %>
+  </section>
+<% end %>

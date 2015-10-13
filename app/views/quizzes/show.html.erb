@@ -1,0 +1,13 @@
+<% content_for :meta_title, "NWRUG Quiz: #{@quiz.title}" %>
+<% content_for :meta_description, truncate(render_plaintext(@quiz.description), length: 160) %>
+
+<article class="quiz no-aside">
+  <% if current_user.present? %>
+    <div class="controls">
+      <%= link_to 'Edit', edit_quiz_path(@quiz) %>
+    </div>
+  <% end %>
+
+  <h1>NWRUG Quiz: <%= @quiz.title %></h1>
+  <%= render_markdown @quiz.description %>
+</article>
