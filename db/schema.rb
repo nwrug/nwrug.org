@@ -11,38 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150921125723) do
+ActiveRecord::Schema.define(version: 20151013144857) do
 
   create_table "events", force: :cascade do |t|
-    t.string   "title"
-    t.string   "slug"
-    t.text     "description"
+    t.string   "title",       limit: 255
+    t.string   "slug",        limit: 255
+    t.text     "description", limit: 65535
     t.datetime "date"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "location_id"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "location_id", limit: 4
   end
 
   add_index "events", ["location_id"], name: "index_events_on_location_id", using: :btree
 
   create_table "locations", force: :cascade do |t|
-    t.string   "name"
-    t.string   "website"
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "postal_code"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "name",           limit: 255
+    t.string   "website",        limit: 255
+    t.string   "street_address", limit: 255
+    t.string   "city",           limit: 255
+    t.string   "postal_code",    limit: 255
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   add_index "locations", ["name"], name: "index_locations_on_name", using: :btree
 
+  create_table "quizzes", force: :cascade do |t|
+    t.string   "title",       limit: 255
+    t.string   "slug",        limit: 255
+    t.text     "description", limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "name",            limit: 255
+    t.string   "email",           limit: 255
+    t.string   "password_digest", limit: 255
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
 end
