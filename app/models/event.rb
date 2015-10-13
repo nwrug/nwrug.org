@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
-  before_validation :set_slug, on: :create
-  validates :slug, uniqueness: true
-  validates :title, :description, :slug, :date, presence: true
+  include Slugged
+
+  validates :title, :description, :date, presence: true
 
   belongs_to :location
 
@@ -15,10 +15,6 @@ class Event < ActiveRecord::Base
     else
       third_thursday_of_month
     end
-  end
-
-  def to_param
-    slug
   end
 
   def time
