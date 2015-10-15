@@ -98,6 +98,31 @@ pre {
   font-family: "Courier New", Courier, monospace;
 }
 
+.hint {
+  p {
+    display: none;
+    font-style: italic;
+    background-color: lighten($background-colour, 50%);
+    border: 1px solid lighten($background-colour, 40%);
+    padding: 1em;
+  }
+}
+
+.no-js {
+  .hint {
+    a.hint-reveal {
+      display: none;
+    }
+    p {
+      display: block;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 .secondary-colour {
   color: $secondary-brand-colour;
 }
