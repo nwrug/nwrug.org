@@ -2,7 +2,8 @@
   <% if next_event.present? %>
     <h2>Next Event: <%= next_event.date.to_s(:short_date) %></h2>
     <h3><%= link_to next_event.title, event_path(next_event) %></h3>
-    <h4><%= next_event.time %> at the Manchester Digital Labratory</h4>
+    <% location = next_event.location.present? ? "at #{next_event.location.name}" : "(location TBC)" %>
+    <h4><%= next_event.time %> <%= location %></h4>
   <% else %>
     <h2>Next Event: <%= Event.next_date.to_s(:short_date) %></h2>
     <p>Details to follow&hellip;</p>

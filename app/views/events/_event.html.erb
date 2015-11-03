@@ -1,4 +1,5 @@
 <li>
   <h3><%= link_to event.title, event %></h3>
-  <p><%= event.date.to_s(:short_date) %> <%= event.time %> at <%= event.location.name %></p>
+  <% location = event.location.present? ? "at #{event.location.name}" : "(location TBC)" %>
+  <p><%= event.date.to_s(:short_date) %> <%= event.time %> <%= location %></p>
 </li>
