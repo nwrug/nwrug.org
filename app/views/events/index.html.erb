@@ -11,8 +11,15 @@
 <%= render 'events/aside' %>
 
 <article>
+  <% @upcoming.load %>
+  <% unless @upcoming.empty? %>
+    <h2>Upcoming events</h2>
+    <ul class="events">
+      <%= render @upcoming %>
+    </ul>
+  <% end %>
   <h2>Previous events</h2>
   <ul class="events">
-    <%= render @events %>
+    <%= render @previous %>
   </ul>
 </article>
