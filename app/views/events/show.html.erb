@@ -9,7 +9,7 @@
   <% end %>
 
   <h1 class="large-heading">Event: <%= @event.title %></h1>
-  <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> <%= location_string(@event.location) %></h2>
+  <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at <%= @event.location.name %></h2>
 
   <%= render_markdown @event.description %>
 
