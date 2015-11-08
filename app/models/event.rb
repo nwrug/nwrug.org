@@ -1,9 +1,12 @@
 class Event < ActiveRecord::Base
   include Slugged
 
-  validates :title, :description, :date, presence: true
+  validates :title, :description, :date, :location, presence: true
 
   belongs_to :location
+
+  scope :upcoming, -> { where("date >= ?", Date.today).order(date: :asc) }
+  scope :previous, -> { where("date < ?", Date.today).order(date: :desc) }
 
   def self.new_with_defaults
     new(date: next_date)

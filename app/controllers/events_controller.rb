@@ -3,7 +3,8 @@ class EventsController < ApplicationController
   before_filter :authorise, except: [:index, :show]
 
   def index
-    @events = Event.order(date: :desc)
+    @upcoming = Event.upcoming.includes(:location)
+    @previous = Event.previous.includes(:location)
   end
 
   def show

@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 private
 
   def next_event
-    @next_event ||= Event.find_by("date >= ?", Date.today)
+    @next_event ||= Event.upcoming.first
   end
   helper_method :next_event
 
