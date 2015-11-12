@@ -7,10 +7,6 @@ class EventsController < ApplicationController
     @previous = Event.previous.includes(:location)
   end
 
-  def show
-    @event = Event.find_by!(slug: params[:id])
-  end
-
   def new
     @event = Event.new_with_defaults
   end
