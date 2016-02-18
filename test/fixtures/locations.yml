@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 madlab:
-  name: The Manchester Digital Labratory (MadLab)
+  name: The Manchester Digital Laboratory (MadLab)
   website: http://madlab.org.uk/
   street_address: 36-40 Edge Street
   city: Manchester
