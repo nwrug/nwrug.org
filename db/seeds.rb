@@ -9,7 +9,7 @@ require 'csv'
 
 LOCATIONS = [
   {
-    name: 'The Manchester Digital Labratory (MadLab)',
+    name: 'The Manchester Digital Laboratory (MadLab)',
     website: 'http://madlab.org.uk',
     street_address: '36-40 Edge Street',
     city: 'Manchester',
