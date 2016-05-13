@@ -56,4 +56,3 @@ group :development, :test do
   gem 'spring'
   gem 'capybara', '~> 2.4.4'
 end
-
