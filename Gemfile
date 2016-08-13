@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
-gem 'mysql2', '~> 0.3.18'
+gem 'rails', '4.2.7.1'
+gem 'mysql2', '~> 0.4.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
