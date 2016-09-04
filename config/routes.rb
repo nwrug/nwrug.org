@@ -61,7 +61,6 @@ Rails.application.routes.draw do
   get '/events/17th-january---the-hacker-edition', to: redirect('/events/january-2013-the-hacker-edition')
   get '/events/thursday-20th-june-social-meetup', to: redirect('/events/june-2013-social-meetup')
   get '/events/thursday-18th-april---how-to-make-your-objects-selfish-ignorant-and-lazy-in-one-easy-step', to: redirect('/events/april-2013-how-to-make-your-objects-selfish-ignorant-and-lazy-in-one-easy-step')
-  get '/events/february-2013-parsing-for-fun-profit', to: redirect('/events/february-2013-parsing-for-fun-profit')
   get '/events/15th-may---social-meet', to: redirect('/events/may-2014-social-meet')
   get '/events/thursday-20th-february-lightning-talks', to: redirect('/events/february-2014-lightning-talks')
   get '/events/thursday-19th-december---social-meetup', to: redirect('/events/december-2013-social-meetup')
