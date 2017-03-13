@@ -20,6 +20,10 @@ class Event < ActiveRecord::Base
     end
   end
 
+  def talk_start_time
+    (date + 30.minutes).strftime('%l:%M%P').strip
+  end
+
   def time
     date.strftime('%l:%M%P').strip
   end

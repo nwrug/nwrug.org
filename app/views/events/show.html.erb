@@ -10,6 +10,9 @@
 
   <h1 class="large-heading"><%= @event.title %></h1>
   <h2 class="secondary-colour"><%= @event.date.to_s(:short_date) %> <%= @event.time %> at <%= @event.location.name %></h2>
+  <% if @event.location && @event.date > (Time.now - 1.hour) %>
+    <small>Doors: <%= @event.time %> - Talks Starts: <%= @event.talk_start_time %></small>
+  <% end %>
 
   <%= render_markdown @event.description %>
 

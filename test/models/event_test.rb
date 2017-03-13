@@ -33,6 +33,11 @@ class EventTest < ActiveSupport::TestCase
     assert_equal "7:00pm", event.time
   end
 
+  test "#talk_start_time returns the time when we usually start talks" do
+    event = create_event!(date: DateTime.new(2015, 8, 1, 19, 0))
+    assert_equal "7:30pm", event.talk_start_time
+  end
+
   test "Event.new_with_defaults sets the date to the next probable date (third Thursday, 6:30pm)" do
     travel_to Date.new(2015, 8, 21) do
       event = Event.new_with_defaults
