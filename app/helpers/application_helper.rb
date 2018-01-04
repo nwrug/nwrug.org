@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def render_markdown(markdown)
-    markdown_renderer.render(markdown).html_safe
+    markdown_renderer.render(nil, markdown).html_safe
   end
 
   def render_plaintext(markdown)
