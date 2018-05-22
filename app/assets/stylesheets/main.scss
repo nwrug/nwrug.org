@@ -1,8 +1,11 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 // Variables
-$base-font-family:    Lato, Helvetica, Helvetica Neue, Arial;
-$heading-font-family: Ubuntu, sans-serif;
+$base-font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
+    “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+$heading-font-family: $base-font-family;
 $base-font-size:      17px;
 $small-font-size:     $base-font-size * 0.8;
 $base-line-height:    26px;
