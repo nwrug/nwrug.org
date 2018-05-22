@@ -31,4 +31,18 @@ Use `bundle exec rails server` to run rails locally.
 bundle exec rake
 ```
 
+## Security checks
+
+Check gems for known vulnerabilities:
+
+```
+bundle exec bundle-audit check --update
+```
+
+Run static code analysis on codebase to identify common vulnerabilities:
+
+```
+bundle exec brakeman -z
+```
+
 All contributions welcome!
