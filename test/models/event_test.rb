@@ -37,7 +37,7 @@ class EventTest < ActiveSupport::TestCase
     travel_to Date.new(2015, 8, 21) do
       event = Event.new_with_defaults
 
-      assert_equal DateTime.new(2015, 9, 17, 19, 00), event.date
+      assert_equal DateTime.new(2015, 9, 17, 18, 30), event.date
     end
   end
 
@@ -49,27 +49,27 @@ class EventTest < ActiveSupport::TestCase
     assert_equal last_event.location, new_event.location
   end
 
-  test 'Event.next_date returns the third Thursday of the month at 7pm' do
+  test 'Event.next_date returns the third Thursday of the month at 6:30pm' do
     travel_to Date.new(2015, 8, 1) do
-      assert_equal DateTime.new(2015, 8, 20, 19, 00), Event.next_date
+      assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
     end
   end
 
   test "Event.next_date returns today if it's the third Thursday of the month" do
     travel_to Date.new(2015, 8, 20) do
-      assert_equal DateTime.new(2015, 8, 20, 19, 00), Event.next_date
+      assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
     end
   end
 
   test "Event.next_date returns the third Thursday of next month if this month's has passed" do
     travel_to Date.new(2015, 8, 21) do
-      assert_equal DateTime.new(2015, 9, 17, 19, 00), Event.next_date
+      assert_equal DateTime.new(2015, 9, 17, 18, 30), Event.next_date
     end
   end
 
   test "Event.next_date correctly rolls over at the end of the year" do
     travel_to Date.new(2015, 12, 20) do
-      assert_equal DateTime.new(2016, 1, 21, 19, 00), Event.next_date
+      assert_equal DateTime.new(2016, 1, 21, 18, 30), Event.next_date
     end
   end
 

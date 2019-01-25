@@ -38,6 +38,6 @@ private
     month = base_date.month
     day   = (4 - Date.new(year, month, 1).wday) % 7 + (2*7) + 1
 
-    DateTime.new(year, month, day, 19, 00)
+    DateTime.new(year, month, day, 18, 30)
   end
 end
