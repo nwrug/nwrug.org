@@ -41,6 +41,14 @@ class EventTest < ActiveSupport::TestCase
     end
   end
 
+  test "Event.new_with_defaults sets the location to that of the previous event" do
+    _old_event = create_event!(date: Date.new(2015, 1), location: locations(:madlab))
+    last_event = create_event!(date: Date.new(2018, 1), location: locations(:otb))
+
+    new_event = Event.new_with_defaults
+    assert_equal last_event.location, new_event.location
+  end
+
   test 'Event.next_date returns the third Thursday of the month at 7pm' do
     travel_to Date.new(2015, 8, 1) do
       assert_equal DateTime.new(2015, 8, 20, 19, 00), Event.next_date
@@ -69,10 +77,13 @@ class EventTest < ActiveSupport::TestCase
 private
 
   def create_event!(overrides={})
-    Event.create!({
-      title: "Event title",
-      description: 'Event description',
-      date: 1.week.from_now,
-      location_id: locations(:madlab).id}.merge(overrides))
+    Event.create!(
+      {
+        title: "Event title",
+        description: 'Event description',
+        date: 1.week.from_now,
+        location: locations(:madlab)
+      }.merge(overrides)
+    )
   end
 end

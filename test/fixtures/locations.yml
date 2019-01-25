@@ -6,3 +6,9 @@ madlab:
   street_address: 36-40 Edge Street
   city: Manchester
   postal_code: M4 1HN
+
+otb:
+  name:  On the Beach offices, Aeroworks
+  street_address: 7 Adair St
+  city: Manchester
+  postal_code: M1 2NQ

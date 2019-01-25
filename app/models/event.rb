@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   scope :previous, -> { where("date < ?", Date.today).order(date: :desc) }
 
   def self.new_with_defaults
-    new(date: next_date)
+    new(date: next_date, location: Location.most_recent)
   end
 
   def self.next_date
