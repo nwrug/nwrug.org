@@ -15,7 +15,7 @@ sudo apt-get install unattended-upgrades
 sudo dpkg-reconfigure unattended-upgrades
 
 # install dependencies
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+sudo apt-get install git curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libmysqlclient-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev
 
 
 ##################################
@@ -28,10 +28,10 @@ sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
 
 # Install brightbox ruby package:
-sudo apt-get install ruby2.2
+sudo apt-get install ruby2.6
 
 # Install ruby build stuff:
-sudo apt-get install ruby2.2-dev
+sudo apt-get install ruby2.6-dev
 
 # Configure gems and install bundler:
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
@@ -45,35 +45,28 @@ sudo apt-get install nodejs
 # NGINX AND PASSENGER
 ##################################
 
-# Install Phusion's PGP key to verify packages
-gpg --keyserver keyserver.ubuntu.com --recv-keys 561F9B9CAC40B2F7
-gpg --armor --export 561F9B9CAC40B2F7 | sudo apt-key add -
+# This stuff comes from the Passenger website. Best to review the guides there for the latest version
 
-# Add HTTPS support to APT
-sudo apt-get install apt-transport-https
+sudo apt-get install nginx
 
-# Add the passenger repository
-sudo sh -c "echo 'deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main' >> /etc/apt/sources.list.d/passenger.list"
-sudo chown root: /etc/apt/sources.list.d/passenger.list
-sudo chmod 600 /etc/apt/sources.list.d/passenger.list
+sudo apt-get install -y dirmngr gnupg
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+sudo apt-get install -y apt-transport-https ca-certificates
+
+# Add our APT repository
+sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger bionic main > /etc/apt/sources.list.d/passenger.list'
 sudo apt-get update
 
-# Install nginx and passenger
-sudo apt-get install nginx-full passenger
+# Install Passenger + Nginx module
+sudo apt-get install -y libnginx-mod-http-passenger
 
-# Start nginx:
-sudo service nginx start # should now be able to hit the IP and see a webpage.
+# Enable the Passenger Nginx module and restart Nginx
 
-# configure Passenger
-sudo nano /etc/nginx/nginx.conf
+if [ ! -f /etc/nginx/modules-enabled/50-mod-http-passenger.conf ]; then sudo ln -s /usr/share/nginx/modules-available/mod-http-passenger.load /etc/nginx/modules-enabled/50-mod-http-passenger.conf ; fi
+$ sudo ls /etc/nginx/conf.d/mod-http-passenger.conf
 
-# Set the following directives in the config where the "Phusion Passenger config" bit is:
-
-  passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
-  passenger_ruby /usr/bin/ruby;
-
-# Add the following to /etc/nginx/nginx.conf so passsenger can do stuff:
-env PATH;
+# Retart nginx:
+sudo service nginx restart # should now be able to hit the IP and see a webpage.
 
 
 # Edit /etc/nginx/sites-enabled/default:
@@ -118,5 +111,20 @@ export DB_HOST=...
 ##################################
 
 cap production deploy
+
+
+# Set up log rotation
+
+Add the following to /etc/logrotate.conf:
+
+/var/www/nwrug/current/log/*.log {
+  daily
+  missingok
+  rotate 7
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
 
 
