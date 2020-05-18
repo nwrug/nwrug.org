@@ -33,10 +33,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'dotenv-rails'
 
 group :development do
-  gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano-bundler', '~> 1.1.4'
-  gem 'capistrano-rails', '~> 1.1.3'
-  gem 'capistrano-passenger', '~> 0.1.1'
+  gem 'capistrano', '~> 3.14'
+  gem 'capistrano-bundler', '~> 1.6'
+gem 'capistrano-rails', '~> 1.5'
+  gem 'capistrano-passenger', '~> 0.2'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end

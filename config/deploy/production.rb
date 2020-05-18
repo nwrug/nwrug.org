@@ -10,6 +10,8 @@
 set :stage, :production
 server '109.107.35.37', user: 'deploy', roles: %w{web app db}
 
+set :passenger_restart_with_touch, true
+
 # role-based syntax
 # ==================
 

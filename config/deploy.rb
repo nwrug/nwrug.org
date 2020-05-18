@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.1'
+lock '3.14.0'
 
 set :application, 'nwrug'
 set :repo_url, 'https://github.com/nwrug/nwrug.org.git'
