@@ -8,7 +8,7 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
 set :stage, :production
-server '109.107.35.37', user: 'deploy', roles: %w{web app db}
+server '109.107.37.135', user: 'deploy', roles: %w{web app db}
 
 set :passenger_restart_with_touch, true
 
