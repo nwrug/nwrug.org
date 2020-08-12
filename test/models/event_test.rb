@@ -33,6 +33,10 @@ class EventTest < ActiveSupport::TestCase
     assert_equal "7:00pm", event.time
   end
 
+  test "online events don't need a location" do
+    event = create_event!(location: nil, online: true)
+  end
+
   test "Event.new_with_defaults sets the date to the next probable date (third Thursday, 7pm)" do
     travel_to Date.new(2015, 8, 21) do
       event = Event.new_with_defaults

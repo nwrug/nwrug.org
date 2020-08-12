@@ -1,7 +1,8 @@
 class Event < ActiveRecord::Base
   include Slugged
 
-  validates :title, :description, :date, :location, presence: true
+  validates :title, :description, :date, presence: true
+  validates :location, presence: true, unless: :online?
 
   belongs_to :location
 
