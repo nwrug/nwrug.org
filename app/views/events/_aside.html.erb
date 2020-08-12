@@ -2,7 +2,7 @@
   <% if next_event.present? %>
     <h2>Next Event: <%= next_event.date.to_s(:short_date) %></h2>
     <h3><%= link_to next_event.title, event_path(next_event) %></h3>
-    <h4><%= next_event.time %> at <%= next_event.location.name %></h4>
+    <h4><%= next_event.time %> <%= location_text(next_event) %></h4>
   <% else %>
     <h2>Next Event: <%= Event.next_date.to_s(:short_date) %></h2>
     <p>Details to follow&hellip;</p>

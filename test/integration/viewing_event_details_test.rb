@@ -7,5 +7,6 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
 
     assert page.has_content?(event.title)
     assert page.has_content?(event.description)
+    assert page.has_content?("at The Manchester Digital Laboratory (MadLab)")
   end
 end

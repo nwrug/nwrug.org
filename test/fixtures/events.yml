@@ -6,3 +6,9 @@ august_2015:
   description: Description of event
   date: <%= DateTime.new(2015, 8, 20, 18, 30) %>
   location: :madlab
+online:
+  title: Lockdown Zoom Town
+  slug: lockdown-zoom-town
+  description: This is an online event happening in cyberspace
+  date: <% 1.month.from_now %>
+  online: true
