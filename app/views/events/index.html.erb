@@ -13,12 +13,12 @@
 <article>
   <% unless @upcoming.empty? %>
     <h2>Upcoming events</h2>
-    <ul class="events">
+    <ul class="events" id="upcoming-events">
       <%= render @upcoming %>
     </ul>
   <% end %>
   <h2>Previous events</h2>
-  <ul class="events">
+  <ul class="events"  id="previous-events">
     <%= render @previous %>
   </ul>
 </article>
