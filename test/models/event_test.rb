@@ -53,6 +53,15 @@ class EventTest < ActiveSupport::TestCase
     assert_equal last_event.location, new_event.location
   end
 
+  test "Event.new_with_defaults sets the event to “online” if the previous event was" do
+    _old_event = create_event!(date: Date.new(2015, 1), location: locations(:madlab))
+    last_event = create_event!(date: Date.new(2018, 1), location: nil, online: true)
+
+    new_event = Event.new_with_defaults
+    assert new_event.online?
+    assert_nil new_event.location
+  end
+
   test 'Event.next_date returns the third Thursday of the month at 6:30pm' do
     travel_to Date.new(2015, 8, 1) do
       assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
