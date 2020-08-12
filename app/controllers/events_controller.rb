@@ -35,6 +35,6 @@ private
   end
 
   def event_params
-    params.require(:event).permit(:title, :description, :date, :slug, :location_id)
+    params.require(:event).permit(:title, :description, :date, :slug, :location_id, :online)
   end
 end

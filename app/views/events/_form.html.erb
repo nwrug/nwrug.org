@@ -24,7 +24,13 @@
 
   <section>
     <%= form.label :location_id %>
-    <%= form.select :location_id, Location.all.map {|l| [l.name, l.id] } %>
+    <%= form.select :location_id, Location.all.map {|l| [l.name, l.id] }, include_blank: true %>
+  </section>
+  <span>or</span>
+  <section>
+    <%= form.label :online do %>Online
+      <%= form.check_box :online %>
+    <% end %>
   </section>
 
   <section>

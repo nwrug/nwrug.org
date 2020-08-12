@@ -23,6 +23,22 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
     assert_equal 'New event title', last_event.title
   end
 
+  test 'authorised user can create an online event' do
+    login_as users(:admin)
+    visit events_path
+    click_link 'New event'
+
+    fill_in :event_title, with: 'Online event'
+    fill_in :event_description, with: 'Somewhere in cyberspace'
+    check :event_online
+    click_on 'Save'
+
+    last_event = Event.last
+
+    assert_equal 'Online event', last_event.title
+    assert last_event.online?
+  end
+
   test 'unauthorised user cannot edit an event' do
     event = events(:august_2015)
 
