@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
-  before_filter :find_event, only: [:show, :edit, :update]
-  before_filter :authorise, except: [:index, :show]
+  before_action :find_event, only: [:show, :edit, :update]
+  before_action :authorise, except: [:index, :show]
 
   def index
     @upcoming = Event.upcoming.includes(:location)

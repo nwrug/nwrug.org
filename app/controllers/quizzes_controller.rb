@@ -1,6 +1,6 @@
 class QuizzesController < ApplicationController
-  before_filter :find_quiz, only: [:show, :edit, :update]
-  before_filter :authorise, except: [:show]
+  before_action :find_quiz, only: [:show, :edit, :update]
+  before_action :authorise, except: [:show]
 
   def show
     @quiz = Quiz.find_by!(slug: params[:id])
