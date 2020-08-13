@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.7.2'
+gem 'rails', '5.2.4.3'
+gem 'bootsnap'
 gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -25,6 +26,9 @@ group :development do
   gem 'capistrano-bundler', '~> 1.6'
   gem 'capistrano-rails', '~> 1.5'
   gem 'capistrano-passenger', '~> 0.2'
+  # Use an evented file watcher to asynchronously detect changes
+  gem 'listen'
+  gem 'puma'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end

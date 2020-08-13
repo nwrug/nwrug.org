@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-august_2015:
+next_event:
   title: An event for August
   slug: an-event-for-august
   description: Description of event
-  date: <%= DateTime.new(2015, 8, 20, 18, 30) %>
+  date: <%= DateTime.now.next_week(:thursday) %>
   location: :madlab
 online:
   title: Lockdown Zoom Town
   slug: lockdown-zoom-town
   description: This is an online event happening in cyberspace
-  date: <% 1.month.from_now %>
+  date: <% DateTime.now.last_month.next_week(:thursday) %>
   online: true

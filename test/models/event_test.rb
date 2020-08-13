@@ -45,21 +45,20 @@ class EventTest < ActiveSupport::TestCase
     end
   end
 
-  test "Event.new_with_defaults sets the location to that of the previous event" do
-    _old_event = create_event!(date: Date.new(2015, 1), location: locations(:madlab))
-    last_event = create_event!(date: Date.new(2018, 1), location: locations(:otb))
+  test "Event.new_with_defaults sets the location to that of the most recent event" do
+    most_recent_event = Event.order(:date).last
 
     new_event = Event.new_with_defaults
-    assert_equal last_event.location, new_event.location
+    assert_equal most_recent_event.location, new_event.location
   end
 
-  test "Event.new_with_defaults sets the event to “online” if the previous event was" do
-    _old_event = create_event!(date: Date.new(2015, 1), location: locations(:madlab))
-    last_event = create_event!(date: Date.new(2018, 1), location: nil, online: true)
+  test "Event.new_with_defaults sets the event to be online if the most recent event was online" do
+      most_recent_event = Event.order(:date).last
+      most_recent_event.update!(location: nil, online: true)
 
-    new_event = Event.new_with_defaults
-    assert new_event.online?
-    assert_nil new_event.location
+      new_event = Event.new_with_defaults
+      assert new_event.online?
+      assert_nil new_event.location
   end
 
   test 'Event.next_date returns the third Thursday of the month at 6:30pm' do

@@ -40,7 +40,7 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
   end
 
   test 'unauthorised user cannot edit an event' do
-    event = events(:august_2015)
+    event = events(:next_event)
 
     visit event_path(event)
     refute page.has_link?('Edit', href: edit_event_path(event))
@@ -50,7 +50,7 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
   end
 
   test 'authorised user can edit an event' do
-    event = events(:august_2015)
+    event = events(:next_event)
 
     login_as users(:admin)
     visit event_path(event)
