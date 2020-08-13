@@ -4,7 +4,7 @@ class Event < ApplicationRecord
   validates :title, :description, :date, presence: true
   validates :location, presence: true, unless: :online?
 
-  belongs_to :location
+  belongs_to :location, optional: true
 
   scope :upcoming, -> { where("date >= ?", Date.today).order(date: :asc) }
   scope :previous, -> { where("date < ?", Date.today).order(date: :desc) }
