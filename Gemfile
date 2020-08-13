@@ -25,6 +25,8 @@ group :development do
   gem 'capistrano-bundler', '~> 1.6'
   gem 'capistrano-rails', '~> 1.5'
   gem 'capistrano-passenger', '~> 0.2'
+  # Use an evented file watcher to asynchronously detect changes
+  gem 'listen'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end
