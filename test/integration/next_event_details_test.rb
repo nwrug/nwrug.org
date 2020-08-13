@@ -7,7 +7,7 @@ class NextEventDetailsTest < ActionDispatch::IntegrationTest
 
     visit root_path
 
-    assert page.has_link? event.title, event_path(event)
+    assert page.has_link?(event.title, href: event_path(event))
   end
 
   test 'homepage displays the default date (the next third Thursday) if no future event exist yet' do

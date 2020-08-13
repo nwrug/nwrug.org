@@ -8,12 +8,12 @@ gem 'mysql2', '~> 0.4.4'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # For rendering markdown as HTML
 gem 'github-markup'
 gem 'redcarpet'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 group :production do
   # Used to load secrets via environment variables on production
@@ -41,7 +41,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'capybara', '~> 2.4.4'
+  gem 'capybara'
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
 end
