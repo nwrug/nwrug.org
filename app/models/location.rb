@@ -1,4 +1,4 @@
-class Location < ActiveRecord::Base
+class Location < ApplicationRecord
   has_many :events
 
   validates_format_of :website, :with => /\A#{URI::regexp(%w(http https))}\z/, allow_blank: true
