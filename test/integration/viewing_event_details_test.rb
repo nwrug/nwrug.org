@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
   test "displays an event's details" do
-    event = events(:august_2015)
+    event = events(:next_event)
     visit events_path
 
     within "ul#upcoming-events" do
