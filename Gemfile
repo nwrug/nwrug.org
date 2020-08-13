@@ -27,6 +27,7 @@ group :development do
   gem 'capistrano-passenger', '~> 0.2'
   # Use an evented file watcher to asynchronously detect changes
   gem 'listen'
+  gem 'puma'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end
