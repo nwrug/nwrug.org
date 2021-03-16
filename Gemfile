@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.4'
+gem 'rails', '5.2.4.5'
 gem 'bootsnap'
 gem 'mysql2'
 # Use SCSS for stylesheets
