@@ -6,7 +6,7 @@ set :repo_url, 'https://github.com/nwrug/nwrug.org.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :branch, ENV['BRANCH'] if ENV['BRANCH']
+set :branch, 'main'
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/home/deploy/nwrug'

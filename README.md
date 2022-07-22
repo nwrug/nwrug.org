@@ -1,6 +1,6 @@
 # [NWRUG.ORG](http://nwrug.org)
 
-[![Build Status](https://travis-ci.org/nwrug/nwrug.org.svg?branch=master)](https://travis-ci.org/nwrug/nwrug.org)
+[![Build Status](https://travis-ci.org/nwrug/nwrug.org.svg?branch=main)](https://travis-ci.org/nwrug/nwrug.org)
 
 The website of the North West Ruby User Group, a Manchester-based user group for
 folk interested in the Ruby programming language.
