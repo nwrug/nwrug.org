@@ -9,6 +9,13 @@ require 'csv'
 
 LOCATIONS = [
   {
+    name: 'IntelliCentrics UK',
+    website: 'https://intellicentrics.co.uk/',
+    street_address: '55 Spring Gardens',
+    city: 'Manchester',
+    postal_code: 'M2 2BY',
+  },
+  {
     name: 'The Manchester Digital Laboratory (MadLab)',
     website: 'http://madlab.org.uk',
     street_address: '36-40 Edge Street',
