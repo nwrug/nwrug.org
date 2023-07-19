@@ -7,7 +7,7 @@ module ApplicationHelper
 
   def google_maps_embed_url(location)
     map_query = [location.name, location.street_address, location.city].join(', ')
-    "https://www.google.com/maps/embed/v1/place?q=#{map_query}&key=AIzaSyByIp6AzlpPjVjisNnNNKHMwn_i8XwCWdc"
+    "https://www.google.com/maps/embed/v1/place?q=#{map_query}&key=AIzaSyAhdACwd5_M8jarFTKCj69yWubTlEtzLwA"
   end
 
   def render_markdown(markdown)
