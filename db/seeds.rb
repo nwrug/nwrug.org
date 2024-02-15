@@ -84,6 +84,12 @@ LOCATIONS = [
     city: 'Manchester',
     postal_code: 'M2 2BY',
   },
+  {
+    name: 'Tekin Ltd',
+    street_address: '122 Grosvenor Street (above Sandbar)',
+    city: 'Manchester',
+    postal_code: 'M1 7HL',
+  },
 ]
 
 LOCATIONS.each do |attributes|
