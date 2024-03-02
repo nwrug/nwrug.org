@@ -22,6 +22,8 @@ group :production do
 end
 
 group :development do
+  gem 'ed25519', '>= 1.2', '< 2.0', require: false
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0', require: false
   gem 'capistrano', '~> 3.14'
   gem 'capistrano-bundler', '~> 1.6'
   gem 'capistrano-rails', '~> 1.5'
