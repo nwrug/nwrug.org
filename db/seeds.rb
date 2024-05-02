@@ -90,6 +90,13 @@ LOCATIONS = [
     city: 'Manchester',
     postal_code: 'M1 7HL',
   },
+  {
+    name: ' Chroma Recruitment',
+    website: 'https://chromarecruitment.com',
+    street_address: '2nd Floor, 31 Booth St',
+    city: 'Manchester',
+    postal_code: 'M2 4AF',
+  }
 ]
 
 LOCATIONS.each do |attributes|
