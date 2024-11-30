@@ -96,6 +96,13 @@ LOCATIONS = [
     street_address: '2nd Floor, 31 Booth St',
     city: 'Manchester',
     postal_code: 'M2 4AF',
+  },
+  {
+    name: 'Café Beermoth',
+    website: 'https://beermoth.co.uk/cafe/',
+    street_address: 'Brown St, Manchester',
+    city: 'Manchester',
+    postal_code: 'M2 1DA',
   }
 ]
 
