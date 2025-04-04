@@ -23,6 +23,16 @@ class QuizAdministrationTest < ActionDispatch::IntegrationTest
     assert_equal 'New quiz title', last_quiz.title
   end
 
+  test 're-render the page when creating invalid quizzes' do
+    login_as users(:admin)
+    visit root_path
+    click_link 'New quiz'
+
+    click_on 'Save'
+
+    assert page.has_content?("Title can't be blank")
+  end
+
   test 'unauthorised user cannot edit an quiz' do
     quiz = quizzes(:cryptographic_challenge)
 
@@ -35,12 +45,27 @@ class QuizAdministrationTest < ActionDispatch::IntegrationTest
 
   test 'authorised user can edit an quiz' do
     quiz = quizzes(:cryptographic_challenge)
-
     login_as users(:admin)
     visit quiz_path(quiz)
-
     click_link 'Edit'
 
-    assert_path edit_quiz_path(quiz)
+    fill_in :quiz_title, with: 'Edited quiz title'
+    fill_in :quiz_description, with: 'Edited event description'
+    click_on 'Save'
+
+    assert page.has_content?('Edited quiz title')
+  end
+
+  test 're-render the page when editing invalid quizzes' do
+    quiz = quizzes(:cryptographic_challenge)
+    login_as users(:admin)
+    visit quiz_path(quiz)
+    click_link 'Edit'
+
+    fill_in :quiz_title, with: ''
+    fill_in :quiz_description, with: ''
+    click_on 'Save'
+
+    assert page.has_content?("Title can't be blank")
   end
 end

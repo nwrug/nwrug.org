@@ -39,6 +39,16 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
     assert last_event.online?
   end
 
+  test 're-render the page when creating invalid events' do
+    login_as users(:admin)
+    visit events_path
+    click_link 'New event'
+
+    click_on 'Save'
+
+    assert page.has_content?("Title can't be blank")
+  end
+
   test 'unauthorised user cannot edit an event' do
     event = events(:next_event)
 
@@ -51,12 +61,29 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
 
   test 'authorised user can edit an event' do
     event = events(:next_event)
-
     login_as users(:admin)
     visit event_path(event)
-
     click_link 'Edit'
 
-    assert_path edit_event_path(event)
+    fill_in :event_title, with: 'Edited event title'
+    fill_in :event_description, with: 'Edited event description'
+    check :event_online
+    click_on 'Save'
+
+    assert page.has_content?('Edited event title')
+  end
+
+  test 're-render the page when editing invalid events' do
+    event = events(:next_event)
+    login_as users(:admin)
+    visit event_path(event)
+    click_link 'Edit'
+
+    fill_in :event_title, with: ''
+    fill_in :event_description, with: ''
+    check :event_online
+    click_on 'Save'
+
+    assert page.has_content?("Title can't be blank")
   end
 end
