@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~>5.2.6'
+gem 'rails', '~>6.1'
 gem 'bootsnap'
 gem 'mysql2'
 # Use SCSS for stylesheets
@@ -15,6 +15,9 @@ gem 'github-markup'
 gem 'redcarpet'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+
+# Temporarily lock concurrent-ruby version until we're on Rails 7.1
+gem 'concurrent-ruby', '1.3.4'
 
 group :production do
   # Used to load secrets via environment variables on production
