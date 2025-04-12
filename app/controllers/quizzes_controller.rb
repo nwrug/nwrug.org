@@ -20,7 +20,7 @@ class QuizzesController < ApplicationController
   end
 
   def update
-    if @quiz.update_attributes(quiz_params)
+    if @quiz.update(quiz_params)
       redirect_to @quiz
     else
       render :edit
