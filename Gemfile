@@ -19,10 +19,6 @@ gem 'bcrypt'
 # Temporarily lock concurrent-ruby version until we're on Rails 7.1
 gem 'concurrent-ruby', '1.3.4'
 
-# Temporarily add net-http to silence net protocol warnings until we upgrade
-# Ruby from 2.7 (See https://github.com/rails/rails/pull/44175)
-gem 'net-http'
-
 group :production do
   # Used to load secrets via environment variables on production
   gem 'dotenv-rails'
