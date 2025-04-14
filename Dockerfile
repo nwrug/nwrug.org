@@ -19,7 +19,7 @@ FROM base AS build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libvips pkg-config libmariadb-dev
+    apt-get install --no-install-recommends -y build-essential git libvips pkg-config libmariadb-dev libxml2-dev libxslt-dev
 
 # Install application gems
 COPY .ruby-version Gemfile Gemfile.lock ./
