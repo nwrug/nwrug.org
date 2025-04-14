@@ -16,6 +16,8 @@ gem 'redcarpet'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 
+gem 'puma'
+
 # Temporarily lock concurrent-ruby version until we're on Rails 7.1
 gem 'concurrent-ruby', '1.3.4'
 
@@ -33,7 +35,6 @@ group :development do
   gem 'capistrano-passenger', '~> 0.2'
   # Use an evented file watcher to asynchronously detect changes
   gem 'listen'
-  gem 'puma'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end
