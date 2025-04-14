@@ -29,21 +29,11 @@ end
 group :development do
   gem 'ed25519', '>= 1.2', '< 2.0', require: false
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0', require: false
-  gem 'capistrano', '~> 3.14'
-  gem 'capistrano-bundler', '~> 1.6'
-  gem 'capistrano-rails', '~> 1.5'
-  gem 'capistrano-passenger', '~> 0.2'
   # Use an evented file watcher to asynchronously detect changes
   gem 'listen'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
