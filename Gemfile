@@ -16,12 +16,10 @@ gem 'redcarpet'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 
+gem 'puma'
+
 # Temporarily lock concurrent-ruby version until we're on Rails 7.1
 gem 'concurrent-ruby', '1.3.4'
-
-# Temporarily add net-http to silence net protocol warnings until we upgrade
-# Ruby from 2.7 (See https://github.com/rails/rails/pull/44175)
-gem 'net-http'
 
 group :production do
   # Used to load secrets via environment variables on production
@@ -31,27 +29,13 @@ end
 group :development do
   gem 'ed25519', '>= 1.2', '< 2.0', require: false
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0', require: false
-  gem 'capistrano', '~> 3.14'
-  gem 'capistrano-bundler', '~> 1.6'
-  gem 'capistrano-rails', '~> 1.5'
-  gem 'capistrano-passenger', '~> 0.2'
   # Use an evented file watcher to asynchronously detect changes
   gem 'listen'
-  gem 'puma'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
 end
 
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'capybara'

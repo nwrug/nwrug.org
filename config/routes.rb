@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
+  get 'up', to: 'healthchecks#show'
   get 'code-of-conduct', to: 'pages#code-of-conduct', as: :code_of_conduct
   get 'participate', to: 'pages#participate', as: :participate
 
