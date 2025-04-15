@@ -18,9 +18,6 @@ gem 'bcrypt'
 
 gem 'puma'
 
-# Temporarily lock concurrent-ruby version until we're on Rails 7.1
-gem 'concurrent-ruby', '1.3.4'
-
 group :production do
   # Used to load secrets via environment variables on production
   gem 'dotenv-rails'
