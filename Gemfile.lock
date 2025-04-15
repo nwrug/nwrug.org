@@ -154,6 +154,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.7-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.18.7-x86_64-linux-gnu)
+      racc (~> 1.4)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -256,6 +258,7 @@ GEM
 PLATFORMS
   ruby
   x86_64-darwin-16
+  x86_64-linux-gnu
 
 DEPENDENCIES
   bcrypt
