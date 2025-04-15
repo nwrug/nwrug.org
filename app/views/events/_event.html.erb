@@ -1,4 +1,4 @@
 <li>
   <h3><%= link_to event.title, event %></h3>
-  <p><%= event.date.to_s(:short_date) %> <%= event.time %> <%= location_text(event) %></p>
+  <p><%= event.date.to_fs(:short_date) %> <%= event.time %> <%= location_text(event) %></p>
 </li>
