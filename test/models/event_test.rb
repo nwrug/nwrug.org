@@ -34,7 +34,15 @@ class EventTest < ActiveSupport::TestCase
   end
 
   test "online events don't need a location" do
-    event = create_event!(location: nil, online: true)
+    event = Event.new(
+        online: true,
+        location: nil,
+        title: "Event title",
+        description: 'Event description',
+        date: 1.week.from_now
+    )
+
+    assert event.valid?
   end
 
   test "Event.new_with_defaults sets the date to the next probable date (third Thursday, 7pm)" do
