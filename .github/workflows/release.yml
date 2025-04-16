@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false # Prevents ongoing deployments from being canceled
+
+env:
+  SERVER_ADDR: 109.107.35.37
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: nwrug
+
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+
+    env:
+      DOCKER_BUILDKIT: 1
+      RAILS_ENV: production
+      BUNDLE_WITHOUT: “default development test production profiling”
+      BUNDLE_WITH: tools
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          # Absence of ruby-version: forces read from .ruby-version
+          bundler-cache: true
+          cache-version: "tools-v1-${{ runner.os }}"
+
+      - name: Set up Docker Buildx for cache
+        uses: docker/setup-buildx-action@v3
+
+      - name: Expose GitHub Runtime for cache
+        uses: crazy-max/ghaction-github-runtime@v3
+
+      - name: SSH Auth
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy with Kamal
+        run: bin/kamal deploy
+        env:
+          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          NWRUG_DATABASE_PASSWORD: ${{ secrets.NWRUG_DATABASE_PASSWORD }}
+          KAMAL_REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          KAMAL_REGISTRY_USERNAME: ${{ github.actor }}
