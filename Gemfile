@@ -35,3 +35,7 @@ group :development, :test do
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
 end
+
+group :tools do
+  gem 'kamal', '~>0.2'
+end
