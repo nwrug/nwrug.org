@@ -25,17 +25,19 @@ proxy:
 
 # Credentials for your image host.
 registry:
-  # Specify the registry server, if you're not using Docker Hub
-  server: cr.brightbox.com/acc-3v76h/nwrug
-  # TODO: This should come from the env/secrets and not be committed.
-  username: tekin@tekin.co.uk
-  # Always use an access token rather than real password (pulled from .kamal/secrets).
+  server: ghcr.io/nwrug
+  username:
+    - KAMAL_REGISTRY_USERNAME
   password:
     - KAMAL_REGISTRY_PASSWORD
 
 # Configure builder setup.
 builder:
   arch: amd64
+  cache:
+    type: gha
+    options: mode=max
+    image: app-build-cache
   # Pass in additional build args needed for your Dockerfile.
   # args:
     # RUBY_VERSION: <%= File.read('.ruby-version').strip %>
