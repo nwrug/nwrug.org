@@ -15,8 +15,10 @@ env:
 
 jobs:
   deploy:
+    name: Kamal deploy
     runs-on: ubuntu-latest
     environment: nwrug
+    timeout-minutes: 10
 
     permissions:
       contents: read
