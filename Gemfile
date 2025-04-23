@@ -37,5 +37,5 @@ group :development, :test do
 end
 
 group :tools do
-  gem 'kamal', '~>0.2'
+  gem 'kamal', '~>2'
 end
