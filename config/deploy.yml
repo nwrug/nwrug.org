@@ -38,6 +38,7 @@ builder:
     type: gha
     options: mode=max
     image: app-build-cache
+  multiarch: false
   # Pass in additional build args needed for your Dockerfile.
   # args:
     # RUBY_VERSION: <%= File.read('.ruby-version').strip %>
