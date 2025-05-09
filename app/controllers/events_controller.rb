@@ -48,14 +48,21 @@ private
 
   def one_year_of_ical
     events = Event.where(date: 1.year.ago...).order(date: :desc).includes(:location)
+
     cal = Icalendar::Calendar.new
+    cal.description = 'North West Ruby User Group events'
+    cal.source = events_url(format: :ics)
+    cal.url = root_url
+    cal.refresh_interval = 'P1W'
+
+    tz = TZInfo::Timezone.get 'Europe/London'
 
     events.each do |event|
       cal.event do |e|
         e.uid         = "nwrug-event-#{event.id}"
         e.location    = location_for(event)
-        e.dtstart     = Icalendar::Values::DateTime.new(event.date, tzid: 'Europe/London')
-        e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: 'Europe/London')
+        e.dtstart     = Icalendar::Values::DateTime.new(event.date, tzid: tz)
+        e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: tz)
         e.summary     = "NWRUG: #{event.title}"
         e.description = event.description
         e.url = event_url(event)
