@@ -1,4 +1,5 @@
 require 'icalendar'
+require 'icalendar/tzinfo'
 
 class EventsController < ApplicationController
   before_action :find_event, only: [:show, :edit, :update]
@@ -56,13 +57,15 @@ private
     cal.refresh_interval = 'P1W'
 
     tz = TZInfo::Timezone.get 'Europe/London'
+    timezone = tz.ical_timezone events.first.date
+    cal.add_timezone timezone
 
     events.each do |event|
       cal.event do |e|
         e.uid         = "nwrug-event-#{event.id}"
         e.location    = location_for(event)
-        e.dtstart     = Icalendar::Values::DateTime.new(event.date, tzid: tz)
-        e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: tz)
+        e.dtstart     = Icalendar::Values::DateTime.new(event.date, tzid: tz.identifier)
+        e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: tz.identifier)
         e.summary     = "NWRUG: #{event.title}"
         e.description = event.description
         e.url = event_url(event)
