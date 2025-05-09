@@ -22,5 +22,6 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
     assert page.has_content?("SUMMARY:NWRUG: #{event.title}")
     assert page.has_content?("DESCRIPTION:#{event.description}")
     assert page.has_content?('LOCATION:The Manchester Digital Laboratory (MadLab)\, 36-40 Edge Street')
+    assert page.has_content?('URL;VALUE=URI:http://www.example.com/events/an-event-for-august')
   end
 end

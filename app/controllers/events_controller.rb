@@ -58,6 +58,7 @@ private
         e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: 'Europe/London')
         e.summary     = "NWRUG: #{event.title}"
         e.description = event.description
+        e.url = event_url(event)
       end
     end
 
