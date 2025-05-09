@@ -53,7 +53,7 @@ private
     events.each do |event|
       cal.event do |e|
         e.uid         = "nwrug-event-#{event.id}"
-        e.location    = "#{event.location.city}, England"
+        e.location    = location_for(event)
         e.dtstart     = Icalendar::Values::DateTime.new(event.date, tzid: 'Europe/London')
         e.dtend       = Icalendar::Values::DateTime.new((event.date+2.hours), tzid: 'Europe/London')
         e.summary     = "NWRUG: #{event.title}"
@@ -62,5 +62,13 @@ private
     end
 
     cal.to_ical
+  end
+
+  def location_for(event)
+    if event.online?
+      "Online"
+    else
+      event.location.attributes.slice(*%w[name street_address city postal_code]).values.join(', ') << ', England'
+    end
   end
 end

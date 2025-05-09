@@ -21,6 +21,6 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
     assert page.body.start_with?('BEGIN:VCALENDAR')
     assert page.has_content?("SUMMARY:NWRUG: #{event.title}")
     assert page.has_content?("DESCRIPTION:#{event.description}")
-    assert page.has_content?('LOCATION:Manchester\, England')
+    assert page.has_content?('LOCATION:The Manchester Digital Laboratory (MadLab)\, 36-40 Edge Street')
   end
 end
