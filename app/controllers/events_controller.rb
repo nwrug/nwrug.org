@@ -10,7 +10,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.ics { render plain: one_year_of_ical }
+      format.ics { render body: one_year_of_ical, mime_type: Mime::Type.lookup("text/calendar") }
     end
   end
 
