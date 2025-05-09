@@ -13,4 +13,14 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
     assert page.has_content?(event.description)
     assert page.has_content?("at The Manchester Digital Laboratory (MadLab)")
   end
+
+  test "viewing an ICAL feed of events" do
+    event = events(:next_event)
+    visit(events_path(format: :ics))
+
+    assert page.body.start_with?('BEGIN:VCALENDAR')
+    assert page.has_content?("SUMMARY:NWRUG: #{event.title}")
+    assert page.has_content?("DESCRIPTION:#{event.description}")
+    assert page.has_content?('LOCATION:Manchester\, England')
+  end
 end

@@ -118,6 +118,12 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    icalendar (2.11.0)
+      base64
+      ice_cube (~> 0.16)
+      logger
+      ostruct
+    ice_cube (0.17.0)
     io-console (0.8.0)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -289,6 +295,7 @@ DEPENDENCIES
   capybara
   dotenv-rails
   github-markup
+  icalendar
   kamal (~> 2)
   mysql2
   puma

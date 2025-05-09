@@ -18,6 +18,9 @@ gem 'bcrypt'
 
 gem 'puma'
 
+# For publishing an ical feed of events
+gem 'icalendar'
+
 group :production do
   # Used to load secrets via environment variables on production
   gem 'dotenv-rails'
