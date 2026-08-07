@@ -6,8 +6,8 @@ class Event < ApplicationRecord
 
   belongs_to :location, optional: true
 
-  scope :upcoming, -> { where("date >= ?", Date.today).order(date: :asc) }
-  scope :previous, -> { where("date < ?", Date.today).order(date: :desc) }
+  scope :upcoming, -> { where("date >= ?", Time.zone.today).order(date: :asc) }
+  scope :previous, -> { where("date < ?", Time.zone.today).order(date: :desc) }
 
   def self.new_with_defaults
     previous_event = Event.order(:date).last
@@ -16,7 +16,7 @@ class Event < ApplicationRecord
 
   def self.next_date
     if third_thursday_of_month.past?
-      third_thursday_of_month(Date.today + 1.month)
+      third_thursday_of_month(Time.zone.today + 1.month)
     else
       third_thursday_of_month
     end
@@ -35,7 +35,7 @@ private
   end
 
   def self.third_thursday_of_month(base_date=nil)
-    base_date ||= Date.today
+    base_date ||= Time.zone.today
     year  = base_date.year
     month = base_date.month
     day   = (4 - Date.new(year, month, 1).wday) % 7 + (2*7) + 1

@@ -69,6 +69,30 @@ class EventTest < ActiveSupport::TestCase
       assert_nil new_event.location
   end
 
+  test "the proposed date for a new event does not slip in the early hours" do
+    travel_to Time.utc(2025, 7, 1, 0, 30) do
+      assert_equal DateTime.new(2025, 7, 17, 18, 30), Event.new_with_defaults.date
+    end
+  end
+
+  test "an event dated today is upcoming, not previous, in the early hours" do
+    travel_to Time.utc(2025, 6, 15, 0, 30) do
+      event = create_event!(title: 'Today', date: DateTime.new(2025, 6, 15, 18, 30))
+
+      assert_includes Event.upcoming, event
+      refute_includes Event.previous, event
+    end
+  end
+
+  test "an event dated yesterday is previous, not upcoming, in the early hours" do
+    travel_to Time.utc(2025, 6, 15, 0, 30) do
+      event = create_event!(title: 'Yesterday', date: DateTime.new(2025, 6, 14, 18, 30))
+
+      assert_includes Event.previous, event
+      refute_includes Event.upcoming, event
+    end
+  end
+
   test 'Event.next_date returns the third Thursday of the month at 6:30pm' do
     travel_to Date.new(2015, 8, 1) do
       assert_equal DateTime.new(2015, 8, 20, 18, 30), Event.next_date
