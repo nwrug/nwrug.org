@@ -1,6 +1,7 @@
 # NWRUG Recovery
 
-**Written**: 2026-08-07. **Vocabulary**: see `CONTEXT.md` at the repo root.
+**Written**: 2026-08-07. **Revised**: 2026-08-09, after slice 0 was carried out.
+**Vocabulary**: see `CONTEXT.md` at the repo root.
 
 > **Read this first if you are starting cold.** Every finding in this document
 > was established by observation, not assumption, and each one is stated with
@@ -10,6 +11,12 @@
 > "Evidence log" section at the end is the fastest way to re-establish the whole
 > picture in one pass, and the "Landmarks" table names every file this work
 > touches.
+>
+> **The 2026-08-09 revision was substantial.** Carrying out slice 0 disproved
+> four findings in the original draft and reversed three of its design
+> decisions. Where the first draft was wrong, this document says so rather than
+> quietly correcting itself, because the reasoning that produced the error is
+> more useful than the error is embarrassing.
 
 ## Sources
 
@@ -35,10 +42,13 @@ before relying on any of them, since the repository may have moved on.
 | --- | --- |
 | Hidden setup blocker | `.bundle/config`, untracked, gitignored via `/.bundle` |
 | CI workflow, lint job fails here | `.github/workflows/test-suite.yml` |
-| Deploy workflow, to be neutered | `.github/workflows/release.yml` |
-| Deploy config, to be split by Destination | `config/deploy.yml`, `.kamal/secrets` |
+| Deploy workflow, retained as-is | `.github/workflows/release.yml` |
+| Deploy config, single file, no Destinations | `config/deploy.yml`, `.kamal/secrets` |
+| Deploy history, the authoritative record | `~/.kamal/nwrug_org-audit.log` on the host |
+| Actions secrets live here | GitHub environment `nwrug` |
 | CI-only eager loading | `config/environments/test.rb`, line 16 |
-| Dead Code of Conduct link | `app/views/pages/code-of-conduct.html.erb` |
+| Dead Code of Conduct link | `app/views/pages/code-of-conduct.html.erb`, line 11 |
+| Second dead link | `app/views/pages/participate.html.erb`, line 68 |
 | Dead code, delete for 100% | `app/helpers/sessions_helper.rb` |
 | Empty test class | `test/models/location_test.rb` |
 | No test file at all | `app/helpers/application_helper.rb` |
@@ -50,46 +60,57 @@ before relying on any of them, since the repository may have moved on.
 | Misleading gitignore entry | `.gitignore`, the `config/database.yml` line |
 | Typo, "the gme dependencies" | `README.md` |
 | Production host | `109.107.35.37`, SSH user `ubuntu`, registry `ghcr.io/nwrug` |
+| Proxy on the host | `kamal-proxy`, currently `v0.9.0` |
 
 ## Problem Statement
 
-NWRUG's site works, but nobody can safely change it.
+NWRUG's site works, but nobody could safely change it.
 
 A Member visiting today cannot find out when the group next meets. There is no
 Scheduled Event in the future, so the homepage falls back to showing a
 Provisional Date under the heading "Next Event", presenting a date nobody has
 committed to as though it were a confirmed meetup. The events page lists nothing
 upcoming at all. The Code of Conduct links to a definition of unacceptable
-behaviour on a domain that no longer exists.
+behaviour on a domain that no longer exists, and the participation page links to
+speaking advice on a second domain that no longer exists.
 
-For a Maintainer, the situation is worse than it looks. `main` has not moved in
-over a year. Continuous integration reports failure on every branch, so the
-signal has stopped meaning anything and eleven pull requests sit unmerged behind
-it: nine dependency bumps (#63, #68, #73, #74, #75, #76, #77, #78, #79), a Ruby
-upgrade (#67), and one substantive change (#92). The deployment workflow has run
-once in its life and failed, so the only proven way to release is a manual
-command that nobody has written down. Setting the project up on a fresh machine
-does not work, and the reason is invisible because it lives in an untracked file
-on the one machine where it does. Sixteen issues are open, twelve of them from a
-single audit (#80 to #91), and none has been acted on.
+For a Maintainer, the situation looked worse than it was, and in one specific
+way worse than it looked. `main` has not moved in over a year. Continuous
+integration reports failure on every branch, so the signal has stopped meaning
+anything and eleven pull requests sit unmerged behind it: nine dependency bumps
+(#63, #68, #73, #74, #75, #76, #77, #78, #79), a Ruby upgrade (#67), and one
+substantive change (#92). Setting the project up on a fresh machine does not
+work, and the reason is invisible because it lives in an untracked file on the
+one machine where it does. Sixteen issues are open, twelve of them from a single
+audit (#80 to #91), and none has been acted on.
 
-None of these problems is individually hard. Together they form a stall: the
-safety equipment needed to change anything is itself the thing that needs
-changing, and every possible starting point appears to be blocked by another.
+Deployment was believed to be broken and undocumented. It was neither. The
+workflow had deployed successfully at least seven times through 2025 and then
+stopped, in July 2025, for a single specific reason nobody diagnosed: a gem bump
+took Kamal past the version of `kamal-proxy` running on the host. **The
+deployment problem was one line of version skew sitting behind twelve months of
+silence.** The silence was the real defect. Nobody noticed the failure, so
+production sat fourteen months behind `main`, and the only record of any of it
+was a log file on a server.
+
+Slice 0 resolved that. Production is now level with `main`, the proxy is
+current, and a deploy takes ninety seconds.
 
 ## Solution
 
-Restore the ability to ship, then use it.
+The ability to ship has been restored. Use it.
 
 Work proceeds as a sequence of small slices. The ordering rule, agreed
 explicitly, is that **no infrastructure slice ships unless the Member-facing
 slice it unblocks can be named**. This keeps the safety net from becoming the
 project.
 
-The first slice is deliberately both: it makes deploying a considered act and
-carries a genuine Member-facing fix as its payload, so that proving the pipeline
-and delivering value are the same commit. Only once a change has been shown to
-reach production does anything else begin.
+The original plan opened with an infrastructure slice that would make deploying
+a deliberate act and carry a Member-facing fix as its payload, so that proving
+the pipeline and delivering value were the same commit. That is no longer
+needed: the pipeline is proven, and the machinery the slice would have built
+turned out to be unnecessary. What survives is the payload. Slice 1 is now
+purely Member-facing.
 
 From there the sequence restores the CI signal, makes a fresh setup work,
 introduces coverage measurement, closes the coverage gaps one at a time, and
@@ -107,7 +128,7 @@ exists to catch them.
 4. As a Member, I want to know the group's usual meeting pattern even when nothing is confirmed, so that I can plan roughly around it.
 5. As a Member, I want a Provisional Date clearly marked as unconfirmed, so that I can tell it apart from a Scheduled Event at a glance.
 6. As a Member, I want the Code of Conduct's definition of unacceptable behaviour to be readable, so that I know what standard I am being held to.
-7. As a Member, I want every link in the Code of Conduct to work, so that I can trust the group takes the document seriously.
+7. As a Member, I want every link on the site to work, so that I can trust the group takes its own pages seriously.
 8. As a Member, I want to know who to contact about an incident, so that I can report something safely.
 9. As a Member, I want to subscribe to a calendar feed of Events, so that meetups appear in my calendar without my checking the site.
 10. As a Member, I want calendar entries at the correct local time, so that I do not arrive an hour out during British Summer Time.
@@ -144,10 +165,10 @@ exists to catch them.
 35. As a Maintainer, I want static analysis to actually run, so that its findings reach me rather than being skipped after an earlier step fails.
 36. As a Maintainer, I want dependency staleness reported without failing the build, so that a gate I cannot fix does not train me to ignore CI.
 37. As a Maintainer, I want dependency updates to land in one deliberate act rather than nine conflicting ones, so that the effort produces a green signal rather than a queue of rebases.
-38. As a Maintainer, I want deploying to require naming a Destination, so that production cannot be reached by accident or by muscle memory.
-39. As a Maintainer, I want one documented command that deploys, so that releasing does not depend on somebody remembering how they did it last year.
-40. As a Maintainer, I want deploys to happen only when a human asks, so that merging a change does not fire an unproven workflow at the live site.
-41. As a Maintainer, I want to be able to add a second Destination later by adding a file, so that a staging environment is not a restructure.
+38. As a Maintainer, I want to know which commit production is running, so that I can tell whether a fix has actually shipped. *(Replaces the original story about naming a Destination, which described machinery that was never built. See "Deployment".)*
+39. As a Maintainer, I want the way to deploy written down, so that releasing does not depend on somebody remembering how they did it last year.
+40. As a Maintainer, I want a failed deploy to be noticed, so that production cannot drift a year behind `main` in silence. *(Replaces the original story about deploys happening only when a human asks. The failure mode was never automation; it was silence.)*
+41. As a Maintainer, I want the deploy tooling's own version requirements to be visible, so that a routine dependency bump cannot silently break releasing. *(Replaces the original story about adding a second Destination by adding a file. See evidence 3.)*
 42. As a Maintainer, I want every controller proven by Feature tests, so that I know the site works the way a Member uses it, not merely that the methods run.
 43. As a Maintainer, I want everything other than controllers proven by Unit tests, so that behaviour is pinned directly rather than incidentally through a page.
 44. As a Maintainer, I want coverage measured before it is enforced, so that the gate arrives green and CI is never knowingly left red.
@@ -174,27 +195,49 @@ terms of Feature tests and Unit tests.
 
 ### Deployment
 
-- Deploying is triggered by a **Maintainer running a command**, not by merging.
-  `.github/workflows/release.yml` is reduced to `workflow_dispatch` only, by
-  removing its `push: branches: [main]` trigger. It stays in the repository as
-  the seed of future automation. This closes half of issue #72, "Improve deploy
-  pipelines", whose other half is its own observation that the project currently
-  deploys regardless of build state.
-- A **`bin/deploy` wrapper requires a Destination argument.** Exactly one
-  Destination, `production`, is valid. The argument is a safety interlock, not
-  configuration: deploying to production should not be four keystrokes. Kamal's
-  single `config/deploy.yml` is split into `config/deploy.production.yml`, so
-  that `bin/deploy production` resolves to `kamal deploy -d production` and
-  adding a second Destination later is adding a file rather than restructuring.
-- **The local path is proven before the automated one.** Getting a successful
-  deploy from a Maintainer's machine isolates the container, SSH and registry
-  concerns from the workflow-syntax concerns, rather than debugging both at once
-  through a CI log. Evidence that this path works: the live calendar feed
-  contains changes that the workflow never successfully shipped, so a human
-  deployed them.
-- The first deploy also carries the outstanding dependency bump commit, because
-  production is one commit behind `main`. This is expected, not a surprise to
-  investigate.
+The first draft of this document got deployment substantially wrong, because it
+inferred history from GitHub's Actions tab, which only retains recent runs. The
+corrected position:
+
+- **Deploying is merging to `main`, and that stays.** `release.yml` keeps its
+  `push: branches: [main]` trigger. The original plan was to strip it so that
+  deploying required a human, justified on the grounds that the workflow was
+  unproven. The workflow is proven (see evidence 3 and 4), so that justification
+  has expired. Deploy-on-merge shipped seven releases through 2025 and never
+  caused the problem this document is recovering from.
+- **`workflow_dispatch` stays as the escape hatch**, for redeploying without a
+  commit. It is already in the file.
+- **There is no `bin/deploy`.** The original plan called for a wrapper requiring
+  a Destination argument. With exactly one valid Destination the argument can
+  only be typed one way, so it is ceremony rather than an interlock. It was
+  designed by analogy with a Heroku project having real `staging` and
+  `production` remotes, where choosing wrongly is a live hazard. That hazard
+  does not exist here. Deleting the idea also deletes the third test seam it
+  would have required.
+- **There is no Kamal Destination and no config split.** The original plan
+  called for splitting `config/deploy.yml` into `config/deploy.production.yml`.
+  That is not how Kamal Destinations work: `Kamal::Configuration.create_from`
+  loads the base file *and merges the destination file on top of it*, so a
+  literal split breaks the config. Worse, adopting a Destination changes
+  `container_prefix` from `service-role` to `service-role-destination`, renaming
+  every container and re-registering the app with the proxy under a new name.
+  That is a cutover with real downtime, paid today for a staging environment
+  that is explicitly out of scope. When staging is genuinely wanted, add
+  `config/deploy.staging.yml` and deploy it with `-d staging`; production is on
+  the unnamed default and is never touched.
+- **Kamal and `kamal-proxy` are version-coupled, and the coupling is invisible.**
+  `Kamal::Configuration::Proxy::Boot::MINIMUM_VERSION` names the oldest proxy a
+  given Kamal will talk to, and Kamal refuses to deploy against anything older.
+  Bumping the `kamal` gem can therefore break deploying with no change to the
+  application at all. This is exactly what happened in July 2025. Treat
+  `kamal proxy reboot` as a routine follow-up to any Kamal bump.
+- **The proxy is booted at `MINIMUM_VERSION`, not at latest**, because
+  `read_image_version` defaults to it. So the coupling will bite again on the
+  next Kamal bump. This is expected, not a surprise to investigate.
+- **Local Kamal is the operations lever, not the deploy path.** `release.yml`
+  only ever runs `lock release && deploy`; it cannot reboot a proxy or roll
+  back. Those need `bin/kamal` on a Maintainer's machine, which needs Docker
+  buildx. See evidence 8.
 
 ### Dependencies
 
@@ -207,6 +250,10 @@ terms of Feature tests and Unit tests.
   the build red until the last one lands, so the effort yields no green signal
   along the way. A single update resolves them together and GitHub closes the
   pull requests automatically.
+- **Expect `bundle update` to move Kamal past 2.7.0 and require another
+  `kamal proxy reboot`.** See "Deployment" above. The procedure is proven and
+  took under a minute with no measurable downtime. It is a known step, not a
+  risk.
 - The **Ruby version upgrade (#67, Ruby 3.4.8 and Bundler 4) is kept separate**.
   It is a language change, not a dependency bump, and belongs in its own slice.
 - **Staleness is measured with `libyear-bundler`** (<https://github.com/jaredbeck/libyear-bundler>),
@@ -269,6 +316,10 @@ terms of Feature tests and Unit tests.
   actively misleading. Renaming happens opportunistically when a slice touches
   that code anyway, never as a standalone refactor. Expect the glossary and the
   code to disagree on these two names for some time; that is intended, not drift.
+- **`Destination` has been removed from the glossary.** It described a concept
+  that now exists nowhere in the code or the tooling, and a glossary term with
+  no referent is the drift the glossary exists to prevent. Reintroduce it if
+  staging ever happens.
 
 ### Tooling adopted from the cited articles
 
@@ -296,7 +347,7 @@ Ghinda recommends five first commits. They are taken as follows:
 
 Setup is fixed as its own slice, following Bernard's first step: run the
 application locally, and if that takes more than an hour, treat it as a finding
-rather than something to push through. The specific blocker is evidence 7 below.
+rather than something to push through. The specific blocker is evidence 9 below.
 Stale configuration and documentation describing a previous hosting arrangement
 (`.travis.yml`, `docs/server-setup.txt`, the misleading `config/database.yml`
 line in `.gitignore`, and the "gme" typo in `README.md`) are removed at the same
@@ -309,9 +360,10 @@ application in a container behind Kamal's proxy, with MySQL on a separate host
 reached via `DB_HOST`, and no cache, queue or object store in play. Data model:
 four tables (`events`, `locations`, `quizzes`, `users`), six migrations, schema
 version `20200812210327`, which matches the latest migration, so `db:prepare` on
-a current production database is a no-op. Data integrity: validations exist at
-the model layer but the database lacks unique indexes on the slug columns, which
-is issue #82.
+a current production database is a no-op. That matters, because
+`bin/docker-entrypoint` runs `db:prepare` on every container boot. Data
+integrity: validations exist at the model layer but the database lacks unique
+indexes on the slug columns, which is issue #82.
 
 ## Testing Decisions
 
@@ -331,30 +383,26 @@ tests in this codebase.
 ### Seams
 
 The guiding rule is to prefer existing seams and to place any new seam at the
-highest point available. The project has two seams today and gains one.
+highest point available. The project has two seams and gains none. The original
+draft proposed a third, for `bin/deploy`'s contract; that script is no longer
+being written, so the seam goes with it.
 
 **Existing, Feature tests.** `test/integration/`, Capybara over rack-test inside
 `ActionDispatch::IntegrationTest`. Note these are feature tests despite the
 directory name; there is no `ActionDispatch::SystemTestCase` and no browser
 driver anywhere in the project. This is the seam for anything a Member or
-Organiser can see, including the Code of Conduct page, which has no coverage at
-present. Adding it also gives `PagesController` its first coverage, since
-`code-of-conduct` and `participate` render implicitly with no action defined.
+Organiser can see, including the Code of Conduct and participation pages, which
+have no coverage at present. Adding it also gives `PagesController` its first
+coverage, since `code-of-conduct` and `participate` render implicitly with no
+action defined.
 
 **Existing, Unit tests.** `test/models/` and `test/helpers/`. Objects exercised
 directly. This is the seam for everything else, and where the known coverage
 gaps live.
 
-**New, exactly one: `bin/deploy`'s own contract.** The wrapper is exercised as a
-subprocess, asserting the safety interlock: invoking it with no Destination
-fails, and invoking it with an unknown Destination fails. This is the highest
-point at which that behaviour exists. It does not deploy anything. It runs in
-the units task, with `bin/` excluded from coverage.
-
-**Deliberately not covered by the suite**: the `release.yml` trigger change,
-verified by observing that no run fires on the next merge; and
-`config/deploy.production.yml`, verified with `bin/kamal config -d production`.
-Both are one-off confirmations, not regressions worth automating.
+**Deliberately not covered by the suite**: the deployment pipeline. It is
+verified by observing a real deploy reach the running site, which is a one-off
+confirmation rather than a regression worth automating.
 
 ### Modules to be tested
 
@@ -363,6 +411,7 @@ numbers are the existing tracker items that cover them.
 
 | Gap | Where | Issue |
 | --- | --- | --- |
+| No coverage of the static pages | `app/controllers/pages_controller.rb` | none |
 | Empty test class, zero assertions | `test/models/location_test.rb` | #84 |
 | Broken `online` fixture, blocks the above | `test/fixtures/events.yml` | #80 |
 | No test file; 7 methods, all used in views | `app/helpers/application_helper.rb` | #87 |
@@ -372,7 +421,7 @@ numbers are the existing tracker items that cover them.
 | `upcoming` and `previous` exercised only via pages | `app/models/event.rb` | none |
 | `location_for` online branch unreached | `app/controllers/events_controller.rb` | #85 |
 
-The final row is the one gap on the controller side. The only Feature test
+The last row is the one gap on the controller side. The only Feature test
 covering the calendar feed uses an Event with a Venue, so the `"Online"` branch
 never runs. Issue #85 proposes extracting the feed into an `EventCalendar`
 object, which gives that branch a better home than the controller and is the
@@ -381,12 +430,11 @@ reason this gap is closed by extraction rather than by another Feature test.
 ## Out of Scope
 
 - **Migrating to RSpec.** Explicitly rejected; see Implementation Decisions.
-- **A staging Destination.** One Destination exists and one is enough. A second
-  host and database is real recurring cost and maintenance for a volunteer site
-  that ships a few times a year. The design leaves the door open.
-- **Restoring automated deploy on merge.** Deferred, not abandoned. The workflow
-  stays in the repository and can be reconnected once the manual path is proven
-  and a green build is required to merge.
+- **A staging Destination.** One deployment target exists and one is enough. A
+  second host and database is real recurring cost and maintenance for a
+  volunteer site that ships a few times a year. The design leaves the door open.
+- **Removing automated deploy on merge.** Originally planned, now rejected. See
+  "Deployment".
 - **Renaming models as a standalone piece of work.** Renames ride along with
   slices that touch the code anyway.
 - **Style and code-quality enforcement, and strict loading.** Deferred until
@@ -397,46 +445,57 @@ reason this gap is closed by extraction rather than by another Feature test.
   arrange and publish a Scheduled Event or agree that the site should say
   nothing is scheduled.
 - **Rewriting the Code of Conduct's substance.** Repointing the dead link is in
-  scope. Inlining a definition of unacceptable behaviour into the page, so it
-  can never rot again, was considered and rejected for slice 1: it changes the
-  group's stated policy, so it needs Tekin's agreement and would block a slice
-  whose job is to prove the pipeline. Worth revisiting separately.
+  scope, and it is repointed at an archived copy of the *same* document, so no
+  policy changes. Adopting the Contributor Covenant instead, or inlining a
+  definition of unacceptable behaviour so it can never rot again, both change
+  the group's stated policy and need Tekin's agreement. See "Decisions awaiting
+  a Maintainer".
 - **Issue #91's low-severity tidy-ups**, other than the reek configuration noted
   above. Redundant query, class-method privacy and explicit slug override are
   genuine but rank below everything sequenced here.
+- **Host housekeeping.** A stray container named `laughing_ellis` has been
+  running the pre-Kamal Brightbox image since April 2025, and `traefik:v2.9` is
+  still on disk. Both are harmless and neither is on the critical path. The host
+  has 21 GB free.
 
 ## Further Notes
 
 ### Slice sequence
 
-Each slice is independently shippable. The "unblocks" column is the ordering
-rule in practice: an infrastructure slice has to name what it makes possible.
+Each slice is independently shippable. The "unblocks" note is the ordering rule
+in practice: an infrastructure slice has to name what it makes possible.
 
-**Slice 0. Establish deploy access.** A spike, no code. Confirm SSH as `ubuntu`
-to `109.107.35.37`, a GHCR token with `write:packages` for `ghcr.io/nwrug`, and
-the values of `SECRET_KEY_BASE`, `DB_HOST` and `NWRUG_DATABASE_PASSWORD`.
-Everything is blocked on this. Output is either credentials in hand or a written
-list of what to request from whom. *Unblocks: every slice below.*
+**Slice 0. Establish deploy access. DONE, 2026-08-09.** Intended as a spike to
+confirm SSH, a registry token and three secret values. It found all three
+available, then went further and repaired the pipeline. Outcome: SSH works from
+the Maintainer's machine; the Maintainer is an `admin` of the `nwrug` org and
+can mint tokens without involving anyone; all three secrets are readable off the
+running container and are also present in the `nwrug` GitHub environment; Docker
+buildx was repaired locally; the root cause of the July 2025 deploy failure was
+diagnosed as the Kamal and `kamal-proxy` version guard; the proxy was rebooted
+from v0.8.4 to v0.9.0 with no measurable downtime; and production was deployed
+from `986b695` to `ebebdbd`, level with `main`, in 89 seconds. *Unblocked:
+everything below.*
 
-**Slice 1. Make deploying deliberate, and prove it.** One PR: add `bin/deploy`
-requiring a Destination; split `config/deploy.yml` into
-`config/deploy.production.yml`; strip the `push` trigger from `release.yml`; fix
-the dead Code of Conduct link (#70) to point at the Contributor Covenant
-standards section. The trigger removal must be in the same PR as anything else,
-so that merging cannot fire the unproven workflow at the live site. Then run
-`bin/deploy production` and verify against the running site. Closes #70, half of
-#72. *Unblocks: shipping anything at all.*
+**Slice 1. Fix the dead links on the static pages.** Repoint the Code of Conduct
+link (#70) and the participation page's "Tips for new speakers" link at pinned
+Internet Archive captures, and add a Feature test covering both pages, which
+gives `PagesController` its first coverage. Also remove `release.yml`'s
+unreferenced `SERVER_ADDR` and fix its typographic quotation marks. Closes #70.
+*Delivers: stories 6, 7 and 16. This slice has its own PRD.*
 
 **Slice 2. Restore the CI signal.** One `bundle update`, closing #63, #68, #73
 to #79. `bundler-audit` goes green and Brakeman runs for the first time since
 2025. Merge #92 immediately behind it, since it is already green apart from the
-pre-existing advisories. Optionally add `config.sandbox_by_default`. *Unblocks:
-every future PR getting a trustworthy green tick; #86 builds on #92.*
+pre-existing advisories. Optionally add `config.sandbox_by_default`. Expect a
+`kamal proxy reboot` to be needed afterwards. *Unblocks: every future PR getting
+a trustworthy green tick; #86 builds on #92.*
 
 **Slice 3. Make `bin/setup` work on a clean machine.** Handle the `mysql2` build
-flag, fix the README, delete `.travis.yml` and `docs/server-setup.txt`, drop the
-misleading `.gitignore` line. Add `bin/libyear` and print the number in CI
-without failing on it. *Unblocks: a second volunteer contributing at all.*
+flag, fix the README including the "gme" typo, delete `.travis.yml` and
+`docs/server-setup.txt`, drop the misleading `.gitignore` line, and document how
+deploying actually works. Add `bin/libyear` and print the number in CI without
+failing on it. *Unblocks: a second volunteer contributing at all.*
 
 **Slice 4. Coverage measurement, no gate.** SimpleCov, `rake test:features` and
 `rake test:units`, merging off, `track_files` set, `bin/rake` running both,
@@ -490,31 +549,64 @@ correctness bug affecting Members:
 
 These are the findings that are expensive to rediscover and easy to
 misinterpret. Each is stated with the check that produced it, so a future
-session can re-verify rather than re-derive. All were true on 2026-08-07.
+session can re-verify rather than re-derive. All were true on 2026-08-09 unless
+noted.
 
 1. **CI is not broken in the way it appears.** The `test` job passes (45 runs,
    72 assertions, 0 failures on #92). Only the `lint` job fails, at the
    `bundler-audit` step, which exits 1 before Brakeman runs. Flagged: `uri`
    1.0.3, `websocket-driver` 0.8.0, `rails-html-sanitizer` 1.6.2, `rack-session`.
-   Check: `gh run list --workflow=test-suite.yml --limit 3` then
+   CI was not always red: the last green run was 2025-08-14, and the rot set in
+   from 2025-10-07 as new advisories were published. Check:
+   `gh run list --workflow=test-suite.yml --limit 3` then
    `gh run view <id> --log-failed`.
-2. **`main` has not moved since 2025-07-24**, commit `ebebdbd`. Roughly twelve
-   and a half months of stall. Check: `git log -5 --format='%h %ad %s' --date=short`.
-3. **`release.yml` has run exactly once, on 2025-07-24, and failed.** Its logs
-   have since expired (HTTP 410). Automated deployment has never succeeded, on
-   any commit. Check: `gh run list --workflow=release.yml --limit 10`.
-4. **Production was nonetheless deployed by hand.** The live feed contains a
-   `VTIMEZONE` block, `DESCRIPTION`, `SOURCE` and `REFRESH-INTERVAL`, all
-   introduced in commits `3bb7f76` to `84723cb` dated 2025-05-09, which
-   `release.yml` never shipped. Somebody ran Kamal manually. Check:
-   `curl -s https://nwrug.org/events.ics | head -30`.
-5. **Production is roughly `986b695`, one commit behind `main`**, missing only
-   the dependency bump `6fc58d9`. Follows from findings 3 and 4.
-6. **The deploy target is correct and alive.** `nwrug.org` resolves to
-   `109.107.35.37`, the address in `config/deploy.yml`, and serves Rails over
-   HTTPS with HSTS, so Kamal's proxy and its Let's Encrypt certificate are
-   working. Check: `dig +short nwrug.org A` and `curl -sS -I https://nwrug.org`.
-7. **`bin/setup` does not work on a clean machine, and the reason is
+2. **`main` has not moved since 2025-07-24**, commit `ebebdbd`. Check:
+   `git log -5 --format='%h %ad %s' --date=short`.
+3. **The deploy failure was a Kamal and `kamal-proxy` version guard, nothing
+   more.** Commit `6fc58d9` ("Bump gem dependencies", merged as `ebebdbd`) took
+   `kamal` from 2.5.3 to 2.7.0. Kamal 2.7 requires `kamal-proxy` at v0.9.0 or
+   newer (`Kamal::Configuration::Proxy::Boot::MINIMUM_VERSION`); the host was
+   running v0.8.4. Every deploy of `ebebdbd` failed with
+   `kamal-proxy version v0.8.4 is too old, run kamal proxy reboot`, *after*
+   building, pushing and pulling successfully. Nothing was ever wrong with the
+   application. Resolved on 2026-08-09 by `bin/kamal proxy reboot -y`.
+4. **Automated deployment worked, repeatedly, and the first draft of this
+   document was wrong to say otherwise.** The host's Kamal audit log records
+   `[runner]`, the GitHub Actions runner, booting versions on 2025-04-23, 04-29,
+   05-08, 05-09 (four times) and 06-05. The claim that `release.yml` "has run
+   exactly once and failed" was an artifact of **GitHub's workflow run
+   retention**: the oldest surviving run of *any* workflow in this repository is
+   2025-07-22, and everything before that has been pruned. Do not infer deploy
+   history from the Actions tab. Check:
+   `ssh ubuntu@109.107.35.37 'cat ~/.kamal/nwrug_org-audit.log'` and
+   `gh run list --limit 200 --json workflowName,createdAt`.
+5. **Nobody deployed by hand after 2025-04-23.** The first draft inferred a
+   manual deploy from the live calendar feed containing changes the workflow
+   "never shipped". The audit log shows `[runner]` shipped them on 2025-05-09.
+   The only human entries after that are Tekin's two `Rebooted proxy` lines on
+   2025-07-24, which are him responding to the error in evidence 3.
+6. **Those two proxy reboots never took effect.** `Kamal::Cli::Proxy#reboot`
+   writes its audit line *before* `docker login` and *before* stopping the
+   container, so an audit entry proves an attempt, not a success. The proxy
+   container was still the original one, with sixteen months of uptime, when it
+   was finally replaced. The most likely failure point is `docker login`, which
+   needs `KAMAL_REGISTRY_PASSWORD` in the operator's environment.
+7. **Rebooting the proxy is nearly free.** The new container re-mounts the named
+   volume `kamal-proxy-config`, which holds both the routing table and the
+   Let's Encrypt certificate cache, so routes and certificates survive. The site
+   returned 200 throughout the v0.8.4 to v0.9.0 reboot on 2026-08-09. Check:
+   `docker inspect kamal-proxy --format '{{range .Mounts}}{{.Source}}{{end}}'`.
+8. **Local Kamal needs Docker buildx, which was silently broken.**
+   `~/.docker/cli-plugins/` held fourteen dangling symlinks into a deleted
+   `Docker.app`, shadowing Homebrew's plugins, so `docker buildx` reported
+   "unknown command". Fixed by `brew install docker-buildx`, deleting the
+   dangling symlinks, and adding `/opt/homebrew/lib/docker/cli-plugins` to
+   `cliPluginsExtraDirs` in `~/.docker/config.json`. Note also that the local
+   Docker is Colima on `aarch64` while `config/deploy.yml` pins
+   `builder.arch: amd64`, and that `cache: type: gha` only resolves inside a
+   GitHub Actions runner, so a local *build* is slow and awkward even now. Build
+   in CI; use local Kamal for operations only.
+9. **`bin/setup` does not work on a clean machine, and the reason is
    invisible.** The working machine carries an untracked `.bundle/config`
    holding
    `BUNDLE_BUILD__MYSQL2: "--with-mysql-config=/opt/homebrew/opt/mysql-client/bin/mysql_config"`.
@@ -523,66 +615,98 @@ session can re-verify rather than re-derive. All were true on 2026-08-07.
    does not get it, and `README.md` says only that MySQL must be installed and
    running. This is the single most expensive finding to rediscover. Check:
    `cat .bundle/config` and `git ls-files .bundle/`.
-8. **`config/database.yml` is listed in `.gitignore` but is still tracked**,
-   because it was committed before the ignore rule was added. It is therefore
-   present on a fresh clone, and CI works. Misleading but harmless. Check:
-   `git ls-files --error-unmatch config/database.yml`. Do not trust `.gitignore`
-   here.
-9. **`config/environments/test.rb` line 16 reads
-   `config.eager_load = ENV["CI"].present?`.** Coverage will therefore disagree
-   between a Maintainer's machine and CI unless `track_files` is set explicitly.
-10. **`app/helpers/sessions_helper.rb` is an empty module referenced nowhere.**
+10. **Every production secret is recoverable from the host.** `DB_HOST`,
+    `NWRUG_DATABASE_PASSWORD` and `SECRET_KEY_BASE` are injected into the
+    running container and can be read back with `docker inspect`. They are also
+    stored in the `nwrug` GitHub environment, which has no protection rules,
+    alongside `SSH_PRIVATE_KEY`. Because the running container was booted by the
+    workflow from those same secrets, redeploying cannot invalidate signed
+    cookies. There is a second, empty environment called `production`. No
+    credential needs to be requested from anyone.
+11. **`config/database.yml` is listed in `.gitignore` but is still tracked**,
+    because it was committed before the ignore rule was added. It is therefore
+    present on a fresh clone, and CI works. Misleading but harmless. Check:
+    `git ls-files --error-unmatch config/database.yml`. Do not trust `.gitignore`
+    here.
+12. **`config/environments/test.rb` line 16 reads
+    `config.eager_load = ENV["CI"].present?`.** Coverage will therefore disagree
+    between a Maintainer's machine and CI unless `track_files` is set explicitly.
+13. **`app/helpers/sessions_helper.rb` is an empty module referenced nowhere.**
     It cannot be covered and must be deleted for 100% to be reachable. Check:
     `grep -rn SessionsHelper app/ test/`.
-11. **There is no Scheduled Event in the future.** The homepage shows
+14. **There is no Scheduled Event in the future.** The homepage shows
     "Next Event: Thursday 20th August", which is a Provisional Date, and
     `ul#upcoming-events` on the events page is empty. The most recent Event in
-    the feed was 2026-07-16. Check: `curl -s https://nwrug.org/ | grep -i "next event"`.
-    This may well have changed by the time you read it, and if it has, that is
-    good news rather than a stale finding.
-12. **`citizencodeofconduct.org` no longer resolves at DNS level.** The domain
-    is gone entirely, not merely erroring. It is linked from
-    `app/views/pages/code-of-conduct.html.erb` on the phrase "harassing
-    behaviour". The chosen replacement is
-    <https://www.contributor-covenant.org/version/2/1/code_of_conduct/#our-standards>,
-    which returns 200. Check: `dig +short citizencodeofconduct.org`.
-13. **`release.yml` contains two further defects** beyond its trigger:
-    `SERVER_ADDR: 109.107.35.37` is set and never referenced, and
+    the feed is 2026-07-16. Check:
+    `curl -s https://nwrug.org/ | grep -i "next event"`. Beware that `DTSTART`
+    also appears inside the feed's `VTIMEZONE` block, so the maximum `DTSTART`
+    is a daylight-saving transition, not an Event.
+15. **Two domains linked from the site are gone at DNS level**, not merely
+    erroring: `citizencodeofconduct.org`, linked from
+    `app/views/pages/code-of-conduct.html.erb` line 11 on the phrase "harassing
+    behaviour"; and `rethink-testing.co.uk`, linked from
+    `app/views/pages/participate.html.erb` line 68 as "Tips for new speakers".
+    A sweep of every external link in `app/views/` found no others: the two 403s
+    from `doingpresentations.com` and `inc.com` are bot-blocking, not rot.
+16. **Both dead pages have good Internet Archive captures, but the newest
+    capture is a trap.** `rethink-testing.co.uk` sat behind a bot check from
+    mid-2022, and Wayback captured the "One moment, please..." interstitial
+    instead of the article; those captures are about 1.2 KB against about 21 KB
+    for the real page. **Always pin a timestamp, never use Wayback's undated
+    "newest" form.** The good captures are:
+    - Code of Conduct, rendering in full with the `#unacceptable-behavior`
+      anchor intact:
+      <https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/#unacceptable-behavior>
+    - "Tips for new speakers: Part 1", by Bill, 20 June 2016:
+      <https://web.archive.org/web/20220630231506/http://rethink-testing.co.uk/?p=158>
+    - Parts 2 and 3, not currently linked from the site: `?p=163` at
+      `20220429070544` and `?p=164` at `20230402131520`.
+17. **`release.yml` contains two harmless defects.** `SERVER_ADDR: 109.107.35.37`
+    is set and never referenced, and
     `BUNDLE_WITHOUT: “default development test production profiling”` uses
-    typographic quotation marks, so it will not be parsed as intended. Slice 1
-    only removes the trigger; both of these matter whenever automated deployment
-    is reconnected.
-14. **PR #92 references issue numbers that do not exist.** Its description cites
+    typographic quotation marks, so it does not exclude the groups it names.
+    Neither has ever broken a deploy. Both are cleaned up in slice 1.
+18. **PR #92 references issue numbers that do not exist.** Its description cites
     "issue 001", "002" and "004" from a local numbering scheme used in an
     earlier working session, which does not map to the GitHub tracker. Its "004"
     is issue #86. Worth reconciling so the references are not followed to the
     wrong place.
-15. **Twelve of the sixteen open issues came from a single audit** (#80 to #91,
+19. **Twelve of the sixteen open issues came from a single audit** (#80 to #91,
     labelled `audit`) and already carry severity and category labels. Only #69,
     #70, #71 and #72 are unlabelled. The backlog is less untriaged than it first
     appears.
-16. **The application is 307 lines of Ruby** across controllers, models,
+20. **The application is 307 lines of Ruby** across controllers, models,
     concerns and helpers, with 42 local tests passing. This is a small codebase,
     and estimates should reflect that. Check: `wc -l app/**/*.rb` and `bin/rake`.
+21. **`/quizzes` returns 404 by design.** `config/routes.rb` declares
+    `resources :quizzes, except: [:index, :destroy]`. This is not a regression.
 
 ### Decisions awaiting a Maintainer
 
-- **Deploy credentials.** Slice 0 exists because it is unknown whether SSH
-  access to `ubuntu@109.107.35.37`, a `ghcr.io/nwrug` token with
-  `write:packages`, and the values of `SECRET_KEY_BASE`, `DB_HOST` and
-  `NWRUG_DATABASE_PASSWORD` are available. If they are not, obtaining them is
-  the real first task and may involve somebody other than the person reading
-  this, most likely Tekin. Note that deploying with a different
-  `SECRET_KEY_BASE` than the running container invalidates signed cookies, which
-  here only signs out Organisers, so it is survivable but worth knowing.
 - **Requiring a green build to merge.** Recommended immediately after slice 2,
-  which is the moment it becomes free. Not yet agreed.
-- **Two architecture decision records look justified**, on the grounds that both
-  are hard to reverse, surprising without context, and the result of a genuine
-  trade-off: that deploying is a human-run command rather than an automated
-  consequence of merging, in a repository that visibly contains a release
-  workflow; and that controllers are proven only by Feature tests while
-  everything else is proven only by Unit tests, which becomes difficult to
-  unpick once the gate is on. Neither has been written.
+  which is the moment it becomes free. Not yet agreed. It matters more now than
+  when it was first written down: `release.yml` does not depend on
+  `test-suite.yml`, so merging to `main` deploys regardless of build state, and
+  branch protection is the clean way to close that. This is the other half of
+  issue #72.
+- **Noticing failed deploys.** Story 40's real requirement. Nobody has decided
+  how a Maintainer finds out. Options range from doing nothing and relying on
+  GitHub's default notifications, which demonstrably failed for twelve months,
+  to a scheduled check comparing the running container's version against `main`.
+  Worth deciding before the next long gap.
+- **Adopting the Contributor Covenant.** Slice 1 repoints the Code of Conduct
+  link at an archived copy of the Citizen Code of Conduct, which changes no
+  policy. Replacing it with the Contributor Covenant would be a policy change
+  and needs Tekin's agreement. The Citizen Code of Conduct's project is defunct,
+  so this is worth resolving rather than leaving on an archive link forever.
+- **"Tips for new speakers" Parts 2 and 3.** Only Part 1 is linked. The series
+  exists and is archived. Adding the other two is a content decision.
+- **One architecture decision record looks justified**, on the grounds that it
+  is hard to reverse, surprising without context, and the result of a genuine
+  trade-off: that controllers are proven only by Feature tests while everything
+  else is proven only by Unit tests, which becomes difficult to unpick once the
+  gate is on. It has not been written. The second ADR proposed in the first
+  draft, on deploying being a human-run command, is void, because that decision
+  was reversed before anything was built.
 - **The August meetup.** See Out of Scope. This needs an Organiser, not a
   Maintainer.

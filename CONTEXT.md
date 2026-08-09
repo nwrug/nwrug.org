@@ -88,8 +88,3 @@ A test that exercises one object directly, without going through a page. The
 only kind of test that is allowed to prove everything other than a controller
 works.
 _Avoid_: Model test, spec
-
-**Destination**:
-A named place the site can be deployed to. There is exactly one, `production`,
-and naming it is required so that deploying is always a deliberate act.
-_Avoid_: Environment, stage, target
