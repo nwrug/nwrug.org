@@ -391,10 +391,9 @@ being written, so the seam goes with it.
 `ActionDispatch::IntegrationTest`. Note these are feature tests despite the
 directory name; there is no `ActionDispatch::SystemTestCase` and no browser
 driver anywhere in the project. This is the seam for anything a Member or
-Organiser can see, including the Code of Conduct and participation pages, which
-have no coverage at present. Adding it also gives `PagesController` its first
-coverage, since `code-of-conduct` and `participate` render implicitly with no
-action defined.
+Organiser can see, including the Code of Conduct page, which is visited by no
+test at all. See evidence 22 before assuming anything about how much coverage
+that gains: less than the first draft of this document claimed.
 
 **Existing, Unit tests.** `test/models/` and `test/helpers/`. Objects exercised
 directly. This is the seam for everything else, and where the known coverage
@@ -411,7 +410,7 @@ numbers are the existing tracker items that cover them.
 
 | Gap | Where | Issue |
 | --- | --- | --- |
-| No coverage of the static pages | `app/controllers/pages_controller.rb` | none |
+| Visited by no test | `app/views/pages/code-of-conduct.html.erb` | none |
 | Empty test class, zero assertions | `test/models/location_test.rb` | #84 |
 | Broken `online` fixture, blocks the above | `test/fixtures/events.yml` | #80 |
 | No test file; 7 methods, all used in views | `app/helpers/application_helper.rb` | #87 |
@@ -474,15 +473,18 @@ running container and are also present in the `nwrug` GitHub environment; Docker
 buildx was repaired locally; the root cause of the July 2025 deploy failure was
 diagnosed as the Kamal and `kamal-proxy` version guard; the proxy was rebooted
 from v0.8.4 to v0.9.0 with no measurable downtime; and production was deployed
-from `986b695` to `ebebdbd`, level with `main`, in 89 seconds. *Unblocked:
-everything below.*
+from `986b695` to `ebebdbd`, level with `main`, in 89 seconds. Both deploy paths
+are now proven: `workflow_dispatch` on `ebebdbd`, and a push-triggered deploy on
+`0c3a28f`, which took two minutes from merge to live. *Unblocked: everything
+below.*
 
 **Slice 1. Fix the dead links on the static pages.** Repoint the Code of Conduct
 link (#70) and the participation page's "Tips for new speakers" link at pinned
-Internet Archive captures, and add a Feature test covering both pages, which
-gives `PagesController` its first coverage. Also remove `release.yml`'s
-unreferenced `SERVER_ADDR` and fix its typographic quotation marks. Closes #70.
-*Delivers: stories 6, 7 and 16. This slice has its own PRD.*
+Internet Archive captures, and add a Feature test for the Code of Conduct page,
+which no test currently visits. Also remove `release.yml`'s unreferenced
+`SERVER_ADDR` and fix its typographic quotation marks. Closes #70.
+*Delivers: stories 6, 7 and 16. Has its own PRD:
+[`prd/slice-1-dead-links.md`](slice-1-dead-links.md).*
 
 **Slice 2. Restore the CI signal.** One `bundle update`, closing #63, #68, #73
 to #79. `bundler-audit` goes green and Brakeman runs for the first time since
@@ -680,6 +682,17 @@ noted.
     and estimates should reflect that. Check: `wc -l app/**/*.rb` and `bin/rake`.
 21. **`/quizzes` returns 404 by design.** `config/routes.rb` declares
     `resources :quizzes, except: [:index, :destroy]`. This is not a regression.
+22. **`PagesController` has almost nothing to cover, and `/participate` is
+    already covered.** Both the original draft and its first revision claimed
+    the static pages had no coverage and that testing them would give
+    `PagesController` its first. Neither is true.
+    `test/integration/next_event_details_test.rb` already visits
+    `participate_path`, and `PagesController` declares one action, `home`, whose
+    body is empty; `code-of-conduct` and `participate` have no actions and
+    render implicitly, so they contribute no controller lines. The real and only
+    gap is that `app/views/pages/code-of-conduct.html.erb` is visited by no
+    test, so a change that breaks it ships silently. Check:
+    `grep -rn participate_path test/` and `cat app/controllers/pages_controller.rb`.
 
 ### Decisions awaiting a Maintainer
 
