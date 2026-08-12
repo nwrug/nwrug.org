@@ -1,4 +1,6 @@
 name: Release
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
@@ -14,7 +16,11 @@ env:
   SERVER_ADDR: 109.107.35.37
 
 jobs:
+  ci:
+    name: Test suite
+    uses: ./.github/workflows/test-suite.yml
   deploy:
+    needs: ci
     name: Kamal deploy
     runs-on: ubuntu-latest
     environment: nwrug
@@ -29,7 +35,7 @@ jobs:
     env:
       DOCKER_BUILDKIT: 1
       RAILS_ENV: production
-      BUNDLE_WITHOUT: “default development test production profiling”
+      BUNDLE_WITHOUT: "development test"
       BUNDLE_WITH: tools
 
     steps:
@@ -55,7 +61,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Deploy with Kamal
-        run: bin/kamal lock release && bin/kamal deploy
+        run: bin/kamal deploy
         env:
           SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
           DB_HOST: ${{ secrets.DB_HOST }}
