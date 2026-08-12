@@ -1,4 +1,0 @@
-language: ruby
-before_script:
-  - mysql -e 'create database nwrug_test;'
-  - cp ./config/travis.database.yml ./config/database.yml
