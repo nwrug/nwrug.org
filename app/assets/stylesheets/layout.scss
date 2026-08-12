@@ -10,7 +10,7 @@ html, body {
 }
 
 .main-container {
-  border-top: $brand-colour solid .5em;
+  border-top: $accent-colour solid .5em;
   background-color: white;
 }
 
@@ -31,27 +31,12 @@ header {
   h1 {
     clear: both;
     text-align: center;
-    font-size: $base-font-size * 2.3;
-    font-weight: bold;
     padding-top: $gutter-half;
     margin-bottom: 0;
-    color: $header-text-colour;
 
-    a {
-      text-decoration: none;
-      color: $header-text-colour;
+    .site-logo {
+      width: 180px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 20px;
-    padding: 0;
-    margin: $gutter-half 0;
-    color: $brand-colour;
   }
 }
 
@@ -188,11 +173,11 @@ footer a {
   header{
     h1 {
       padding-top: $gutter;
-      font-size: 60px;
       padding-bottom: 10px;
-    }
-    h2 {
-      font-size: 30px;
+
+      .site-logo {
+        width: 220px;
+      }
     }
     .nav-collapse a {
       padding: 0.7em;

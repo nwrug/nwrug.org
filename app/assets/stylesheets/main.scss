@@ -16,14 +16,15 @@ $gutter-half: $gutter/2;
 $gutter-double: $gutter*2;
 
 // Colours
-$brand-colour:           #BE1717;
-$secondary-brand-colour: #FFA2A2;
+$brand-colour:           #1A2D35;
+$secondary-brand-colour: #A8174E;
+$accent-colour:          #E4A91F;
 $text-colour:            black;
 $background-colour:      #777;
-$link-colour:            darken($brand-colour, 5%);
+$link-colour:            $secondary-brand-colour;
 $header-colour:          $brand-colour;
-$header-text-colour:     #A40202;
-$footer-colour:          $background-colour;
+$header-text-colour:     $brand-colour;
+$footer-colour:          $brand-colour;
 $footer-text-colour:     white;
 $selection-colour:       #b3d4fc;
 
