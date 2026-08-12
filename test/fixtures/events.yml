@@ -10,5 +10,5 @@ online:
   title: Lockdown Zoom Town
   slug: lockdown-zoom-town
   description: This is an online event happening in cyberspace
-  date: <% DateTime.now.last_month.next_week(:thursday) %>
+  date: <%= DateTime.now.last_month.next_week(:thursday) %>
   online: true

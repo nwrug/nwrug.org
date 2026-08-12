@@ -25,6 +25,9 @@ jobs:
         with:
           # Absence of ruby-version: forces read from .ruby-version
           bundler-cache: true
+      # ruby-vips needs the libvips shared library for the social image tests
+      - name: Install libvips
+        run: sudo apt-get update && sudo apt-get install -y libvips
       - name: Set up database schema
         run: bin/rails db:schema:load
       - name: Run tests

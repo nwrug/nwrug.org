@@ -22,6 +22,10 @@ module ApplicationHelper
     'North West Ruby User Group, Manchester, UK'
   end
 
+  def og_image_url
+    "#{root_url}/images/og-image.png"
+  end
+
   def markdown_renderer
     GitHub::Markup::Markdown.new
   end

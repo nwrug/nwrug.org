@@ -21,6 +21,9 @@ gem 'puma'
 # For publishing an ical feed of events
 gem 'icalendar'
 
+# For generating social graph images for events
+gem 'ruby-vips'
+
 group :production do
   # Used to load secrets via environment variables on production
   gem 'dotenv-rails'
