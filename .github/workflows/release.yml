@@ -12,9 +12,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false # Prevents ongoing deployments from being canceled
 
-env:
-  SERVER_ADDR: 109.107.35.37
-
 jobs:
   ci:
     name: Test suite
