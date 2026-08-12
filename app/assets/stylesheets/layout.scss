@@ -45,10 +45,6 @@ header {
 }
 
 
-.main article.no-aside {
-  width: 90%;
-}
-
 .main aside {
   padding: 0px 5% 10px;
   margin: $gutter-double 0;
@@ -114,6 +110,10 @@ aside.event {
 footer {
   font-size: $small-font-size;
   text-align: center;
+
+  .footer-logo {
+    width: 120px;
+  }
 
   ul {
     font-size: $base-font-size;
