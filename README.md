@@ -1,6 +1,6 @@
 # [NWRUG.ORG](http://nwrug.org)
 
-![Build status](https://github.com/nwrug/nwrug.org/actions/workflows/test-suite.yml/badge.svg)
+![Build status](https://github.com/nwrug/nwrug.org/actions/workflows/release.yml/badge.svg)
 
 The website of the North West Ruby User Group, a Manchester-based user group for
 folk interested in the Ruby programming language.
