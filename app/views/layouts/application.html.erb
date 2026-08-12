@@ -35,9 +35,8 @@
       <% end %>
 
       <h1 class="clearfix">
-        <%= link_to_unless_current 'NWRUG', root_path %>
+        <%= link_to_unless_current(root_path) { image_tag 'nwrug-logo.svg', alt: 'NWRUG — North West Ruby User Group', class: 'site-logo' } %>
       </h1>
-      <h2>North West Ruby User Group</h2>
     </header>
 
 
