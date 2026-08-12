@@ -1,4 +1,6 @@
 name: Release
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
@@ -14,7 +16,11 @@ env:
   SERVER_ADDR: 109.107.35.37
 
 jobs:
+  ci:
+    name: Test suite
+    uses: ./.github/workflows/test-suite.yml
   deploy:
+    needs: ci
     name: Kamal deploy
     runs-on: ubuntu-latest
     environment: nwrug
