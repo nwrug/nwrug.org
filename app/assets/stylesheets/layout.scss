@@ -111,6 +111,10 @@ footer {
   font-size: $small-font-size;
   text-align: center;
 
+  .footer-logo {
+    width: 120px;
+  }
+
   ul {
     font-size: $base-font-size;
     list-style: none;
