@@ -23,6 +23,10 @@ module ApplicationHelper
   end
 
   def og_image_url
+    content_for(:og_image_url) || default_og_image_url
+  end
+
+  def default_og_image_url
     "#{root_url}/images/og-image.png"
   end
 

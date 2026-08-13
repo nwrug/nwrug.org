@@ -101,6 +101,8 @@ Rails.application.routes.draw do
   get '/events/15th-november---a-rubyconf-2012-review-with-will-jessop', to: redirect('/events/november-2012-a-rubyconf-2012-review-with-will-jessop')
   get '/events/17th-september---social-meet', to: redirect('/events/september-2015-social-meet')
 
-  resources :events
+  resources :events do
+    resource :open_graph_image, only: :show, module: :events
+  end
   resources :quizzes, except: [:index, :destroy]
 end
