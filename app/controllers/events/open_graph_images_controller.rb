@@ -16,8 +16,10 @@ module Events
     end
 
     def open_graph_image
-      location = @event.online? ? 'Online' : @event.location.name
-      OpenGraphImage.new(title: @event.title, subheading: "#{@event.date.to_fs(:short_date)}, #{@event.time} — #{location}").generate
+      Rails.cache.fetch("event/#{@event.id}/#{@event.updated_at.to_i}/open_graph_image") do
+        location = @event.online? ? 'Online' : @event.location.name
+        OpenGraphImage.new(title: @event.title, subheading: "#{@event.date.to_fs(:short_date)}, #{@event.time} — #{location}").generate
+      end
     end
   end
 end
