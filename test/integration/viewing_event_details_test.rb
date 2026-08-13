@@ -12,6 +12,9 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
     assert page.has_content?(event.title)
     assert page.has_content?(event.description)
     assert page.has_content?("at The Manchester Digital Laboratory (MadLab)")
+
+    og_image_url = event_open_graph_image_url(event, format: :png)
+    assert page.has_css?(%(meta[property="og:image"][content="#{og_image_url}"]), visible: false)
   end
 
   test "viewing an ICAL feed of events" do

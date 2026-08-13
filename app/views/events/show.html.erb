@@ -1,5 +1,6 @@
 <% content_for :meta_title, "NWRUG Event: #{@event.title}, #{@event.date.to_fs(:short_date)}" %>
 <% content_for :meta_description, truncate(render_plaintext(@event.description), length: 160) %>
+<% content_for :og_image_url, event_open_graph_image_url(@event, format: :png) %>
 
 <article class="event no-aside">
   <% if current_user.present? %>
@@ -27,8 +28,8 @@
      </span>
     </div>
 
-    <div class='embed-container'>
-      <iframe width='600' height='300' frameborder='0' style='border:0' src='<%= google_maps_embed_url(location) %>' allowfullscreen></iframe>
+    <div class="embed-container">
+      <iframe width="600" height="300" frameborder="0" style="border:0" src="<%= google_maps_embed_url(location) %>" allowfullscreen></iframe>
     </div>
   <% end %>
 </article>
