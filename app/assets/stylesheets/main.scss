@@ -127,6 +127,18 @@ pre {
   display: none;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .secondary-colour {
   color: $secondary-brand-colour;
 }
@@ -174,4 +186,9 @@ form {
     width: 90%;
     height: 300px;
   }
+}
+
+.sponsor-logo {
+  width: 300px;
+  max-width: 100%;
 }
