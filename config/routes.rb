@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'up', to: 'rails/health#show'
   get 'code-of-conduct', to: 'pages#code-of-conduct', as: :code_of_conduct
   get 'participate', to: 'pages#participate', as: :participate
+  get 'sponsors', to: 'pages#sponsors', as: :sponsors
 
   get '/signin', to: 'sessions#new', as: :signin
   post '/signin', to: 'sessions#create'

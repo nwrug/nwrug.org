@@ -1,0 +1,54 @@
+<% content_for :meta_title, "Sponsors | #{default_page_title}" %>
+<% content_for :meta_description, 'NWRUG is kindly supported by our sponsors.' %>
+
+<article class="no-aside" id="sponsors-page">
+  <h1>Sponsors</h1>
+
+  <p>NWRUG is kindly supported by our sponsors:</p>
+
+  <section>
+    <h2>
+      <%= link_to 'https://www.brightbox.com/?utm_source=nwrug' do %>
+        <span class="visually-hidden">Brightbox</span>
+        <%= image_tag '/images/sponsors/brightbox.svg', alt: '', class: 'sponsor-logo' %>
+      <% end %>
+    </h2>
+    <p>Brightbox is a UK-based cloud hosting provider. Brightbox provide the hosting for this website.</p>
+  </section>
+
+  <section>
+    <h2>
+      <%= link_to 'https://www.fatsoma.com/?utm_source=nwrug' do %>
+        <span class="visually-hidden">Fatsoma</span>
+        <%= image_tag '/images/sponsors/fatsoma.svg', alt: '', class: 'sponsor-logo' %>
+      <% end %>
+    </h2>
+    <p>Fatsoma is a ticketing and event marketing platform. Fatsoma sponsor the venue for our events.</p>
+  </section>
+
+  <section>
+    <h2>
+      <%= link_to 'https://thoughtbot.com/?utm_source=nwrug' do %>
+        <span class="visually-hidden">thoughtbot</span>
+        <%= image_tag '/images/sponsors/thoughtbot.svg', alt: '', class: 'sponsor-logo' %>
+      <% end %>
+    </h2>
+    <p>thoughtbot is a software design and development consultancy. thoughtbot provide the refreshments at our events.</p>
+  </section>
+
+    <section>
+    <h2 id="sponsor-nwrug">Sponsor NWRUG</h2>
+    <p>
+      NWRUG is a community-run group and we are always grateful for sponsorship from companies looking to support the
+      work that we do. If you would like to sponsor NWRUG, <%= link_to 'get in touch', 'mailto:info@nwrug.org' %>. We
+      generally use sponsorship money to cover the various costs of running and hosting our events. In return for your
+      sponsorship, NWRUG will:
+    </p>
+    <ol>
+      <li>mention the sponsorship on the details page for the corresponding event</li>
+      <li>mention the sponsorship on the announcement email sent to <%= link_to 'the mailing list', mailing_list_url %></li>
+      <li>post about the sponsorship on social media</li>
+      <li>mention the sponsorship at the event itself and give you the opportunity to make a short announcement at the start of the event so you can talk to the group</li>
+    </ol>
+  </section>
+</article>
