@@ -17,3 +17,6 @@
 /tmp
 
 config/database.yml
+
+/prd/
+/issues/
