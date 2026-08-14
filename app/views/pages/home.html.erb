@@ -1,13 +1,15 @@
 <% content_for :meta_title, default_page_title %>
 <% content_for :meta_description, 'Manchester-based Ruby User Group. We meet on the 3rd Thursday each month.' %>
 
-<article>
+<article class="inline-aside">
   <p>
     NWRUG is a Manchester-based community for people interested in the
     <%= link_to "Ruby programming language", "https://www.ruby-lang.org/en/" %>.
     We run regular <%= link_to "events", events_path %> open to anyone with an
     interest in Ruby.
   </p>
+
+  <%= render 'events/aside' %>
 
   <h2 id="our-aim">Our aim</h2>
 
@@ -42,5 +44,3 @@
     <%= link_to "code of conduct", code_of_conduct_path %>.
   </p>
 </article>
-
-<%= render 'events/aside' %>

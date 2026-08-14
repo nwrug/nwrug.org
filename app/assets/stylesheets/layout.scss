@@ -150,16 +150,24 @@ footer a {
 
   .main {
     article {
-        float: left;
-        width: 57%;
+      float: left;
+      width: 57%;
 
-        .large-heading {
-          font-size: $base-font-size * 3;
+      .large-heading {
+        font-size: $base-font-size * 3;
+      }
+
+      &.no-aside {
+        width: 90%;
+      }
+
+      &.inline-aside {
+        width: 100%;
+
+        aside {
+          margin-left: 30px;
         }
-    }
-
-    article.no-aside {
-      width: 90%;
+      }
     }
 
     aside {
