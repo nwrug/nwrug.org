@@ -43,7 +43,7 @@ private
   end
 
   def event_params
-    params.require(:event).permit(:title, :description, :date, :slug, :location_id, :online)
+    params.require(:event).permit(:title, :description, :date, :slug, :location_id, :online, :registration_url)
   end
 
 

@@ -23,6 +23,11 @@
   </section>
 
   <section>
+    <%= form.label :registration_url %>
+    <%= form.text_field :registration_url %>
+  </section>
+
+  <section>
     <%= form.label :location_id %>
     <%= form.select :location_id, Location.all.map {|l| [l.name, l.id] }, include_blank: true %>
   </section>
@@ -39,6 +44,6 @@
   </section>
 
   <section>
-    <%= form.submit 'Save' %> or <%= link_to 'cancel', events_path %>
+    <%= form.submit 'Save', class: 'button' %> or <%= link_to 'cancel', events_path %>
   </section>
 <% end %>
