@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2020_08_12_210327) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_16_075811) do
   create_table "events", id: :integer, charset: "utf8mb3", collation: "utf8mb3_unicode_ci", force: :cascade do |t|
     t.datetime "created_at", precision: nil, null: false
     t.datetime "date", precision: nil
     t.text "description"
     t.integer "location_id"
     t.boolean "online", default: false
+    t.string "registration_url"
     t.string "slug"
     t.string "title"
     t.datetime "updated_at", precision: nil, null: false

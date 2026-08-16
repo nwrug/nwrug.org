@@ -15,6 +15,10 @@
     <%= location_text(@event) %>
   </h2>
 
+  <% if @event.registration_url.present? %>
+    <p><%= link_to 'Register to attend', @event.registration_url, class: 'button' %></p>
+  <% end %>
+
   <%= render_markdown @event.description %>
 
   <% if location = @event.location %>

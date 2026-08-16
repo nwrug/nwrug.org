@@ -16,11 +16,13 @@ class EventAdministrationTest < ActionDispatch::IntegrationTest
 
     fill_in :event_title, with: 'New event title'
     fill_in :event_description, with: 'Event description'
+    fill_in :event_registration_url, with: 'https://www.tickettailor.com/events/nwrug/1234'
     click_on 'Save'
 
     last_event = Event.last
 
     assert_equal 'New event title', last_event.title
+    assert has_link?('Register to attend', href: 'https://www.tickettailor.com/events/nwrug/1234')
   end
 
   test 'authorised user can create an online event' do

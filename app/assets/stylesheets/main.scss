@@ -192,3 +192,24 @@ form {
   width: 300px;
   max-width: 100%;
 }
+
+.button {
+  display: block;
+  padding: 8px 10px 7px;
+  border: 2px solid transparent;
+  color: #ffffff;
+  background-color: $secondary-brand-colour;
+  box-shadow: 0 2px 0 #002d18;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  box-shadow: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: lighten($secondary-brand-colour, 15%);
+  }
+}
