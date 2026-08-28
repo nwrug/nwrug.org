@@ -27,4 +27,19 @@ class ViewingEventDetailsTest < ActionDispatch::IntegrationTest
     assert page.has_content?('LOCATION:The Manchester Digital Laboratory (MadLab)\, 36-40 Edge Street')
     assert page.has_content?('URL;VALUE=URI:http://www.example.com/events/an-event-for-august')
   end
+
+  test 'ICAL feed when there is no future event shows a TBC event with the right date' do
+    events(:next_event).destroy!
+    visit(events_path(format: :ics))
+
+    tz = TZInfo::Timezone.get 'Europe/London'
+    next_event_date = Icalendar::Values::DateTime.new(Event.next_date, tzid: tz.identifier)
+
+    assert page.body.start_with?('BEGIN:VCALENDAR')
+    assert page.has_content?("SUMMARY:NWRUG: North West Ruby User Group Meetup")
+    assert page.has_content?("DESCRIPTION:Details to follow...")
+    assert page.has_content?('LOCATION:Manchester\, UK')
+
+    assert page.has_content?(next_event_date.value_ical)
+  end
 end

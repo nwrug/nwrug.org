@@ -60,6 +60,18 @@ private
     timezone = tz.ical_timezone events.first.date
     cal.add_timezone timezone
 
+    if Event.upcoming.none?
+      # Put a placeholder event in the ICAL feed
+      cal.event do |e|
+        e.uid         = "nwrug-event-placeholder-#{Event.next_date}"
+        e.location    = "Manchester, UK"
+        e.dtstart     = Icalendar::Values::DateTime.new(Event.next_date, tzid: tz.identifier)
+        e.dtend       = Icalendar::Values::DateTime.new((Event.next_date+2.hours), tzid: tz.identifier)
+        e.summary     = "NWRUG: North West Ruby User Group Meetup"
+        e.description = "Details to follow..."
+      end
+    end
+
     events.each do |event|
       cal.event do |e|
         e.uid         = "nwrug-event-#{event.id}"
