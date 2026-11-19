@@ -59,6 +59,7 @@ test:
   <<: *default
   database: nwrug_test
   username: root
+  host: <%= ENV['DB_HOST'] %>
   password: <%= ENV['DB_PASSWORD'] %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
